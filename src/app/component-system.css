@@ -2029,3 +2029,13 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
 .em-header-preview header > div {
   padding: 0;
 }
+
+/* Component examples stack so controls retain readable widths on phones. */
+@media (width < 48rem) {
+  .em-grid.em-example-grid > [data-columns] {
+    grid-column: 1 / -1;
+  }
+  .em-example-grid .em-form-grid > [data-columns] {
+    grid-column: 1 / -1;
+  }
+}

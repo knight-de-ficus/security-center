@@ -36,34 +36,19 @@ export const menuSections: {
     ],
   },
   {
-    type: "analytics",
-    labelKey: "groups.analytics",
-    items: [
-      {
-        icon: <BoxIcon className="size-6" />,
-        key: "dashboardSamples",
-        path: "/dashboard-widgets",
-      },
-      {
-        icon: <PieChartIcon className="size-6" />,
-        key: "chartSamples",
-        subItems: [
-          { key: "metricStyles", path: "/metric-styles" },
-          { key: "lineChart", path: "/line-chart" },
-          { key: "barChart", path: "/bar-chart" },
-          { key: "securityComponents", path: "/security-components" },
-        ],
-      },
-    ],
-  },
-  {
     type: "components",
     labelKey: "groups.components",
     items: [
       {
-        icon: <LayoutGridIcon className="size-6" />,
-        key: "componentWorkbench",
-        path: "/design-system",
+        icon: <BoxIcon className="size-6" />,
+        key: "uiElements",
+        subItems: [
+          { key: "buttons", path: "/buttons" },
+          { key: "avatar", path: "/avatars" },
+          { key: "feedbackExamples", path: "/alerts" },
+          { key: "overlayExamples", path: "/overlays" },
+          { key: "navigationExamples", path: "/navigation" },
+        ],
       },
       {
         icon: <ListIcon className="size-6" />,
@@ -75,25 +60,24 @@ export const menuSections: {
       },
       {
         icon: <TableIcon className="size-6" />,
-        key: "tables",
-        subItems: [{ key: "basicTables", path: "/basic-tables" }],
+        key: "basicTables",
+        path: "/basic-tables",
       },
       {
-        icon: <BoxIcon className="size-6" />,
-        key: "uiElements",
+        icon: <PieChartIcon className="size-6" />,
+        key: "dataExamples",
         subItems: [
-          { key: "alerts", path: "/alerts" },
-          { key: "avatar", path: "/avatars" },
-          { key: "badge", path: "/badge" },
-          { key: "buttons", path: "/buttons" },
-          { key: "images", path: "/images" },
-          { key: "videos", path: "/videos" },
+          { key: "dashboardSamples", path: "/dashboard-widgets" },
+          { key: "metricStyles", path: "/metric-styles" },
+          { key: "chartExamples", path: "/charts" },
+          { key: "securityComponents", path: "/security-components" },
         ],
       },
       {
         icon: <PageIcon className="size-6" />,
         key: "pageSamples",
         subItems: [
+          { key: "mediaExamples", path: "/media" },
           { key: "calendar", path: "/calendar" },
           { key: "signIn", path: "/signin" },
           { key: "signUp", path: "/signup" },

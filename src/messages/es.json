@@ -22,7 +22,6 @@
       "support": "Support",
       "others": "Others",
       "business": "Vulnerability operations",
-      "analytics": "Analytics & charts",
       "components": "Components & examples",
       "settings": "Settings"
     },
@@ -135,14 +134,19 @@
       "securityOverview": "Security overview",
       "securityTrends": "Trend analysis",
       "securityVulnerabilities": "Vulnerabilities",
-      "componentWorkbench": "Components",
       "themeSettings": "Theme settings",
-      "securityComponents": "Heatmap & business components",
+      "securityComponents": "Mapa de actividad",
       "dashboardSamples": "Dashboard examples",
       "chartSamples": "Charts & heatmap",
       "formLayouts": "Form layouts",
       "pageSamples": "Page examples",
-      "metricStyles": "Metric appearances"
+      "metricStyles": "Metric appearances",
+      "dataExamples": "Visualización de datos",
+      "chartExamples": "Gráficos de líneas y barras",
+      "mediaExamples": "Imágenes y vídeos",
+      "feedbackExamples": "Avisos y estados",
+      "overlayExamples": "Diálogos y ventanas",
+      "navigationExamples": "Navegación y diseño"
     },
     "widget": {
       "title": "#1 Tailwind CSS Dashboard",
@@ -1227,8 +1231,8 @@
       },
       "empty": {
         "title": "No content yet",
-        "description": "Choose a module from the component workbench to get started.",
-        "action": "Open component workbench"
+        "description": "Elige componentes en la barra lateral para comenzar.",
+        "action": "Ver ejemplos de botones"
       },
       "chartData": {
         "view": "View chart data",
@@ -1256,7 +1260,7 @@
         "image6": "Geometric corner of a white building against a blue sky"
       },
       "settingsTitle": "Theme settings",
-      "businessTitle": "Heatmap & business components",
+      "businessTitle": "Mapa de actividad",
       "businessNotice": "The actual components from all three business pages, with the same sample data.",
       "businessPreview": "Business page compositions",
       "autoSaved": "Saved automatically in this browser",
@@ -1343,6 +1347,46 @@
       "resetDone": "Ejemplo restablecido",
       "start": "Iniciar proceso",
       "complete": "Completar proceso"
-    }
+    },
+    "unsavedChanges": "Cambios sin guardar. Cerrar o cancelar descarta las modificaciones.",
+    "noPriorityItems": "No hay hallazgos críticos prioritarios en esta instantánea."
+  },
+  "componentExamples": {
+    "badgeSolid": "Solid badges",
+    "badgeLight": "Light badges",
+    "badgeGhost": "Ghost badges",
+    "badgeSolidLeading": "Solid badges with leading icons",
+    "badgeLightLeading": "Light badges with leading icons",
+    "badgeGhostLeading": "Ghost badges with leading icons",
+    "badgeSolidTrailing": "Solid badges with trailing icons",
+    "badgeLightTrailing": "Light badges with trailing icons",
+    "badgeGhostTrailing": "Ghost badges with trailing icons",
+    "alertDefault": "Default alert",
+    "alertSuccess": "Success alert",
+    "alertWarning": "Warning alert",
+    "alertError": "Error alert",
+    "alertInfo": "Information alert"
+  },
+  "businessExamples": {
+    "title": "Business component prototypes",
+    "description": "The same components used by the three security demos. Snapshot controls affect snapshot widgets; historical charts and the editable register keep their own demo data.",
+    "sections": "Prototype sections",
+    "metrics": "Snapshot metrics and risk labels",
+    "risk": "Risk analysis band",
+    "operations": "Team risk and remediation queue",
+    "trends": "Historical analysis components",
+    "priority": "Priority queue",
+    "register": "Register, filters and editable detail",
+    "heatmap": "Activity heatmap",
+    "snapshot": "Snapshot state",
+    "full": "Full snapshot",
+    "empty": "Empty snapshot",
+    "badges": "Severity and workflow status",
+    "metricStyles": "Compare metric appearances",
+    "registerDescription": "Search, filter, sort, paginate, open a record, edit and export. Changes stay in this prototype until refresh; the three demo pages keep their own state.",
+    "editForm": "Finding edit form",
+    "detail": "Finding detail drawer",
+    "openDetail": "Open finding details",
+    "cancelled": "Editing cancelled. Changes have been reverted."
   }
 }

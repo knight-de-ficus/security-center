@@ -1,4 +1,7 @@
-import { setRequestLocale } from "next-intl/server";
+import RiskLabels from "@/components/others/ui-elements/feedback-states/risk-labels";
+import FeedbackStates from "@/components/others/ui-elements/feedback-states";
+import BadgeExamples from "@/components/others/ui-elements/badges";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import ComponentCard from "@/components/common/component-card";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import DefaultAlert from "@/components/others/ui-elements/alerts/default-alert";
@@ -22,26 +25,31 @@ export default async function Alerts({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("sidebar.items");
+  const examples = await getTranslations("componentExamples");
   return (
     <div>
-      <PageBreadcrumb pageTitle="Alerts" />
+      <PageBreadcrumb pageTitle={t("feedbackExamples")} />
       <div className="em-grid">
-        <ComponentCard columns={12} title="Default Alert">
+        <ComponentCard columns={12} title={examples("alertDefault")}>
           <DefaultAlert />
         </ComponentCard>
-        <ComponentCard columns={12} title="Success Alert">
+        <ComponentCard columns={12} title={examples("alertSuccess")}>
           <SuccessAlert />
         </ComponentCard>
-        <ComponentCard columns={12} title="Warning Alert">
+        <ComponentCard columns={12} title={examples("alertWarning")}>
           <WarningAlert />
         </ComponentCard>
-        <ComponentCard columns={12} title="Error Alert">
+        <ComponentCard columns={12} title={examples("alertError")}>
           <ErrorAlert />
         </ComponentCard>
-        <ComponentCard columns={12} title="Info Alert">
+        <ComponentCard columns={12} title={examples("alertInfo")}>
           <InfoAlert />
         </ComponentCard>
       </div>
+      <BadgeExamples />
+      <FeedbackStates />
+      <RiskLabels />
     </div>
   );
 }

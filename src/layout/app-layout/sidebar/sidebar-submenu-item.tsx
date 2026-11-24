@@ -20,6 +20,7 @@ export default function SidebarSubmenuItem({
     <li>
       <Link
         href={subItem.path}
+        aria-current={isActive ? "page" : undefined}
         target={subItem.target}
         className={cn(
           "group menu-dropdown-item",

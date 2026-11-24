@@ -35,7 +35,7 @@ export default function EditForm({ item, onSave, onCancel }: EditProps) {
     register,
     control,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isDirty },
   } = useForm<Values>({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -125,6 +125,11 @@ export default function EditForm({ item, onSave, onCancel }: EditProps) {
         />
         <FieldError>{errors.notes?.message}</FieldError>
       </Field>
+      {isDirty && (
+        <p role="status" className="sec-panel-footnote">
+          {t("unsavedChanges")}
+        </p>
+      )}
       <div className="sec-detail-footer">
         <Button variant="security-outline" type="button" onClick={onCancel}>
           {t("cancel")}

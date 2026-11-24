@@ -1770,6 +1770,8 @@
   .sec-page-actions {
     align-self: stretch;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: 0;
   }
   .sec-band {
     margin-bottom: 16px;

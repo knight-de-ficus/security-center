@@ -1,24 +1,20 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import ComponentCard from "@/components/common/component-card";
+import TrendChart from "./trend-chart";
 import PageHeader from "../shared/page-header";
 import PeriodControl from "../shared/period-control";
 import MetricStyleSelector from "../shared/metric-style-selector";
 import MetricSummary from "../shared/metric-summary";
-import SecurityChart from "../shared/chart";
+
 import ActivityHeatmap from "../shared/activity-heatmap";
-import {
-  findingTypeDistribution,
-  newFindings,
-  remediated,
-  trendDays,
-  weeklyMttr,
-} from "../data";
+import { newFindings, remediated } from "../data";
+import RemediationSpeed from "./remediation-speed";
+import FindingTypes from "./finding-types";
 export default function SecurityTrends() {
   const t = useTranslations("security");
   const [days, setDays] = useState(30);
-  const [view, setView] = useState("volume");
+  const [view, setView] = useState<"volume" | "balance">("volume");
   const incoming = newFindings.slice(-days),
     outgoing = remediated.slice(-days);
   const sum = (values: number[]) => values.reduce((a, b) => a + b, 0);
@@ -34,8 +30,6 @@ export default function SecurityTrends() {
     },
     { key: "mttr", value: "3.6", unit: "days" },
   ];
-  const rangeStart = trendDays.at(-days) ?? "";
-  const rangeEnd = trendDays.at(-1) ?? "";
   return (
     <>
       <PageHeader
@@ -75,97 +69,10 @@ export default function SecurityTrends() {
           unit: t(`units.${s.unit}`),
         }))}
       />
-      <ComponentCard
-        variant="security"
-        title={view === "volume" ? t("volumeView") : t("dailyBalance")}
-        action={
-          <span className="sec-period-caption">
-            {t("metaRange", { start: rangeStart, end: rangeEnd })} ·{" "}
-            {t("unitLabel", { unit: t("units.findings") })}
-          </span>
-        }
-      >
-        <SecurityChart
-          categories={trendDays.slice(-days)}
-          series={
-            view === "volume"
-              ? [
-                  { name: t("newFindings"), data: incoming },
-                  { name: t("remediated"), data: outgoing },
-                ]
-              : [
-                  {
-                    name: t("netChangeLabel"),
-                    data: incoming.map((v, i) => outgoing[i] - v),
-                  },
-                ]
-          }
-          height={270}
-          kind={view === "volume" ? "line" : "bar"}
-          balance={view === "balance"}
-        />
-        {view === "volume" && (
-          <div className="sec-chart-legend">
-            <span>
-              <i className="sec-legend-dot" />
-              {t("newFindings")}
-            </span>
-            <span>
-              <i className="sec-legend-dot secondary" />
-              {t("remediated")}
-            </span>
-          </div>
-        )}
-        {view === "balance" && (
-          <p className="sec-panel-footnote">{t("chartEncoding.balance")}</p>
-        )}
-        <p className="sec-panel-footnote">
-          {t("historySample")} · {t("countNotRisk")}
-        </p>
-      </ComponentCard>
+      <TrendChart days={days} view={view} />
       <div className="sec-grid sec-equal-grid sec-analysis-pair">
-        <ComponentCard
-          columns={6}
-          variant="security"
-          title={t("remediationSpeed")}
-        >
-          <div className="sec-mttr-summary">
-            <strong>
-              3.6<span>{t("units.days")}</span>
-            </strong>
-            <span className="sec-positive">{t("mttrImprovement")}</span>
-          </div>
-          <div className="sec-weekly-bars">
-            {weeklyMttr.map((v, i) => (
-              <div key={i}>
-                <span>{t("weekNumber", { week: i + 1 })}</span>
-                <div>
-                  <span style={{ width: `${(v / 6) * 100}%` }} />
-                </div>
-                <strong>
-                  {v.toFixed(1)}
-                  <small>{t("units.days")}</small>
-                </strong>
-              </div>
-            ))}
-          </div>
-          <p className="sec-panel-footnote">{t("weeklyHistory")}</p>
-        </ComponentCard>
-        <ComponentCard columns={6} variant="security" title={t("findingTypes")}>
-          <div className="sec-category-list">
-            {findingTypeDistribution.map(({ id, percentage }) => (
-              <div key={id} className={`category-${id}`}>
-                <span className="sec-category-dot" />
-                <span>{t(`categories.${id}`)}</span>
-                <div className="sec-category-bar">
-                  <span style={{ width: `${(percentage / 36) * 100}%` }} />
-                </div>
-                <strong>{percentage}%</strong>
-              </div>
-            ))}
-          </div>
-          <p className="sec-panel-footnote">{t("categoryDataset")}</p>
-        </ComponentCard>
+        <RemediationSpeed />
+        <FindingTypes />
       </div>
       <ActivityHeatmap />
     </>

@@ -1,3 +1,4 @@
+import ActionCombinations from "@/components/others/ui-elements/buttons/action-combinations";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import ButtonSpecimens from "@/components/others/ui-elements/buttons/button-specimens";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -21,6 +22,7 @@ export default async function Buttons({
     <div>
       <PageBreadcrumb pageTitle={t("title")} />
       <ButtonSpecimens />
+      <ActionCombinations />
     </div>
   );
 }

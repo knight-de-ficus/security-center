@@ -1,3 +1,4 @@
+import AdvancedControls from "@/components/main/forms/form-elements/advanced-controls";
 import { setRequestLocale } from "next-intl/server";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import CheckboxInputs from "@/components/main/forms/form-elements/checkbox-inputs";
@@ -44,6 +45,7 @@ export default async function FormElements({
           <Dropzone />
         </div>
       </div>
+      <AdvancedControls />
     </div>
   );
 }

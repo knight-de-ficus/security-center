@@ -1,5 +1,4 @@
 "use client";
-import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ChevronRightIcon } from "@/icons";
 interface BreadcrumbProps {
@@ -12,13 +11,11 @@ interface BreadcrumbProps {
 }
 export default function PageBreadcrumb({
   pageTitle,
-  variant = "default",
   description,
   action,
   homeLabel,
   showBreadcrumb = true,
 }: BreadcrumbProps) {
-  const t = useTranslations("security.workbench");
   return (
     <header className="sec-page-header">
       <div>
@@ -32,15 +29,7 @@ export default function PageBreadcrumb({
         <h1>{pageTitle}</h1>
         {description && <p>{description}</p>}
       </div>
-      {(action || variant === "default") && (
-        <div className="sec-page-actions">
-          {action || (
-            <Link className="sec-text-link" href="/design-system">
-              {t("title")}
-            </Link>
-          )}
-        </div>
-      )}
+      {action && <div className="sec-page-actions">{action}</div>}
     </header>
   );
 }

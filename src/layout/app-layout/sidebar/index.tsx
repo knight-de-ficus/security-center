@@ -29,7 +29,7 @@ const findMatchingSubmenu = (path: string) => {
 
 export default function AppSidebar() {
   const { open, isMobile, isHovered } = useSidebar();
-  const pathname = usePathname();
+  const pathname = usePathname().replace(/\/$/, "") || "/";
 
   const showContent = open || isHovered || isMobile;
 

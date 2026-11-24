@@ -18,10 +18,14 @@ import VulnerabilityDetail from "./vulnerability-detail";
 interface VulnerabilitiesProps {
   initialSeverity?: string;
   initialTicket?: string;
+  embedded?: boolean;
+  pageSize?: number;
 }
 export default function Vulnerabilities({
   initialSeverity = "all",
   initialTicket,
+  embedded = false,
+  pageSize = 10,
 }: VulnerabilitiesProps) {
   const t = useTranslations("security");
   const [items, setItems] = useState(initialVulnerabilities);
@@ -43,7 +47,6 @@ export default function Vulnerabilities({
   const [notice, setNotice] = useState("");
   const selected: Vulnerability | null =
     items.find((v) => v.id === selectedId) ?? null;
-  const pageSize = 10;
   const filtered = useMemo(
     () =>
       items
@@ -125,15 +128,24 @@ export default function Vulnerabilities({
   }
   return (
     <>
-      <PageHeader
-        page="vulnerabilities"
-        action={
+      {embedded ? (
+        <div className="em-control-row">
           <Button variant="security-outline" onClick={exportCsv}>
             <DownloadIcon className="size-4" />
             {t("exportList")}
           </Button>
-        }
-      />
+        </div>
+      ) : (
+        <PageHeader
+          page="vulnerabilities"
+          action={
+            <Button variant="security-outline" onClick={exportCsv}>
+              <DownloadIcon className="size-4" />
+              {t("exportList")}
+            </Button>
+          }
+        />
+      )}
       <div data-columns={12} className="sec-register">
         <div
           className="sec-register-tabs"

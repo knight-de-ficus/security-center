@@ -1,4 +1,10 @@
-import { setRequestLocale } from "next-intl/server";
+import PriorityList from "@/components/main/security/overview/priority-list";
+import Vulnerabilities from "@/components/main/security/vulnerabilities";
+import {
+  initialVulnerabilities,
+  isActive,
+} from "@/components/main/security/data";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import ComponentCard from "@/components/common/component-card";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import TableFive from "@/components/main/tables/basic-tables/table-five";
@@ -22,6 +28,11 @@ export default async function BasicTables({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("businessExamples");
+  const priority = initialVulnerabilities
+    .filter((v) => isActive(v) && v.severity === "critical")
+    .sort((a, b) => a.due.localeCompare(b.due))
+    .slice(0, 4);
   return (
     <div>
       <PageBreadcrumb pageTitle="Basic Tables" />
@@ -42,6 +53,14 @@ export default async function BasicTables({
           <TableFive />
         </ComponentCard>
       </div>
+      <section id="priority-list">
+        <PriorityList items={priority} />
+      </section>
+      <section id="vulnerability-register" className="em-gallery-stack">
+        <h2 className="em-section-title">{t("register")}</h2>
+        <p className="em-description">{t("registerDescription")}</p>
+        <Vulnerabilities embedded pageSize={5} />
+      </section>
     </div>
   );
 }

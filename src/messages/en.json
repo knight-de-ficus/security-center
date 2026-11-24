@@ -22,7 +22,6 @@
       "support": "Support",
       "others": "Others",
       "business": "Vulnerability operations",
-      "analytics": "Analytics & charts",
       "components": "Components & examples",
       "settings": "Settings"
     },
@@ -135,14 +134,19 @@
       "securityOverview": "Security overview",
       "securityTrends": "Trend analysis",
       "securityVulnerabilities": "Vulnerabilities",
-      "componentWorkbench": "Components",
       "themeSettings": "Theme settings",
-      "securityComponents": "Heatmap & business components",
+      "securityComponents": "Activity heatmap",
       "dashboardSamples": "Dashboard examples",
       "chartSamples": "Charts & heatmap",
       "formLayouts": "Form layouts",
       "pageSamples": "Page examples",
-      "metricStyles": "Metric appearances"
+      "metricStyles": "Metric appearances",
+      "dataExamples": "Data visualization",
+      "chartExamples": "Line & bar charts",
+      "mediaExamples": "Images & videos",
+      "feedbackExamples": "Feedback & status",
+      "overlayExamples": "Dialogs & overlays",
+      "navigationExamples": "Navigation & layout"
     },
     "widget": {
       "title": "#1 Tailwind CSS Dashboard",
@@ -1210,8 +1214,8 @@
       },
       "empty": {
         "title": "No content yet",
-        "description": "Choose a module from the component workbench to get started.",
-        "action": "Open component workbench"
+        "description": "Choose components from the sidebar to start building.",
+        "action": "View button examples"
       },
       "chartData": {
         "view": "View chart data",
@@ -1239,7 +1243,7 @@
         "image6": "Geometric corner of a white building against a blue sky"
       },
       "settingsTitle": "Theme settings",
-      "businessTitle": "Heatmap & business components",
+      "businessTitle": "Activity heatmap",
       "businessNotice": "The actual components from all three business pages, with the same sample data.",
       "businessPreview": "Business page compositions",
       "autoSaved": "Saved automatically in this browser",
@@ -1326,6 +1330,46 @@
       "resetDone": "Sample reset",
       "start": "Start processing",
       "complete": "Complete processing"
-    }
+    },
+    "unsavedChanges": "Unsaved changes. Closing or cancelling discards these edits.",
+    "noPriorityItems": "No Critical findings need priority attention in this snapshot."
+  },
+  "componentExamples": {
+    "badgeSolid": "Solid badges",
+    "badgeLight": "Light badges",
+    "badgeGhost": "Ghost badges",
+    "badgeSolidLeading": "Solid badges with leading icons",
+    "badgeLightLeading": "Light badges with leading icons",
+    "badgeGhostLeading": "Ghost badges with leading icons",
+    "badgeSolidTrailing": "Solid badges with trailing icons",
+    "badgeLightTrailing": "Light badges with trailing icons",
+    "badgeGhostTrailing": "Ghost badges with trailing icons",
+    "alertDefault": "Default alert",
+    "alertSuccess": "Success alert",
+    "alertWarning": "Warning alert",
+    "alertError": "Error alert",
+    "alertInfo": "Information alert"
+  },
+  "businessExamples": {
+    "title": "Business component prototypes",
+    "description": "The same components used by the three security demos. Snapshot controls affect snapshot widgets; historical charts and the editable register keep their own demo data.",
+    "sections": "Prototype sections",
+    "metrics": "Snapshot metrics and risk labels",
+    "risk": "Risk analysis band",
+    "operations": "Team risk and remediation queue",
+    "trends": "Historical analysis components",
+    "priority": "Priority queue",
+    "register": "Register, filters and editable detail",
+    "heatmap": "Activity heatmap",
+    "snapshot": "Snapshot state",
+    "full": "Full snapshot",
+    "empty": "Empty snapshot",
+    "badges": "Severity and workflow status",
+    "metricStyles": "Compare metric appearances",
+    "registerDescription": "Search, filter, sort, paginate, open a record, edit and export. Changes stay in this prototype until refresh; the three demo pages keep their own state.",
+    "editForm": "Finding edit form",
+    "detail": "Finding detail drawer",
+    "openDetail": "Open finding details",
+    "cancelled": "Editing cancelled. Changes have been reverted."
   }
 }

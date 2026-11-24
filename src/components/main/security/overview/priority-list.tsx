@@ -43,6 +43,11 @@ export default function PriorityList({ items }: { items: Vulnerability[] }) {
             </TableRow>
           </TableHeader>
           <TableBody>
+            {!items.length && (
+              <TableRow>
+                <TableCell colSpan={6}>{t("noPriorityItems")}</TableCell>
+              </TableRow>
+            )}
             {items.map((v) => (
               <TableRow key={v.id}>
                 <TableCell>

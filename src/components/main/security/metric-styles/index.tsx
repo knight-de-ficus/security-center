@@ -1,4 +1,5 @@
 "use client";
+import SnapshotExample from "./snapshot-example";
 import { useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
@@ -80,6 +81,7 @@ export default function MetricStyles() {
           </section>
         ))}
       </div>
+      <SnapshotExample />
     </>
   );
 }

@@ -14,14 +14,6 @@ import {
   SidebarMenuSubItem,
   SidebarMenuSubButton,
 } from "@/components/ui/sidebar";
-import {
-  Field,
-  FieldGroup,
-  FieldLabel,
-  FieldDescription,
-  FieldError,
-} from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
 import AppHeader from "@/layout/app-layout/header";
 import {
   Breadcrumb,
@@ -31,10 +23,10 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
-export default function StructureGallery() {
+export default function ShellPreviews() {
   const t = useTranslations("security.workbench.gallery");
   return (
-    <section className="em-grid" aria-label={t("structure")}>
+    <>
       <Card columns={12}>
         <CardHeader>
           <CardTitle>{t("applicationHeader")}</CardTitle>
@@ -89,7 +81,7 @@ export default function StructureGallery() {
           <Breadcrumb aria-label={t("structure")}>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="#demo-directory-title">
+                <BreadcrumbLink href="#navigation-specimens">
                   {t("navigation")}
                 </BreadcrumbLink>
               </BreadcrumbItem>
@@ -99,20 +91,8 @@ export default function StructureGallery() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          <FieldGroup>
-            <Field>
-              <FieldLabel>{t("name")}</FieldLabel>
-              <Input placeholder={t("placeholder")} />
-              <FieldDescription>{t("notes")}</FieldDescription>
-            </Field>
-            <Field data-invalid>
-              <FieldLabel>{t("invalid")}</FieldLabel>
-              <Input aria-invalid="true" />
-              <FieldError>{t("error")}</FieldError>
-            </Field>
-          </FieldGroup>
         </CardContent>
       </Card>
-    </section>
+    </>
   );
 }

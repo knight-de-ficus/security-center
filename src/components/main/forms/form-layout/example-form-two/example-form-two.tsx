@@ -325,7 +325,7 @@ export default function ExampleFormTwoContent() {
               <RadioGroup
                 value={field.value}
                 onValueChange={(val) => field.onChange(val as string)}
-                className="flex flex-row items-center gap-6"
+                className="flex flex-row flex-wrap items-center gap-6"
               >
                 <Field orientation="horizontal" className="w-auto gap-2">
                   <RadioGroupItem

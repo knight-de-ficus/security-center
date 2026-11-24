@@ -1,6 +1,8 @@
 docs
 .idea
 .taste-skill
+AGENT.md
+/AGENTS.md
 
 # dependencies
 /node_modules

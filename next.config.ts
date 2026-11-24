@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import pageRedirects from "./src/config/page-redirects.json";
 
 const withNextIntl = createNextIntlPlugin();
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
@@ -39,6 +40,13 @@ const nextConfig: NextConfig = {
   redirects() {
     if (isGitHubPages) return [];
     return [
+      ...pageRedirects.flatMap(({ source, destination }) =>
+        ["", "/en", "/zh"].map((prefix) => ({
+          source: `${prefix}${source}`,
+          destination: `${prefix}${destination}`,
+          permanent: true,
+        })),
+      ),
       {
         source: "/buttons-group",
         destination: "/buttons",

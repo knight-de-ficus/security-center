@@ -1,3 +1,4 @@
+import AnalysisExample from "@/components/main/security/overview/analysis-example";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import EcommerceMetrics from "@/components/main/dashboard/ecommerce/metrics";
 import MonthlySalesChart from "@/components/main/dashboard/ecommerce/monthly-sales-chart";
@@ -18,7 +19,7 @@ export default async function DashboardWidgets({
   return (
     <>
       <PageBreadcrumb pageTitle={t("dashboard-widgets")} />
-      <div className="em-grid">
+      <div className="em-grid em-example-grid">
         <section data-columns={8} className="em-span-8 em-widget-panel">
           <EcommerceMetrics />
         </section>
@@ -38,6 +39,7 @@ export default async function DashboardWidgets({
           <RecentOrders />
         </section>
       </div>
+      <AnalysisExample />
     </>
   );
 }

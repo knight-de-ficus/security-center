@@ -22,7 +22,6 @@
       "support": "Support",
       "others": "Others",
       "business": "漏洞运营",
-      "analytics": "分析与图表",
       "components": "组件与样例",
       "settings": "设置"
     },
@@ -135,14 +134,19 @@
       "securityOverview": "安全总览",
       "securityTrends": "趋势分析",
       "securityVulnerabilities": "漏洞管理",
-      "componentWorkbench": "组件工作台",
       "themeSettings": "配色设置",
-      "securityComponents": "热力图与业务组件",
+      "securityComponents": "活动热力图",
       "dashboardSamples": "仪表盘样例",
       "chartSamples": "图表与热力图",
       "formLayouts": "完整表单",
       "pageSamples": "页面样例",
-      "metricStyles": "统计样式对比"
+      "metricStyles": "统计样式对比",
+      "dataExamples": "数据可视化",
+      "chartExamples": "折线图与柱形图",
+      "mediaExamples": "图片与视频",
+      "feedbackExamples": "反馈与状态",
+      "overlayExamples": "弹窗与浮层",
+      "navigationExamples": "导航与布局"
     },
     "widget": {
       "title": "#1 Tailwind CSS Dashboard",
@@ -1210,8 +1214,8 @@
       },
       "empty": {
         "title": "尚未添加内容",
-        "description": "从组件工作台选择适合的模块开始。",
-        "action": "打开组件工作台"
+        "description": "从侧边栏选择组件与样例开始。",
+        "action": "查看按钮样例"
       },
       "chartData": {
         "view": "查看图表数据",
@@ -1239,7 +1243,7 @@
         "image6": "蓝天下白色建筑的几何转角"
       },
       "settingsTitle": "配色设置",
-      "businessTitle": "热力图与业务组件",
+      "businessTitle": "活动热力图",
       "businessNotice": "复用三个业务页面的实际组件；示例数据与业务页面保持一致。",
       "businessPreview": "业务页面组合",
       "autoSaved": "已自动保存到当前浏览器",
@@ -1326,6 +1330,46 @@
       "resetDone": "已恢复",
       "start": "开始处理",
       "complete": "完成处理"
-    }
+    },
+    "unsavedChanges": "修改尚未保存。关闭或取消将放弃这些修改。",
+    "noPriorityItems": "当前快照没有需要优先处理的 Critical 漏洞。"
+  },
+  "componentExamples": {
+    "badgeSolid": "实心标签",
+    "badgeLight": "浅色标签",
+    "badgeGhost": "透明标签",
+    "badgeSolidLeading": "实心标签 · 前置图标",
+    "badgeLightLeading": "浅色标签 · 前置图标",
+    "badgeGhostLeading": "透明标签 · 前置图标",
+    "badgeSolidTrailing": "实心标签 · 后置图标",
+    "badgeLightTrailing": "浅色标签 · 后置图标",
+    "badgeGhostTrailing": "透明标签 · 后置图标",
+    "alertDefault": "默认提示",
+    "alertSuccess": "成功提示",
+    "alertWarning": "警告提示",
+    "alertError": "错误提示",
+    "alertInfo": "信息提示"
+  },
+  "businessExamples": {
+    "title": "业务组件原型",
+    "description": "复用三个漏洞运营 Demo 的同一份组件。快照切换仅影响快照模块；历史图表与可编辑台账各自保留独立演示数据。",
+    "sections": "原型分组",
+    "metrics": "快照指标与风险标签",
+    "risk": "风险分析组合",
+    "operations": "团队风险与修复队列",
+    "trends": "历史分析组件",
+    "priority": "优先处理清单",
+    "register": "台账筛选与可编辑详情",
+    "heatmap": "活动热力图",
+    "snapshot": "快照状态",
+    "full": "完整快照",
+    "empty": "空快照",
+    "badges": "严重程度与处理状态",
+    "metricStyles": "对比统计样式",
+    "registerDescription": "支持搜索、筛选、排序、分页、查看记录、编辑与导出。修改仅保留在当前原型，刷新后恢复；三个 Demo 保持各自独立的编辑状态。",
+    "editForm": "漏洞编辑表单",
+    "detail": "漏洞详情抽屉",
+    "openDetail": "打开漏洞详情",
+    "cancelled": "已取消编辑，修改已还原。"
   }
 }

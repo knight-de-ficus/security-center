@@ -1,0 +1,26 @@
+[
+  {
+    "source": "/design-system",
+    "destination": "/buttons"
+  },
+  {
+    "source": "/line-chart",
+    "destination": "/charts"
+  },
+  {
+    "source": "/bar-chart",
+    "destination": "/charts"
+  },
+  {
+    "source": "/images",
+    "destination": "/media"
+  },
+  {
+    "source": "/videos",
+    "destination": "/media"
+  },
+  {
+    "source": "/badge",
+    "destination": "/alerts"
+  }
+]

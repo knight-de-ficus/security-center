@@ -1,3 +1,4 @@
+import SecurityEditExample from "@/components/main/forms/form-layout/security-edit-example";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import BasicForm from "@/components/main/forms/form-layout/basic-form";
 import ExampleForm from "@/components/main/forms/form-layout/example-form";
@@ -17,7 +18,7 @@ export default async function FormLayoutPage({
   return (
     <>
       <PageBreadcrumb pageTitle={t("form-layout")} />
-      <div className="em-grid">
+      <div className="em-grid em-example-grid">
         <section data-columns={6} className="em-span-6 em-gallery-stack">
           <BasicForm />
           <ExampleFormWithIcons />
@@ -27,6 +28,7 @@ export default async function FormLayoutPage({
           <ExampleFormTwo />
         </section>
       </div>
+      <SecurityEditExample />
     </>
   );
 }
