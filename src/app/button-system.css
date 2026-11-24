@@ -8,6 +8,26 @@
   --color-sec-button-neutral: var(--color-sec-ink);
   --color-sec-button-on-neutral: var(--color-sec-surface);
   --color-sec-button-neutral-hover: var(--color-sec-muted);
+  --color-sec-button-neutral-border: var(--color-sec-button-neutral);
+  --color-sec-button-neutral-hover-border: var(
+    --color-sec-button-neutral-hover
+  );
+  --color-sec-button-neutral-hover-ink: var(--color-sec-button-on-neutral);
+  --color-sec-button-primary-hover-border: var(--color-sec-accent-hover);
+  --color-sec-button-brand-primary-hover-border: var(
+    --color-sec-button-brand-accent-hover
+  );
+  --color-sec-button-brand-outline-hover: var(--color-sec-brand-ink);
+  --color-sec-button-brand-outline-hover-ink: var(--color-sec-brand-surface);
+  --color-sec-button-selected: var(--color-sec-subtle);
+  --color-sec-button-on-selected: var(--color-sec-ink);
+  --color-sec-button-selected-border: var(--color-sec-button-outline);
+  --color-sec-button-brand-selected: var(--color-sec-brand-selected);
+  --color-sec-button-brand-on-selected: var(--color-sec-brand-ink);
+  --color-sec-button-brand-selected-border: var(--color-sec-brand-ink);
+  --color-sec-heading: var(--color-sec-ink);
+  --color-sec-link-hover: var(--color-sec-link);
+  --color-sec-button-ghost-hover-ink: var(--color-sec-ink);
   --color-sec-button-danger: var(--color-sec-critical-text);
   --color-sec-button-on-danger: var(--color-sec-surface);
   --color-sec-button-danger-hover: var(--color-sec-critical);
@@ -39,21 +59,26 @@
   --button-ink: var(--color-sec-on-accent);
   --button-border: var(--color-sec-accent-border);
   --button-hover-fill: var(--color-sec-accent-hover);
-  --button-hover-border: var(--color-sec-accent-hover);
+  --button-hover-border: var(--color-sec-button-primary-hover-border);
 }
 .em-button-neutral {
   --button-fill: var(--color-sec-button-neutral);
   --button-ink: var(--color-sec-button-on-neutral);
-  --button-border: var(--button-fill);
+  --button-border: var(--color-sec-button-neutral-border);
   --button-hover-fill: var(--color-sec-button-neutral-hover);
-  --button-hover-border: var(--button-hover-fill);
+  --button-hover-border: var(--color-sec-button-neutral-hover-border);
+  --button-hover-ink: var(--color-sec-button-neutral-hover-ink);
 }
 .em-button-outline {
   --button-border: var(--color-sec-button-outline);
 }
+.em-button-ghost {
+  --button-hover-ink: var(--color-sec-button-ghost-hover-ink);
+}
 .em-button-link {
   --button-ink: var(--color-sec-link);
   --button-hover-fill: transparent;
+  --button-hover-ink: var(--color-sec-link-hover);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -79,23 +104,28 @@
   --button-ink: var(--color-sec-brand-ink);
   --button-hover-fill: var(--color-sec-brand-hover);
 }
+.em-button-on-brand.em-button-ghost,
+.em-button-on-brand.em-button-link {
+  --button-hover-ink: var(--color-sec-brand-ink);
+}
 .em-button-on-brand.em-button-primary {
   --button-fill: var(--color-sec-button-brand-accent);
   --button-ink: var(--color-sec-button-brand-on-accent);
   --button-border: var(--color-sec-button-brand-accent);
   --button-hover-fill: var(--color-sec-button-brand-accent-hover);
-  --button-hover-border: var(--button-hover-fill);
+  --button-hover-border: var(--color-sec-button-brand-primary-hover-border);
 }
 .em-button-on-brand.em-button-outline {
   --button-border: var(--color-sec-brand-ink);
-  --button-hover-fill: var(--color-sec-brand-ink);
-  --button-hover-ink: var(--color-sec-brand-surface);
+  --button-hover-fill: var(--color-sec-button-brand-outline-hover);
+  --button-hover-ink: var(--color-sec-button-brand-outline-hover-ink);
 }
 .em-button-on-brand.em-button-neutral {
   --button-fill: var(--color-sec-brand-ink);
   --button-ink: var(--color-sec-brand-surface);
   --button-border: var(--button-fill);
   --button-hover-fill: var(--color-sec-brand-muted);
+  --button-hover-ink: var(--color-sec-brand-surface);
   --button-hover-border: var(--button-hover-fill);
 }
 .em-button-on-brand.em-button-link {
@@ -134,8 +164,9 @@
     [data-disabled],
     [aria-disabled="true"]
   ) {
-  border-color: var(--color-sec-button-outline);
-  background: var(--color-sec-subtle);
+  border-color: var(--color-sec-button-selected-border);
+  background: var(--color-sec-button-selected);
+  color: var(--color-sec-button-on-selected);
 }
 .em-button-on-brand:is(
     .em-button-ghost,
@@ -145,8 +176,17 @@
     [data-disabled],
     [aria-disabled="true"]
   ) {
-  border-color: var(--color-sec-brand-ink);
-  background: var(--color-sec-brand-selected);
+  border-color: var(--color-sec-button-brand-selected-border);
+  background: var(--color-sec-button-brand-selected);
+  color: var(--color-sec-button-brand-on-selected);
+}
+.sec-page-header h1,
+.em-card-title,
+.sec-panel-header h2 {
+  color: var(--color-sec-heading);
+}
+.sec-text-link:hover {
+  color: var(--color-sec-link-hover);
 }
 .em-button-specimens {
   display: grid;

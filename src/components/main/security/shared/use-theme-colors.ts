@@ -7,6 +7,7 @@ export default function useThemeColors() {
       const style = getComputedStyle(document.documentElement);
       const names = [
         "data-primary",
+        "data-highlight",
         "data-secondary",
         "data-secondary-line",
         "data-violet",

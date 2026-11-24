@@ -33,8 +33,11 @@
 .sec-category-list .sec-category-bar span {
   background: var(--category-color);
 }
+.sec-weekly-bars > div > div > span {
+  background: var(--color-sec-data-history);
+}
 .sec-weekly-bars > div:last-child > div > span {
-  background: var(--color-sec-data-secondary-line);
+  background: var(--color-sec-data-highlight);
 }
 .sec-negative {
   color: var(--color-sec-data-increase);
@@ -58,4 +61,10 @@
 .sec-heatmap-key-item i {
   width: 16px;
   height: 12px;
+}
+
+/* The brand orange marks an emphasized period; comparison-series identity stays blue. */
+:root {
+  --color-sec-data-highlight: var(--color-sec-data-secondary-line);
+  --color-sec-data-history: var(--color-sec-data-primary);
 }
