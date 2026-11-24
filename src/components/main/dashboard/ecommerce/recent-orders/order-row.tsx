@@ -1,0 +1,64 @@
+"use client";
+
+import { Badge } from "@/components/ui/badge";
+import { TableCell, TableRow } from "@/components/ui/table";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { Product } from "./types";
+
+export interface OrderRowProps {
+  order: Product;
+}
+
+export default function OrderRow({ order }: OrderRowProps) {
+  const t = useTranslations("ecommerce.recentOrders");
+
+  return (
+    <TableRow>
+      <TableCell className="py-3">
+        <div className="flex items-center gap-3">
+          <div className="h-12.5 w-12.5 overflow-hidden rounded-md">
+            <Image
+              width={50}
+              height={50}
+              src={order.image}
+              className="h-12.5 w-12.5"
+              alt={order.name}
+            />
+          </div>
+          <div>
+            <p className="text-sm font-medium text-foreground dark:text-foreground">
+              {order.name}
+            </p>
+            <span className="text-xs text-muted-foreground dark:text-gray-400">
+              {t("variants", { count: order.variants })}
+            </span>
+          </div>
+        </div>
+      </TableCell>
+      <TableCell className="py-3 text-sm text-muted-foreground dark:text-gray-400">
+        {t(`categories.${order.category}`)}
+      </TableCell>
+      <TableCell className="em-numeric py-3 text-sm text-foreground dark:text-foreground">
+        {Number(order.price.replace(/[^0-9.]/g, "")).toLocaleString("en-US", {
+          style: "currency",
+          currency: "USD",
+        })}
+      </TableCell>
+      <TableCell className="py-3 text-sm text-muted-foreground dark:text-gray-400">
+        <Badge
+          size="sm"
+          color={
+            order.status === "delivered"
+              ? "success"
+              : order.status === "pending"
+                ? "warning"
+                : "error"
+          }
+        >
+          {t(`statuses.${order.status}`)}
+        </Badge>
+      </TableCell>
+    </TableRow>
+  );
+}

@@ -1,0 +1,190 @@
+/* Each family owns fill, text and border together. Surface is explicit: a dark
+   brand band is independent of the application's light/dark theme. */
+:root {
+  --color-sec-button-brand-accent: #d3e876;
+  --color-sec-button-brand-accent-hover: #e2efa1;
+  --color-sec-button-brand-on-accent: #22260f;
+  --color-sec-button-outline: var(--color-sec-control);
+  --color-sec-button-neutral: var(--color-sec-ink);
+  --color-sec-button-on-neutral: var(--color-sec-surface);
+  --color-sec-button-neutral-hover: var(--color-sec-muted);
+  --color-sec-button-danger: var(--color-sec-critical-text);
+  --color-sec-button-on-danger: var(--color-sec-surface);
+  --color-sec-button-danger-hover: var(--color-sec-critical);
+}
+.dark {
+  --color-sec-button-danger: #efa6a6;
+  --color-sec-button-on-danger: #301717;
+  --color-sec-button-danger-hover: #f3bbbb;
+}
+.em-button {
+  --button-fill: transparent;
+  --button-ink: var(--color-sec-ink);
+  --button-border: transparent;
+  --button-hover-fill: var(--color-sec-subtle);
+  --button-hover-ink: var(--button-ink);
+  --button-hover-border: var(--button-border);
+  --button-focus: var(--color-sec-focus);
+  color: var(--button-ink);
+  background: var(--button-fill);
+  border-color: var(--button-border);
+  text-decoration: none;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease;
+}
+.em-button-primary {
+  --button-fill: var(--color-sec-accent);
+  --button-ink: var(--color-sec-on-accent);
+  --button-border: var(--color-sec-accent-border);
+  --button-hover-fill: var(--color-sec-accent-hover);
+  --button-hover-border: var(--color-sec-accent-hover);
+}
+.em-button-neutral {
+  --button-fill: var(--color-sec-button-neutral);
+  --button-ink: var(--color-sec-button-on-neutral);
+  --button-border: var(--button-fill);
+  --button-hover-fill: var(--color-sec-button-neutral-hover);
+  --button-hover-border: var(--button-hover-fill);
+}
+.em-button-outline {
+  --button-border: var(--color-sec-button-outline);
+}
+.em-button-link {
+  --button-ink: var(--color-sec-link);
+  --button-hover-fill: transparent;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.em-button-destructive {
+  --button-fill: var(--color-sec-critical-bg);
+  --button-ink: var(--color-sec-critical-text);
+  --button-border: var(--color-sec-critical-text);
+  --button-hover-fill: var(--color-sec-critical-bg);
+  --button-hover-border: var(--color-sec-critical);
+}
+.em-button-destructive-solid {
+  --button-fill: var(--color-sec-button-danger);
+  --button-ink: var(--color-sec-button-on-danger);
+  --button-border: var(--button-fill);
+  --button-hover-fill: var(--color-sec-button-danger-hover);
+  --button-hover-border: var(--button-hover-fill);
+}
+.em-button-on-brand {
+  --button-focus: var(--color-sec-brand-link);
+}
+.em-button-on-brand.em-button-ghost,
+.em-button-on-brand.em-button-outline {
+  --button-ink: var(--color-sec-brand-ink);
+  --button-hover-fill: var(--color-sec-brand-hover);
+}
+.em-button-on-brand.em-button-primary {
+  --button-fill: var(--color-sec-button-brand-accent);
+  --button-ink: var(--color-sec-button-brand-on-accent);
+  --button-border: var(--color-sec-button-brand-accent);
+  --button-hover-fill: var(--color-sec-button-brand-accent-hover);
+  --button-hover-border: var(--button-hover-fill);
+}
+.em-button-on-brand.em-button-outline {
+  --button-border: var(--color-sec-brand-ink);
+  --button-hover-fill: var(--color-sec-brand-ink);
+  --button-hover-ink: var(--color-sec-brand-surface);
+}
+.em-button-on-brand.em-button-neutral {
+  --button-fill: var(--color-sec-brand-ink);
+  --button-ink: var(--color-sec-brand-surface);
+  --button-border: var(--button-fill);
+  --button-hover-fill: var(--color-sec-brand-muted);
+  --button-hover-border: var(--button-hover-fill);
+}
+.em-button-on-brand.em-button-link {
+  --button-ink: var(--color-sec-brand-link);
+  --button-hover-fill: transparent;
+}
+.em-button:not(:disabled, [data-disabled], [aria-disabled="true"]):is(
+    :hover,
+    :active
+  ) {
+  color: var(--button-hover-ink);
+  background: var(--button-hover-fill);
+  border-color: var(--button-hover-border);
+}
+.em-button:focus-visible {
+  outline: 2px solid var(--button-focus);
+  outline-offset: 3px;
+}
+.em-button:is(:disabled, [data-disabled], [aria-disabled="true"]) {
+  color: var(--color-sec-faint);
+  background: var(--color-sec-subtle);
+  border-color: var(--color-sec-border);
+  opacity: 1;
+  cursor: not-allowed;
+}
+.em-button-on-brand:is(:disabled, [data-disabled], [aria-disabled="true"]) {
+  color: var(--color-sec-brand-muted);
+  background: var(--color-sec-brand-hover);
+  border-color: var(--color-sec-brand-border);
+}
+.em-button[aria-busy="true"] {
+  cursor: progress;
+}
+.em-button:is(.em-button-ghost, .em-button-outline)[aria-pressed="true"]:not(
+    :disabled,
+    [data-disabled],
+    [aria-disabled="true"]
+  ) {
+  border-color: var(--color-sec-button-outline);
+  background: var(--color-sec-subtle);
+}
+.em-button-on-brand:is(
+    .em-button-ghost,
+    .em-button-outline
+  )[aria-pressed="true"]:not(
+    :disabled,
+    [data-disabled],
+    [aria-disabled="true"]
+  ) {
+  border-color: var(--color-sec-brand-ink);
+  background: var(--color-sec-brand-selected);
+}
+.em-button-specimens {
+  display: grid;
+  gap: 24px;
+}
+.em-button-surface {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  border-radius: var(--radius-sec-card);
+}
+.em-button-surface[data-surface="brand"] {
+  color: var(--color-sec-brand-ink);
+  background: var(--color-sec-brand-surface);
+}
+.em-button-surface h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.em-button-surface p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.em-button-demo-status {
+  min-height: 24px;
+  color: var(--color-sec-muted);
+}
+.em-button-specimen-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.em-button-demo-loading {
+  min-inline-size: 144px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .em-button {
+    transition: none;
+  }
+}

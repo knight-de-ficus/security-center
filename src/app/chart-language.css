@@ -1,0 +1,61 @@
+/* Data colors have independent roles; never borrow risk or action colors. */
+:root {
+  --color-sec-data-category-1: #71851c;
+  --color-sec-data-category-2: #356c98;
+  --color-sec-data-category-3: #237b75;
+  --color-sec-data-category-4: #986b28;
+  --color-sec-data-context: #52738a;
+  --color-sec-data-increase: #ac503f;
+  --color-sec-data-decrease: #397e67;
+}
+.dark {
+  --color-sec-data-category-1: #cfe45b;
+  --color-sec-data-category-2: #84b9df;
+  --color-sec-data-category-3: #71c6b8;
+  --color-sec-data-category-4: #d8b06b;
+  --color-sec-data-context: #8ba8bd;
+  --color-sec-data-increase: #ed9e87;
+  --color-sec-data-decrease: #8db9a2;
+}
+.sec-category-list > .category-application {
+  --category-color: var(--color-sec-data-category-1);
+}
+.sec-category-list > .category-configuration {
+  --category-color: var(--color-sec-data-category-2);
+}
+.sec-category-list > .category-component {
+  --category-color: var(--color-sec-data-category-3);
+}
+.sec-category-list > .category-identity {
+  --category-color: var(--color-sec-data-category-4);
+}
+.sec-category-list .sec-category-dot,
+.sec-category-list .sec-category-bar span {
+  background: var(--category-color);
+}
+.sec-weekly-bars > div:last-child > div > span {
+  background: var(--color-sec-data-secondary-line);
+}
+.sec-negative {
+  color: var(--color-sec-data-increase);
+}
+.sec-legend-dot.secondary {
+  width: 18px;
+  height: 0;
+  border-block-start: 2px dashed var(--color-sec-data-secondary-line);
+  background: transparent;
+  border-radius: 0;
+}
+.sec-heatmap-key-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--color-sec-ink);
+}
+.sec-heatmap-key-item i {
+  width: 16px;
+  height: 12px;
+}

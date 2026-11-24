@@ -1,0 +1,62 @@
+/* Brand fields establish hierarchy; blue is reserved for actions and selection. */
+.tailadmin-shell [data-slot="sidebar-inner"] {
+  --color-sec-ink: var(--color-sec-brand-ink);
+  --color-sec-muted: var(--color-sec-brand-muted);
+  --color-sec-faint: var(--color-sec-brand-muted);
+  --color-sec-surface: var(--color-sec-brand-surface);
+  --color-sec-subtle: var(--color-sec-brand-hover);
+  --color-sec-border: var(--color-sec-brand-border);
+  --color-sec-link: var(--color-sec-brand-link);
+  --color-sec-focus: var(--color-sec-brand-link);
+  --color-sec-accent-soft: var(--color-sec-brand-selected);
+  color: var(--color-sec-brand-ink);
+  background: var(--color-sec-brand-surface);
+}
+.tailadmin-shell [data-slot="sidebar-inner"] .menu-item svg {
+  color: inherit;
+}
+.tailadmin-shell [data-slot="sidebar-inner"] .menu-dropdown-item-active {
+  color: var(--color-sec-brand-ink);
+}
+.sec-band,
+.sec-small-metrics {
+  border: 0;
+  border-radius: var(--radius-sec-card);
+  background: var(--color-sec-surface);
+  color: var(--color-sec-ink);
+}
+/* Content grouping comes from its surface, heading and spacing. */
+.sec-panel,
+.em-card,
+.em-module {
+  border-color: transparent;
+}
+.sec-analysis-band {
+  border: 0;
+  background: var(--color-sec-surface);
+  border-radius: var(--radius-sec-card);
+}
+.sec-analysis-pair {
+  border: 0;
+}
+.sec-band-columns {
+  border-block-start: 0;
+}
+.sec-band-pane + .sec-band-pane {
+  border-inline-start: 0;
+}
+/* Preserve a frame where a bounded interaction or a data grid needs it. */
+.sec-register,
+.em-card:has(.em-table),
+.em-card:has([data-slot="resizable-panel-group"]) {
+  border-color: var(--color-sec-border);
+}
+.em-directory-link {
+  border: 0;
+  border-radius: 0;
+  border-block-end: 1px solid var(--color-sec-border);
+  background: transparent;
+}
+.em-directory-link:hover {
+  background: var(--color-sec-subtle);
+}

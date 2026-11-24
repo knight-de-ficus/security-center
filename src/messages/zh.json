@@ -1,0 +1,1331 @@
+{
+  "common": {
+    "home": "Home",
+    "edit": "Edit",
+    "close": "Close",
+    "saveChanges": "Save Changes",
+    "viewMore": "View More",
+    "delete": "Delete",
+    "filter": "Filter",
+    "seeAll": "See all",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "presence": {
+      "online": "在线",
+      "offline": "离线",
+      "busy": "忙碌"
+    }
+  },
+  "sidebar": {
+    "groups": {
+      "menu": "Menu",
+      "support": "Support",
+      "others": "Others",
+      "business": "漏洞运营",
+      "analytics": "分析与图表",
+      "components": "组件与样例",
+      "settings": "设置"
+    },
+    "badges": {
+      "new": "new",
+      "pro": "pro"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "ecommerceHome": "Ecommerce",
+      "analytics": "Analytics",
+      "marketing": "Marketing",
+      "crm": "CRM",
+      "stocks": "Stocks",
+      "saas": "SaaS",
+      "logistics": "Logistics",
+      "ai": "AI",
+      "sales": "Sales",
+      "finance": "Finance",
+      "aiAssistant": "AI Assistant",
+      "textGenerator": "Text Generator",
+      "imageGenerator": "Image Generator",
+      "codeGenerator": "Code Generator",
+      "videoGenerator": "Video Generator",
+      "aiSettings": "AI Settings",
+      "ecommerce": "E-commerce",
+      "products": "Products",
+      "addProduct": "Add Product",
+      "billing": "Billing",
+      "invoices": "Invoices",
+      "singleInvoice": "Single Invoice",
+      "createInvoice": "Create Invoice",
+      "transactions": "Transactions",
+      "singleTransaction": "Single Transaction",
+      "calendar": "日历",
+      "userProfile": "个人资料",
+      "task": "Task",
+      "taskList": "List",
+      "kanban": "Kanban",
+      "forms": "表单",
+      "formElements": "表单控件",
+      "formLayout": "Form Layout",
+      "tables": "表格",
+      "basicTables": "基础表格",
+      "dataTables": "Data Tables",
+      "pages": "Pages",
+      "fileManager": "File Manager",
+      "pricingTables": "Pricing Tables",
+      "faq": "FAQ",
+      "apiKeys": "API Keys",
+      "integrations": "Integrations",
+      "blankPage": "空白与空状态",
+      "error404": "错误页面",
+      "error500": "500 Error",
+      "error503": "503 Error",
+      "comingSoon": "Coming Soon",
+      "maintenance": "Maintenance",
+      "successPage": "Success",
+      "layouts": "Layouts",
+      "layoutOne": "Layout One",
+      "layoutTwo": "Layout Two",
+      "layoutThree": "Layout Three",
+      "layoutFour": "Layout Four",
+      "layoutFive": "Layout Five",
+      "layoutSix": "Layout Six",
+      "charts": "Charts",
+      "lineChart": "折线图",
+      "barChart": "柱形图",
+      "pieChart": "Pie Chart",
+      "radarChart": "Radar Chart",
+      "radialChart": "Radial Chart",
+      "maps": "Maps",
+      "mapsGoogle": "Maps",
+      "vectorMap": "Vector Map",
+      "uiElements": "基础组件",
+      "alerts": "提示反馈",
+      "avatar": "头像",
+      "badge": "状态标签",
+      "breadcrumb": "Breadcrumb",
+      "buttons": "按钮",
+      "buttonsGroup": "Buttons Group",
+      "cards": "Cards",
+      "carousel": "Carousel",
+      "dropdowns": "Dropdowns",
+      "images": "图片",
+      "links": "Links",
+      "listView": "List",
+      "modals": "Modals",
+      "notificationUi": "Notification",
+      "pagination": "Pagination",
+      "popovers": "Popovers",
+      "progressbar": "Progressbar",
+      "ribbons": "Ribbons",
+      "spinners": "Spinners",
+      "tabs": "Tabs",
+      "tooltips": "Tooltips",
+      "videos": "视频",
+      "authentication": "Authentication",
+      "signIn": "登录",
+      "signUp": "注册",
+      "resetPassword": "Reset Password",
+      "twoStepVerification": "Two Step Verification",
+      "chat": "Chat",
+      "supportMenu": "Support",
+      "supportList": "Support List",
+      "supportReply": "Support Reply",
+      "email": "Email",
+      "inbox": "Inbox",
+      "inboxDetails": "Details",
+      "securityOverview": "安全总览",
+      "securityTrends": "趋势分析",
+      "securityVulnerabilities": "漏洞管理",
+      "componentWorkbench": "组件工作台",
+      "themeSettings": "配色设置",
+      "securityComponents": "热力图与业务组件",
+      "dashboardSamples": "仪表盘样例",
+      "chartSamples": "图表与热力图",
+      "formLayouts": "完整表单",
+      "pageSamples": "页面样例",
+      "metricStyles": "统计样式对比"
+    },
+    "widget": {
+      "title": "#1 Tailwind CSS Dashboard",
+      "description": "Leading Tailwind CSS Admin Template with 500+ UI Component and Pages.",
+      "purchaseNow": "Purchase Now"
+    }
+  },
+  "header": {
+    "searchPlaceholder": "Search or type command...",
+    "toggleSidebar": "Toggle Sidebar",
+    "notifications": {
+      "title": "Notification",
+      "requestsPermission": "requests permission to change",
+      "project": "Project",
+      "minAgo": "{count} min ago",
+      "hrAgo": "{count} hr ago",
+      "viewAll": "View All Notifications"
+    }
+  },
+  "userDropdown": {
+    "editProfile": "Edit profile",
+    "accountSettings": "Account settings",
+    "support": "Support",
+    "language": "Language",
+    "signOut": "Sign out"
+  },
+  "ecommerce": {
+    "title": "E-commerce Dashboard",
+    "metrics": {
+      "customers": "Customers",
+      "orders": "Orders",
+      "comparison": "本月与上月比较 · 演示样本"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "monthlySales": {
+      "title": "Monthly Sales",
+      "series": "Sales"
+    },
+    "monthlyTarget": {
+      "title": "Monthly Target",
+      "subtitle": "Target you’ve set for each month",
+      "earned": "You earn {amount} today, it's higher than last month. Keep up your good work!",
+      "target": "Target",
+      "revenue": "Revenue",
+      "today": "Today"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "subtitle": "Target you've set for each month",
+      "overview": "Overview",
+      "sales": "Sales",
+      "revenue": "Revenue",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually",
+      "selectDateRange": "Select date range"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "products": "Products",
+      "category": "Category",
+      "price": "Price",
+      "status": "Status",
+      "variants": "{count, plural, one {# Variant} other {# Variants}}",
+      "categories": {
+        "laptop": "Laptop",
+        "watch": "Watch",
+        "smartphone": "SmartPhone",
+        "electronics": "Electronics",
+        "accessories": "Accessories"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "pending": "Pending",
+        "canceled": "Canceled"
+      }
+    },
+    "demographic": {
+      "title": "Customers Demographic",
+      "subtitle": "Number of customer based on country",
+      "customers": "{count} Customers",
+      "usa": "USA",
+      "france": "France",
+      "yemen": "Yemen",
+      "uk": "United Kingdom"
+    }
+  },
+  "analytics": {
+    "metrics": {
+      "uniqueVisitors": "Unique Visitors",
+      "totalPageviews": "Total Pageviews",
+      "bounceRate": "Bounce Rate",
+      "visitDuration": "Visit Duration",
+      "vsLastMonth": "Vs last month"
+    },
+    "barChart": {
+      "title": "Analytics",
+      "subtitle": "Visitor analytics of last 30 days"
+    },
+    "topChannels": {
+      "title": "Top Channels",
+      "source": "Source",
+      "visitors": "Visitors",
+      "channelsReport": "Channels Report"
+    },
+    "topPages": {
+      "title": "Top Pages",
+      "source": "Source",
+      "pageview": "Pageview",
+      "channelsReport": "Channels Report"
+    },
+    "activeUsers": {
+      "title": "Active Users",
+      "liveVisitors": "Live visitors",
+      "avgDaily": "Avg, Daily",
+      "avgWeekly": "Avg, Weekly",
+      "avgMonthly": "Avg, Monthly"
+    },
+    "acquisitionChannels": {
+      "title": "Acquisition Channels"
+    },
+    "session": {
+      "title": "Sessions By Device"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "products": "Products",
+      "category": "Category",
+      "country": "Country",
+      "cr": "CR",
+      "value": "Value",
+      "categories": {
+        "uiKits": "UI Kits",
+        "templates": "Templates",
+        "saas": "SaaS"
+      },
+      "crDashboard": "Dashboard"
+    }
+  },
+  "notFound": {
+    "error": "ERROR",
+    "message": "We can’t seem to find the page you are looking for!",
+    "backHome": "Back to Home Page",
+    "title": "未找到页面"
+  },
+  "marketing": {
+    "metrics": {
+      "avgClientRating": "Avg. Client Rating",
+      "instagramFollowers": "Instagram Followers",
+      "totalRevenue": "Total Revenue",
+      "vsLastMonth": "Vs last month"
+    },
+    "impressionChart": {
+      "title": "Impression & Data Traffic",
+      "totalRevenue": "Total Revenue",
+      "sales": "Sales",
+      "revenue": "Revenue"
+    },
+    "featuredCampaign": {
+      "title": "Featured Campaigns",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "products": "Products",
+      "campaign": "Campaign",
+      "status": "Status",
+      "adsCampaign": "Ads campaign",
+      "campaigns": {
+        "growBrand": "Grow your brand by...",
+        "betterIdeas": "Make Better Ideas...",
+        "increaseTraffic": "Increase your website tra..."
+      },
+      "statuses": {
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    },
+    "trafficStats": {
+      "title": "Traffic Stats",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "newSubscribers": "New Subscribers",
+      "conversionRate": "Conversion Rate",
+      "pageBounceRate": "Page Bounce Rate",
+      "thenLastWeek": "then last Week",
+      "newSales": "New Sales"
+    },
+    "trafficSource": {
+      "title": "Top Traffic Source",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "viewAll": "View All"
+    }
+  },
+  "crm": {
+    "metrics": {
+      "activeDeal": "Active Deal",
+      "revenueTotal": "Revenue Total",
+      "closedDeals": "Closed Deals",
+      "lastMonth": "last month"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "subtitle": "Target you’ve set for each month",
+      "avgYearlyProfit": "Avg. Yearly Profit",
+      "sales": "Sales",
+      "revenue": "Revenue"
+    },
+    "estimatedRevenue": {
+      "title": "Estimated Revenue",
+      "subtitle": "Target you’ve set for each month",
+      "goals": "June Goals",
+      "marketing": "Marketing",
+      "sales": "Sales"
+    },
+    "salesCategory": {
+      "title": "Sales Category",
+      "affiliate": "Affiliate",
+      "direct": "Direct",
+      "adsense": "Adsense",
+      "affiliateProgram": "Affiliate Program",
+      "directBuy": "Direct Buy",
+      "products": "Products",
+      "total": "Total",
+      "usedOf": "Used of"
+    },
+    "upcomingSchedule": {
+      "title": "Upcoming Schedule",
+      "schedules": {
+        "item1": {
+          "title": "Business Analytics Press",
+          "description": "Exploring the Future of Data-Driven +6 more"
+        },
+        "item2": {
+          "title": "Business Sprint",
+          "description": "Techniques from Business Sprint +2 more"
+        },
+        "item3": {
+          "title": "Customer Review Meeting",
+          "description": "Insights from the Customer Review Meeting +8 more"
+        }
+      }
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "dealId": "Deal ID",
+      "customer": "Customer",
+      "productService": "Product/Service",
+      "dealValue": "Deal Value",
+      "closeDate": "Close Date",
+      "status": "Status",
+      "action": "Action",
+      "products": {
+        "softwareLicense": "Software License",
+        "cloudHosting": "Cloud Hosting",
+        "webDomain": "Web Domain",
+        "sslCertificate": "SSL Certificate",
+        "premiumSupport": "Premium Support"
+      },
+      "statuses": {
+        "complete": "Complete",
+        "pending": "Pending",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "stocks": {
+    "title": "Stocks",
+    "dividend": {
+      "title": "Dividend",
+      "series": "Dividend",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "portfolioPerformance": {
+      "title": "Portfolio Performance",
+      "subtitle": "Here is your performance stats of each month",
+      "series": "Portfolio Performance"
+    },
+    "trendingStocks": {
+      "title": "Trending Stocks",
+      "shortStock": "Short Stock",
+      "buyStock": "Buy Stock"
+    },
+    "watchlist": {
+      "title": "My Watchlist",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "latestTransactions": {
+      "title": "Latest Transactions",
+      "searchPlaceholder": "Search...",
+      "table": {
+        "name": "Name",
+        "date": "Date",
+        "price": "Price",
+        "category": "Category",
+        "status": "Status"
+      },
+      "actions": {
+        "bought": "Bought {symbol}",
+        "sell": "Sell {symbol}"
+      },
+      "categories": {
+        "finance": "Finance"
+      },
+      "statuses": {
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    }
+  },
+  "saas": {
+    "title": "SaaS",
+    "metrics": {
+      "overview": "Overview",
+      "totalRevenue": "Total Revenue",
+      "activeUsers": "Active Users",
+      "clv": "Customer Lifetime Value",
+      "cac": "Customer Acquisition Cost"
+    },
+    "churnRate": {
+      "title": "Churn Rate",
+      "subtitle": "Downgrade to Free plan",
+      "thanLastWeek": "than last Week",
+      "series": "Churn Rate",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "userGrowth": {
+      "title": "User Growth",
+      "subtitle": "New signups website + mobile",
+      "thanLastWeek": "than last Week",
+      "series": "Revenue",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "conversionFunnel": {
+      "title": "Conversion Funnel",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "series": {
+        "adImpressions": "Ad Impressions",
+        "websiteSession": "Website Session",
+        "appDownload": "App Download",
+        "newUsers": "New Users"
+      }
+    },
+    "recentInvoices": {
+      "title": "Recent Invoices",
+      "table": {
+        "serialNo": "Serial No:",
+        "closeDate": "Close Date",
+        "user": "User",
+        "amount": "Amount",
+        "status": "Status"
+      },
+      "statuses": {
+        "complete": "Complete",
+        "pending": "Pending",
+        "cancelled": "Cancelled"
+      }
+    },
+    "productPerformance": {
+      "title": "Product Performance",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "tabs": {
+        "dailySales": "Daily Sales",
+        "onlineSales": "Online Sales",
+        "newUsers": "New Users"
+      },
+      "digitalProduct": "Digital Product",
+      "physicalProduct": "Physical Product",
+      "avgDailySales": "Average Daily Sales",
+      "totalOnlineSales": "Total Online Sales",
+      "addedLastMonth": "Added last month",
+      "totalNewUsers": "Total New Users",
+      "series": {
+        "sales": "Sales",
+        "revenue": "Revenue"
+      }
+    },
+    "activities": {
+      "title": "Activities",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "newInvoice": "New invoice",
+      "createdInvoice": "created invoice"
+    }
+  },
+  "logistics": {
+    "title": "Logistics",
+    "metrics": {
+      "totalOrders": "Total Orders",
+      "ordersInTransit": "Orders in Transit"
+    },
+    "deliveryStatistics": {
+      "title": "Delivery Statistics",
+      "subtitle": "Total number of deliveries 70.5K",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "shipment": "Shipment",
+      "delivery": "Delivery"
+    },
+    "revenueEarned": {
+      "totalRevenue": "Total revenue earned",
+      "shippedQuantities": "Shipped quantities",
+      "newSales": "New Sales"
+    },
+    "deliveryVehicle": {
+      "title": "Delivery Vehicles",
+      "subtitle": "Vehicles operating on the road",
+      "thanLastWeek": "than last Week",
+      "onRoute": "On-route"
+    },
+    "trackingDelivery": {
+      "title": "Tracking Delivery",
+      "subtitle": "Last viewed delivery history"
+    },
+    "trackingProgress": {
+      "trackingId": "Tracking ID",
+      "inTransit": "In Transit",
+      "pickedUp": "Picked up",
+      "delivered": "Delivered"
+    },
+    "deliveryMan": {
+      "courier": "Courier"
+    },
+    "deliveriesActivity": {
+      "title": "Delivery Activities",
+      "subtitle": "Track your recent shipping activities",
+      "tabs": {
+        "all": "All",
+        "delivered": "Delivered",
+        "inTransit": "In-Transit",
+        "pending": "Pending",
+        "processing": "Processing"
+      },
+      "filter": {
+        "button": "Filter",
+        "category": "Category",
+        "searchCategory": "Search category...",
+        "company": "Company",
+        "searchCompany": "Search company...",
+        "apply": "Apply"
+      },
+      "table": {
+        "orderId": "Order ID",
+        "category": "Category",
+        "company": "Company",
+        "arrivalTime": "Arrival Time",
+        "route": "Route",
+        "price": "Price",
+        "status": "Status"
+      },
+      "categories": {
+        "furniture": "Furniture",
+        "clothing": "Clothing",
+        "books": "Books",
+        "automotive": "Automotive",
+        "electronics": "Electronics",
+        "health": "Health",
+        "toys": "Toys",
+        "kitchen": "Kitchen",
+        "beauty": "Beauty",
+        "sports": "Sports"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "inTransit": "In Transit",
+        "canceled": "Canceled"
+      },
+      "pagination": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "page": "Page"
+      }
+    }
+  },
+  "aiDashboard": {
+    "stats": {
+      "users": "Users",
+      "projects": "Projects",
+      "revenue": "Revenue",
+      "paidUsers": "Paid Users",
+      "last30Days": "Last 30 Days"
+    },
+    "userRevenue": {
+      "title": "Users & Revenue Statistics",
+      "subtitle": "Visualize month-to-month progress and engagement.",
+      "users": "Users",
+      "revenue": "Revenue",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually"
+    },
+    "apiToken": {
+      "title": "API Token Usages",
+      "totalApiTokenUsed": "Total API Token Used",
+      "tokenUsed": "Token used",
+      "configuredKey": "{count, plural, one {# API key configured} other {# API keys configured}}",
+      "viewAllUsageDetails": "View All Usage Details"
+    },
+    "userAnalytics": {
+      "title": "User Analytics",
+      "subtitle": "Platform user insights",
+      "totalUsers": "Total Users",
+      "freeUsers": "Free Users",
+      "paidUsers": "Paid Users",
+      "ofTotalUser": "of total user",
+      "thisMonth": "This Month",
+      "fromLastMonth": "from last month",
+      "thisYear": "This Year",
+      "fromLastYear": "from last year"
+    },
+    "projectAnalytics": {
+      "title": "Projects Analytics",
+      "subtitle": "View detailed project insights",
+      "totalProjects": "Total Projects",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "projectCreated": "Project created",
+      "thisMonth": "This Month",
+      "fromLastMonth": "from last month",
+      "thisYear": "This Year",
+      "fromLastYear": "from last year"
+    },
+    "recentTransactions": {
+      "title": "Recent Transactions",
+      "searchPlaceholder": "Search...",
+      "filter": "Filter",
+      "table": {
+        "paidBy": "Paid By",
+        "packageName": "Package Name",
+        "price": "Price",
+        "paidDate": "Paid Date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "packages": {
+        "starterMonthly": "Starter - Monthly",
+        "growthYearly": "Growth - Yearly",
+        "premiumMonthly": "Premium - Monthly"
+      },
+      "statuses": {
+        "active": "Active",
+        "expired": "Expired"
+      },
+      "pagination": {
+        "previous": "Previous",
+        "next": "Next",
+        "pageOf": "Page {current} of {total}"
+      }
+    }
+  },
+  "sales": {
+    "salesStats": {
+      "title": "Sales Dashboard",
+      "subtitle": "Track revenue, performance, and sales growth in real-time",
+      "selectDateRange": "Select date range",
+      "export": "Export",
+      "totalRevenue": "Total Revenue",
+      "totalSales": "Total Sales",
+      "conversionRate": "Conversion Rate",
+      "refundRate": "Refund Rate",
+      "vsLastMonth": "vs last month",
+      "newSales": "New Sales"
+    },
+    "userRevenueStats": {
+      "title": "Users & Revenue Statistics",
+      "subtitle": "Visualize month-to-month progress and engagement.",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "onlineSales": "Online Sales",
+      "offlineSales": "Offline Sales"
+    },
+    "userRetention": {
+      "title": "User Retention",
+      "subtitle": "User engagement over time",
+      "increasedVsLastWeek": "Increased vs last week"
+    },
+    "salesByChannel": {
+      "title": "Sales by Channel",
+      "subtitle": "Channel performance overview",
+      "increasedVsLastWeek": "Increased vs last week",
+      "channels": {
+        "website": "Website",
+        "email": "Email",
+        "socialMedia": "Social Media"
+      },
+      "table": {
+        "channels": "Channels",
+        "metric": "Metric",
+        "total": "Total"
+      }
+    },
+    "salesByCountry": {
+      "title": "Sales by Country",
+      "subtitle": "Country-wise sales overview",
+      "countries": {
+        "usa": "USA",
+        "france": "France",
+        "japan": "Japan",
+        "germany": "Germany"
+      }
+    },
+    "topProducts": {
+      "title": "Top Products",
+      "table": {
+        "productName": "Product Name",
+        "category": "Category",
+        "sales": "Sales",
+        "earnings": "Earnings",
+        "stocks": "Stocks",
+        "status": "Status"
+      },
+      "products": {
+        "classicDenimJacket": "Classic Denim Jacket",
+        "slimFitChinos": "Slim Fit Chinos",
+        "organicCottonTShirt": "Organic Cotton T-Shirt",
+        "leatherAnkleBoots": "Leather Ankle Boots"
+      },
+      "variants": {
+        "threeSizes": "3 Sizes",
+        "fourColors": "4 Colors",
+        "fiveColors": "5 Colors",
+        "sixSizes": "6 Sizes"
+      },
+      "categories": {
+        "jacket": "Jacket",
+        "pants": "Pants",
+        "tShirt": "T-Shirt",
+        "footwear": "Footwear"
+      },
+      "statuses": {
+        "inStock": "In Stock",
+        "lowStock": "Low Stock",
+        "outOfStock": "Out of Stock"
+      }
+    }
+  },
+  "finance": {
+    "totalBalanceOverview": {
+      "title": "Total Balance",
+      "overview": "Overview of your current funds",
+      "thanLastMonth": "than last month",
+      "primaryAccount": "Primary Account:",
+      "seeDetails": "See Details",
+      "transfer": "Transfer",
+      "received": "Received",
+      "balance": "Balance"
+    },
+    "stats": {
+      "totalBalance": "Total Balance",
+      "monthlyIncome": "Monthly Income",
+      "totalSpent": "Total Spent",
+      "savingRate": "Saving Rate",
+      "thanLastMonth": "than last month",
+      "goalProgress": "Goal: 30% - 3.9% to go"
+    },
+    "cashflow": {
+      "title": "Cashflow Overview",
+      "totalRevenue": "Total Revenue",
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "spending": {
+      "title": "Spending",
+      "yearly": "Yearly",
+      "monthly": "Monthly",
+      "total": "Total",
+      "categories": {
+        "activity": "Activity",
+        "onlinePurchases": "Online Purchases",
+        "groceries": "Groceries",
+        "digitalGoods": "Digital Goods",
+        "stationery": "Stationery",
+        "others": "Others"
+      }
+    },
+    "quickSend": {
+      "title": "Quick send",
+      "sendFrom": "Send From",
+      "currency": "Currency",
+      "amount": "Amount",
+      "sendMoney": "Send Money"
+    },
+    "myCards": {
+      "title": "My Cards",
+      "addCard": "Add Card",
+      "virtualCard": "Virtual Card",
+      "recentTransactions": "Recent Transactions",
+      "seeAllTransactions": "See All Transactions",
+      "transactions": {
+        "paymentReceived": "Payment Received",
+        "cashbackDesc": "Cashback from Stellar Rewards",
+        "netflixSubscription": "Netflix Subscription",
+        "netflixDesc": "September subscription charge",
+        "moneyReceived": "Money received",
+        "paypalDesc": "Payment received via PayPal",
+        "googleAds": "Google Ads",
+        "googleAdsDesc": "Payment received form google ads"
+      }
+    },
+    "transactionsTable": {
+      "title": "Recent Transactions",
+      "searchPlaceholder": "Search...",
+      "filter": "Filter",
+      "table": {
+        "orderId": "Order ID",
+        "activity": "Activity",
+        "price": "Price",
+        "date": "Date",
+        "status": "Status"
+      },
+      "activities": {
+        "hotelBooking": "Hotel Booking",
+        "onlineShopping": "Online Shopping",
+        "gamePurchase": "Game Purchase",
+        "utilityBillPayment": "Utility Bill Payment",
+        "onlineCourseEnrollment": "Online Course Enrollment"
+      },
+      "statuses": {
+        "completed": "Completed",
+        "inProgress": "In Progress"
+      }
+    }
+  },
+  "security": {
+    "brandSub": "漏洞运营工作台",
+    "workspace": "北辰集团",
+    "workspaceSub": "企业安全工作空间",
+    "workspaceNav": "安全工作空间",
+    "navigation": "页面导航",
+    "demoEnvironment": "设计预览环境",
+    "demoDescription": "演示记录与历史样本，未连接生产系统。",
+    "role": "安全管理员",
+    "skip": "跳到主要内容",
+    "toggleTheme": "切换明暗主题",
+    "footer": "设计样例 v1.3 · 数据为演示快照",
+    "backTop": "返回顶部",
+    "nav": {
+      "overview": "安全总览",
+      "trends": "趋势分析",
+      "vulnerabilities": "漏洞管理",
+      "designSystem": "组件工作台"
+    },
+    "pages": {
+      "overview": {
+        "title": "安全态势总览"
+      },
+      "trends": {
+        "title": "趋势分析"
+      },
+      "vulnerabilities": {
+        "title": "漏洞管理"
+      }
+    },
+    "severity": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "status": {
+      "open": "待处理",
+      "inProgress": "修复中",
+      "resolved": "已修复",
+      "closed": "已关闭"
+    },
+    "teams": {
+      "commerce": "电商业务",
+      "platform": "平台研发",
+      "data": "数据服务",
+      "infrastructure": "基础设施"
+    },
+    "metrics": {
+      "active": "未关闭漏洞",
+      "critical": "严重风险",
+      "overdue": "超期工单",
+      "remediationRate": "修复完成率"
+    },
+    "findings": {
+      "accessControl": "应用访问控制缺陷",
+      "sqlInjection": "潜在 SQL 注入风险",
+      "exposedConfig": "服务配置暴露",
+      "outdatedLibrary": "组件依赖版本过旧",
+      "weakPassword": "弱口令策略配置",
+      "missingHeaders": "安全响应头缺失",
+      "fileUpload": "文件上传校验不足",
+      "sensitiveData": "敏感数据暴露"
+    },
+    "columns": {
+      "id": "工单编号",
+      "vulnerability": "漏洞信息",
+      "severity": "严重程度",
+      "asset": "受影响资产",
+      "owner": "负责人",
+      "due": "修复期限",
+      "status": "处理状态",
+      "action": "",
+      "created": "发现时间"
+    },
+    "units": {
+      "findings": "项",
+      "days": "天",
+      "perDay": "项 / 天",
+      "percent": "%"
+    },
+    "period": "统计周期",
+    "lastDays": "最近 {days} 天",
+    "keyMetrics": "核心安全指标",
+    "bandContextScope": "全部业务 · 当前快照",
+    "overdueScopeNote": "超期为未关闭漏洞的子集，按修复期限与快照日期判定。",
+    "viewOpenTickets": "查看待处理漏洞",
+    "reviewCritical": "查看严重风险",
+    "riskChangeTitle": "风险变化",
+    "metaRange": "{start} 至 {end}",
+    "unitLabel": "单位：{unit}",
+    "analysisTrendTitle": "新增与修复",
+    "analysisSeverityTitle": "当前严重程度",
+    "netReduction": "近 {days} 天净减少",
+    "netIncrease": "近 {days} 天净增加",
+    "resolvedOfTotal": "{total} 项中已完成 {resolved} 项",
+    "independentHistory": "独立历史样本 · 与当前工单快照分开统计",
+    "exploreAnalysis": "深入分析",
+    "newFindings": "新增漏洞",
+    "remediated": "已修复漏洞",
+    "activeFindings": "项未关闭漏洞",
+    "snapshotDate": "快照日期 2026-11-22",
+    "businessRisk": "业务风险分布",
+    "assetsMonitored": "监测 {count} 项资产",
+    "overdueCount": "{count} 项超期",
+    "remediationQueue": "修复工作流",
+    "assigned": "正在修复",
+    "awaitingTriage": "等待处理",
+    "openWorkspace": "进入漏洞管理",
+    "priorityQueue": "优先关注的漏洞",
+    "viewAll": "查看全部",
+    "chartView": "分析维度",
+    "volumeView": "新增与修复",
+    "balanceView": "风险净变化",
+    "historyDataset": "独立历史演示样本",
+    "historySample": "独立历史样本",
+    "countNotRisk": "样本计数变化不等同于风险水平变化。",
+    "analysisMetrics": "分析指标",
+    "netChangeLabel": "净变化（修复 − 新增）",
+    "mttr": "平均修复时长",
+    "dailyBalance": "每日净变化",
+    "remediationSpeed": "修复效率变化",
+    "mttrImprovement": "比第 1 周缩短 1.6 天",
+    "weekNumber": "第 {week} 周",
+    "weeklyHistory": "四组独立周度样本 · 仅统计已完成漏洞",
+    "findingTypes": "漏洞类型构成",
+    "categories": {
+      "application": "应用安全",
+      "configuration": "配置风险",
+      "component": "组件依赖",
+      "identity": "身份与权限"
+    },
+    "categoryDataset": "独立类型分布样本 · 合计 100%",
+    "activityHeatmap": "业务单元发现热度",
+    "less": "较少",
+    "more": "较多",
+    "heatmapDataset": "独立活跃度样本 · 每格 0–5 项",
+    "allFindings": "全部漏洞",
+    "statusFilter": "按处理状态筛选",
+    "severityFilter": "按严重程度筛选",
+    "ownerFilter": "按负责人筛选",
+    "sortLabel": "漏洞排序方式",
+    "sortSeverity": "严重程度优先",
+    "sortDue": "修复期限优先",
+    "sortNewest": "最新发现优先",
+    "allSeverities": "全部严重程度",
+    "allOwners": "全部负责人",
+    "searchPlaceholder": "搜索漏洞、工单编号或资产",
+    "matchedResults": "找到 {count} 项匹配结果",
+    "clearFilters": "清除筛选",
+    "noResults": "没有匹配的漏洞",
+    "noResultsDescription": "尝试其他关键词，或清除筛选条件。",
+    "pagination": "显示 {from}–{to} 项，共 {total} 项",
+    "previousPage": "上一页",
+    "nextPage": "下一页",
+    "exportList": "导出列表",
+    "demoDataDescription": "72 条演示记录 · 快照日期 2026-11-22 · 编辑仅保留在当前预览中，不代表真实安全公告",
+    "savedNotice": "{id} 已更新，修改保留在当前预览中。",
+    "exportedNotice": "已导出 {count} 条演示记录。",
+    "viewFinding": "查看 {id}",
+    "overdueDays": "已超期 {count} 天",
+    "findingContext": "演示发现 · 内部安全评估",
+    "detailTabs": "漏洞信息",
+    "findingDetails": "漏洞详情",
+    "activity": "处理记录",
+    "groupFinding": "漏洞信息",
+    "groupAsset": "资产范围",
+    "groupOwnership": "修复责任",
+    "scoreDescription": "演示评估分值，实际优先级需结合资产重要性与影响范围判断。",
+    "assetInformation": "资产与责任信息",
+    "ipAddress": "IP 地址",
+    "businessUnit": "业务单元",
+    "environment": "所属环境",
+    "production": "生产环境",
+    "detected": "发现时间",
+    "findingSource": "发现来源",
+    "securityAssessment": "内部安全评估",
+    "description": "漏洞描述",
+    "findingDescription": "在对 {asset} 的安全评估中发现潜在安全弱点。该记录用于展示漏洞信息与修复上下文，不代表真实安全公告。",
+    "remediationAdvice": "修复建议",
+    "remediationDescription": "检查受影响组件，复核访问边界与配置策略，在受控环境验证修复结果后再关闭工单。",
+    "notes": "修复备注",
+    "noNotes": "尚未添加修复备注。",
+    "ticketCreated": "漏洞已记录",
+    "systemDiscovery": "安全评估记录已进入漏洞台账",
+    "ownerAssigned": "已指定负责人",
+    "currentState": "当前处理状态",
+    "localOnly": "仅在当前预览生效",
+    "editFinding": "编辑漏洞",
+    "cancel": "取消",
+    "saveChanges": "保存修改",
+    "required": "请填写此项。",
+    "invalidDate": "请选择不早于发现时间的有效日期。",
+    "notesLimit": "备注不能超过 2000 字。",
+    "notesPlaceholder": "填写修复步骤、处理进展或验证说明…",
+    "workbench": {
+      "title": "主题与组件工作台",
+      "reset": "恢复默认",
+      "export": "导出主题",
+      "notice": "修改后自动保存在当前浏览器，关闭页面或重启后继续保留；浅色与深色分别保存。可导出 CSS。",
+      "row": "同一行的默认控件",
+      "input": "输入示例",
+      "placeholder": "输入内容",
+      "secondary": "次要操作",
+      "primary": "主要操作",
+      "tokens": "全部已声明的颜色与阴影",
+      "restored": "已恢复当前主题默认值",
+      "gallery": {
+        "title": "组件样例",
+        "buttons": "按钮与尺寸档位",
+        "save": "保存",
+        "reset": "重置",
+        "secondary": "次要操作",
+        "danger": "删除记录",
+        "disabled": "不可用",
+        "compact": "紧凑 32",
+        "standard": "默认 40",
+        "touch": "触控 44",
+        "saved": "已在当前样例保存",
+        "ready": "等待操作",
+        "fields": "输入框状态",
+        "name": "名称",
+        "placeholder": "请输入内容",
+        "invalid": "校验失败",
+        "error": "此字段为必填项",
+        "textarea": "多行文本",
+        "notes": "备注",
+        "checkbox": "复选状态",
+        "checked": "已选择",
+        "unchecked": "未选择",
+        "radio": "单项选择",
+        "optionOne": "选项一",
+        "optionTwo": "选项二",
+        "progress": "进度",
+        "zero": "零进度",
+        "selection": "同行输入与选择",
+        "tabs": "标签页",
+        "accordion": "展开区域",
+        "loading": "加载与分隔",
+        "feedback": "状态与反馈",
+        "identity": "身份与开关",
+        "overlays": "浮层交互",
+        "dialog": "打开弹窗",
+        "popover": "打开浮层",
+        "tooltip": "提示信息",
+        "upload": "上传文件",
+        "otp": "验证码",
+        "table": "结构化表格",
+        "state": "状态",
+        "count": "数量",
+        "navigation": "导航与分页",
+        "combinations": "组合操作",
+        "searchSelect": "搜索选择",
+        "menu": "操作菜单",
+        "drawer": "打开详情抽屉",
+        "close": "关闭",
+        "range": "范围选择",
+        "empty": "无匹配结果",
+        "disclosure": "按需展开",
+        "disclosureBody": "补充定义按需展开，避免在每个指标旁重复相同说明。",
+        "previous": "上一页",
+        "next": "下一页",
+        "panels": "可调整面板与滚动区域",
+        "one": "选项一",
+        "two": "选项二",
+        "three": "选项三",
+        "structure": "字段与层级结构",
+        "sidebar": "侧栏导航",
+        "mixed": "部分选中",
+        "loadingState": "正在加载",
+        "transactionPeriod": "一月至十一月 · 演示样本",
+        "applicationHeader": "顶栏与账户菜单"
+      },
+      "directory": {
+        "title": "完整组件示例",
+        "buttons": "按钮",
+        "form-elements": "表单与校验",
+        "basic-tables": "表格",
+        "alerts": "提示反馈",
+        "badge": "状态标签",
+        "avatars": "头像",
+        "images": "图片",
+        "videos": "视频",
+        "line-chart": "折线图",
+        "bar-chart": "柱形图",
+        "calendar": "日历",
+        "profile": "个人资料",
+        "dashboard-widgets": "仪表盘组件",
+        "signin": "登录",
+        "signup": "注册",
+        "blank": "空白与空状态",
+        "error-404": "错误页面",
+        "form-layout": "完整表单布局",
+        "security-components": "热力图与业务组件",
+        "theme-settings": "配色设置",
+        "metric-styles": "统计样式对比"
+      },
+      "alerts": {
+        "action": "查看记录",
+        "default": {
+          "title": "需要处理",
+          "description": "继续前请检查已选择的记录。"
+        },
+        "success": {
+          "title": "修改已保存",
+          "description": "所选记录已完成更新。"
+        },
+        "warning": {
+          "title": "部分记录已跳过",
+          "description": "请检查缺少必填字段的记录。"
+        },
+        "error": {
+          "title": "未能保存修改",
+          "description": "已保留输入，请修正无效字段后重试。"
+        },
+        "info": {
+          "title": "数据已刷新",
+          "description": "当前视图展示最新可用的快照。"
+        }
+      },
+      "empty": {
+        "title": "尚未添加内容",
+        "description": "从组件工作台选择适合的模块开始。",
+        "action": "打开组件工作台"
+      },
+      "chartData": {
+        "view": "查看图表数据",
+        "period": "期间",
+        "missing": "无数据",
+        "sample": "一月至十二月 · 演示数据 · 单位：项",
+        "financialSample": "年度演示样本 · 单位：千美元"
+      },
+      "profile": {
+        "editPersonal": "编辑个人信息",
+        "editAddress": "编辑地址",
+        "requiredFields": "带 * 的字段为必填项。"
+      },
+      "sections": "组件分组",
+      "primitives": "基础组件",
+      "feedback": "状态与浮层",
+      "navigation": "导航与布局",
+      "invalidValue": "请输入有效的CSS颜色或阴影值。",
+      "media": {
+        "image1": "蓝色玻璃与金属幕墙的建筑外立面",
+        "image2": "蓝色座椅与圆桌组成的公共办公区",
+        "image3": "落地灯与浅色座椅组成的休息区",
+        "image4": "蓝天下的建筑屋檐与红色立柱",
+        "image5": "白色室内空间中的斜向楼梯结构",
+        "image6": "蓝天下白色建筑的几何转角"
+      },
+      "settingsTitle": "配色设置",
+      "businessTitle": "热力图与业务组件",
+      "businessNotice": "复用三个业务页面的实际组件；示例数据与业务页面保持一致。",
+      "businessPreview": "业务页面组合",
+      "autoSaved": "已自动保存到当前浏览器",
+      "saveFailed": "当前浏览器无法保存设置，请导出 CSS 保留配色。"
+    },
+    "metricStyles": {
+      "title": "统计样式对比",
+      "label": "统计数字样式",
+      "description": "三种方案使用同一组漏洞指标。选择后同步应用到总览和趋势页，并保存在当前浏览器。",
+      "contrast": "深色高亮",
+      "contrastNote": "中性深底与明亮黄绿数字，标签保持浅灰。",
+      "gradient": "金属浅灰",
+      "gradientNote": "银灰底与黄绿色边缘反射；光泽缓慢流动，反光与卡片阴影可随鼠标位置移动。",
+      "plain": "白底黑字",
+      "plainNote": "纯白表面与深色数字，作为高可读性的基准。",
+      "apply": "应用此样式",
+      "selected": "当前样式"
+    },
+    "palettePresets": {
+      "title": "快速配色",
+      "default": "默认",
+      "tenable": "Tenable",
+      "rapid7": "Rapid7",
+      "custom": "自定义",
+      "defaultDescription": "当前的深蓝灰与橄榄绿。",
+      "tenableDescription": "官网炭灰、白色与荧光黄。",
+      "rapid7Description": "官网深灰、橙色与蓝色。",
+      "customDescription": "保存你对颜色与阴影的调整。",
+      "selected": "已选",
+      "apply": "切换",
+      "hint": "切换方案会保留已保存的自定义配色。修改任意颜色或阴影后，自动转为自定义；浅色和深色分别保存。",
+      "sourceNote": "品牌核心色取自官网；明暗色阶与金属反光为本 Demo 适配。来源："
+    },
+    "chartEncoding": {
+      "current": "本期（模拟）",
+      "previous": "前期（模拟）",
+      "latest": "蓝灰柱为历史月份，主数据色标记最后一个月份。",
+      "balance": "净修复 = 已修复 − 新增。正值表示存量减少；负值表示存量增加，零线为收支平衡。"
+    },
+    "fontSettings": {
+      "misans": "MiSans",
+      "oppo": "OPPO Sans 4.0",
+      "harmony": "HarmonyOS Sans",
+      "title": "界面字体",
+      "label": "选择界面字体",
+      "original": "原字体 Outfit",
+      "sampleTitle": "漏洞风险与修复进度",
+      "sampleBody": "查看标题、正文与统计数字的字形效果。切换后，导航、表格和图表文字会一起更新。",
+      "idle": "选择会应用到全站，并保存在当前浏览器。",
+      "loading": "正在加载字体，完成前暂用备用字体…",
+      "ready": "字体已应用并保存。",
+      "error": "字体加载失败，请重新选择或刷新页面。",
+      "notSaved": "字体已应用，但浏览器未允许保存。",
+      "credits": "本网站使用下列字体，版权归各权利人所有。授权文件："
+    },
+    "buttons": {
+      "title": "按钮规范",
+      "body": "页面操作",
+      "brand": "深色品牌底",
+      "states": "状态与尺寸",
+      "primary": "主操作",
+      "neutral": "中性操作",
+      "outline": "描边操作",
+      "ghost": "透明操作",
+      "link": "文字链接",
+      "danger": "危险操作",
+      "dangerSolid": "确认删除",
+      "loading": "处理中",
+      "disabled": "不可用",
+      "done": "已完成示例操作",
+      "ready": "就绪",
+      "settings": "打开设置",
+      "vulnerabilities": "查看漏洞",
+      "save": "保存更改",
+      "compact": "紧凑 32",
+      "standard": "标准 40",
+      "touch": "触控 44",
+      "bodyHelp": "同一行使用相同高度。每个操作组最多一个强调色主操作。",
+      "brandHelp": "透明文字、白色描边、强调色实心分别承担导航、次级和主要操作。",
+      "preview": "预览操作",
+      "selected": "已选择",
+      "toggle": "切换选中状态",
+      "reset": "恢复示例",
+      "resetDone": "已恢复",
+      "start": "开始处理",
+      "complete": "完成处理"
+    }
+  }
+}

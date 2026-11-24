@@ -1,0 +1,1331 @@
+{
+  "common": {
+    "home": "Home",
+    "edit": "Edit",
+    "close": "Close",
+    "saveChanges": "Save Changes",
+    "viewMore": "View More",
+    "delete": "Delete",
+    "filter": "Filter",
+    "seeAll": "See all",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "presence": {
+      "online": "Online",
+      "offline": "Offline",
+      "busy": "Busy"
+    }
+  },
+  "sidebar": {
+    "groups": {
+      "menu": "Menu",
+      "support": "Support",
+      "others": "Others",
+      "business": "Vulnerability operations",
+      "analytics": "Analytics & charts",
+      "components": "Components & examples",
+      "settings": "Settings"
+    },
+    "badges": {
+      "new": "new",
+      "pro": "pro"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "ecommerceHome": "Ecommerce",
+      "analytics": "Analytics",
+      "marketing": "Marketing",
+      "crm": "CRM",
+      "stocks": "Stocks",
+      "saas": "SaaS",
+      "logistics": "Logistics",
+      "ai": "AI",
+      "sales": "Sales",
+      "finance": "Finance",
+      "aiAssistant": "AI Assistant",
+      "textGenerator": "Text Generator",
+      "imageGenerator": "Image Generator",
+      "codeGenerator": "Code Generator",
+      "videoGenerator": "Video Generator",
+      "aiSettings": "AI Settings",
+      "ecommerce": "E-commerce",
+      "products": "Products",
+      "addProduct": "Add Product",
+      "billing": "Billing",
+      "invoices": "Invoices",
+      "singleInvoice": "Single Invoice",
+      "createInvoice": "Create Invoice",
+      "transactions": "Transactions",
+      "singleTransaction": "Single Transaction",
+      "calendar": "Calendar",
+      "userProfile": "User profile",
+      "task": "Task",
+      "taskList": "List",
+      "kanban": "Kanban",
+      "forms": "Forms",
+      "formElements": "Form controls",
+      "formLayout": "Form Layout",
+      "tables": "Tables",
+      "basicTables": "Basic tables",
+      "dataTables": "Data Tables",
+      "pages": "Pages",
+      "fileManager": "File Manager",
+      "pricingTables": "Pricing Tables",
+      "faq": "FAQ",
+      "apiKeys": "API Keys",
+      "integrations": "Integrations",
+      "blankPage": "Empty page",
+      "error404": "Error page",
+      "error500": "500 Error",
+      "error503": "503 Error",
+      "comingSoon": "Coming Soon",
+      "maintenance": "Maintenance",
+      "successPage": "Success",
+      "layouts": "Layouts",
+      "layoutOne": "Layout One",
+      "layoutTwo": "Layout Two",
+      "layoutThree": "Layout Three",
+      "layoutFour": "Layout Four",
+      "layoutFive": "Layout Five",
+      "layoutSix": "Layout Six",
+      "charts": "Charts",
+      "lineChart": "Line chart",
+      "barChart": "Bar chart",
+      "pieChart": "Pie Chart",
+      "radarChart": "Radar Chart",
+      "radialChart": "Radial Chart",
+      "maps": "Maps",
+      "mapsGoogle": "Maps",
+      "vectorMap": "Vector Map",
+      "uiElements": "UI elements",
+      "alerts": "Alerts",
+      "avatar": "Avatars",
+      "badge": "Badges",
+      "breadcrumb": "Breadcrumb",
+      "buttons": "Buttons",
+      "buttonsGroup": "Buttons Group",
+      "cards": "Cards",
+      "carousel": "Carousel",
+      "dropdowns": "Dropdowns",
+      "images": "Images",
+      "links": "Links",
+      "listView": "List",
+      "modals": "Modals",
+      "notificationUi": "Notification",
+      "pagination": "Pagination",
+      "popovers": "Popovers",
+      "progressbar": "Progressbar",
+      "ribbons": "Ribbons",
+      "spinners": "Spinners",
+      "tabs": "Tabs",
+      "tooltips": "Tooltips",
+      "videos": "Videos",
+      "authentication": "Authentication",
+      "signIn": "Sign in",
+      "signUp": "Sign up",
+      "resetPassword": "Reset Password",
+      "twoStepVerification": "Two Step Verification",
+      "chat": "Chat",
+      "supportMenu": "Support",
+      "supportList": "Support List",
+      "supportReply": "Support Reply",
+      "email": "Email",
+      "inbox": "Inbox",
+      "inboxDetails": "Details",
+      "securityOverview": "Security overview",
+      "securityTrends": "Trend analysis",
+      "securityVulnerabilities": "Vulnerabilities",
+      "componentWorkbench": "Components",
+      "themeSettings": "Theme settings",
+      "securityComponents": "Heatmap & business components",
+      "dashboardSamples": "Dashboard examples",
+      "chartSamples": "Charts & heatmap",
+      "formLayouts": "Form layouts",
+      "pageSamples": "Page examples",
+      "metricStyles": "Metric appearances"
+    },
+    "widget": {
+      "title": "#1 Tailwind CSS Dashboard",
+      "description": "Leading Tailwind CSS Admin Template with 500+ UI Component and Pages.",
+      "purchaseNow": "Purchase Now"
+    }
+  },
+  "header": {
+    "searchPlaceholder": "Search or type command...",
+    "toggleSidebar": "Toggle Sidebar",
+    "notifications": {
+      "title": "Notification",
+      "requestsPermission": "requests permission to change",
+      "project": "Project",
+      "minAgo": "{count} min ago",
+      "hrAgo": "{count} hr ago",
+      "viewAll": "View All Notifications"
+    }
+  },
+  "userDropdown": {
+    "editProfile": "Edit profile",
+    "accountSettings": "Account settings",
+    "support": "Support",
+    "language": "Language",
+    "signOut": "Sign out"
+  },
+  "ecommerce": {
+    "title": "E-commerce Dashboard",
+    "metrics": {
+      "customers": "Customers",
+      "orders": "Orders",
+      "comparison": "This month vs previous month · Sample"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "monthlySales": {
+      "title": "Monthly Sales",
+      "series": "Sales"
+    },
+    "monthlyTarget": {
+      "title": "Monthly Target",
+      "subtitle": "Target you’ve set for each month",
+      "earned": "You earn {amount} today, it's higher than last month. Keep up your good work!",
+      "target": "Target",
+      "revenue": "Revenue",
+      "today": "Today"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "subtitle": "Target you've set for each month",
+      "overview": "Overview",
+      "sales": "Sales",
+      "revenue": "Revenue",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually",
+      "selectDateRange": "Select date range"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "products": "Products",
+      "category": "Category",
+      "price": "Price",
+      "status": "Status",
+      "variants": "{count, plural, one {# Variant} other {# Variants}}",
+      "categories": {
+        "laptop": "Laptop",
+        "watch": "Watch",
+        "smartphone": "SmartPhone",
+        "electronics": "Electronics",
+        "accessories": "Accessories"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "pending": "Pending",
+        "canceled": "Canceled"
+      }
+    },
+    "demographic": {
+      "title": "Customers Demographic",
+      "subtitle": "Number of customer based on country",
+      "customers": "{count} Customers",
+      "usa": "USA",
+      "france": "France",
+      "yemen": "Yemen",
+      "uk": "United Kingdom"
+    }
+  },
+  "analytics": {
+    "metrics": {
+      "uniqueVisitors": "Unique Visitors",
+      "totalPageviews": "Total Pageviews",
+      "bounceRate": "Bounce Rate",
+      "visitDuration": "Visit Duration",
+      "vsLastMonth": "Vs last month"
+    },
+    "barChart": {
+      "title": "Analytics",
+      "subtitle": "Visitor analytics of last 30 days"
+    },
+    "topChannels": {
+      "title": "Top Channels",
+      "source": "Source",
+      "visitors": "Visitors",
+      "channelsReport": "Channels Report"
+    },
+    "topPages": {
+      "title": "Top Pages",
+      "source": "Source",
+      "pageview": "Pageview",
+      "channelsReport": "Channels Report"
+    },
+    "activeUsers": {
+      "title": "Active Users",
+      "liveVisitors": "Live visitors",
+      "avgDaily": "Avg, Daily",
+      "avgWeekly": "Avg, Weekly",
+      "avgMonthly": "Avg, Monthly"
+    },
+    "acquisitionChannels": {
+      "title": "Acquisition Channels"
+    },
+    "session": {
+      "title": "Sessions By Device"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "products": "Products",
+      "category": "Category",
+      "country": "Country",
+      "cr": "CR",
+      "value": "Value",
+      "categories": {
+        "uiKits": "UI Kits",
+        "templates": "Templates",
+        "saas": "SaaS"
+      },
+      "crDashboard": "Dashboard"
+    }
+  },
+  "notFound": {
+    "error": "ERROR",
+    "message": "We can’t seem to find the page you are looking for!",
+    "backHome": "Back to Home Page",
+    "title": "Page not found"
+  },
+  "marketing": {
+    "metrics": {
+      "avgClientRating": "Avg. Client Rating",
+      "instagramFollowers": "Instagram Followers",
+      "totalRevenue": "Total Revenue",
+      "vsLastMonth": "Vs last month"
+    },
+    "impressionChart": {
+      "title": "Impression & Data Traffic",
+      "totalRevenue": "Total Revenue",
+      "sales": "Sales",
+      "revenue": "Revenue"
+    },
+    "featuredCampaign": {
+      "title": "Featured Campaigns",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "products": "Products",
+      "campaign": "Campaign",
+      "status": "Status",
+      "adsCampaign": "Ads campaign",
+      "campaigns": {
+        "growBrand": "Grow your brand by...",
+        "betterIdeas": "Make Better Ideas...",
+        "increaseTraffic": "Increase your website tra..."
+      },
+      "statuses": {
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    },
+    "trafficStats": {
+      "title": "Traffic Stats",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "newSubscribers": "New Subscribers",
+      "conversionRate": "Conversion Rate",
+      "pageBounceRate": "Page Bounce Rate",
+      "thenLastWeek": "then last Week",
+      "newSales": "New Sales"
+    },
+    "trafficSource": {
+      "title": "Top Traffic Source",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "viewAll": "View All"
+    }
+  },
+  "crm": {
+    "metrics": {
+      "activeDeal": "Active Deal",
+      "revenueTotal": "Revenue Total",
+      "closedDeals": "Closed Deals",
+      "lastMonth": "last month"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "subtitle": "Target you’ve set for each month",
+      "avgYearlyProfit": "Avg. Yearly Profit",
+      "sales": "Sales",
+      "revenue": "Revenue"
+    },
+    "estimatedRevenue": {
+      "title": "Estimated Revenue",
+      "subtitle": "Target you’ve set for each month",
+      "goals": "June Goals",
+      "marketing": "Marketing",
+      "sales": "Sales"
+    },
+    "salesCategory": {
+      "title": "Sales Category",
+      "affiliate": "Affiliate",
+      "direct": "Direct",
+      "adsense": "Adsense",
+      "affiliateProgram": "Affiliate Program",
+      "directBuy": "Direct Buy",
+      "products": "Products",
+      "total": "Total",
+      "usedOf": "Used of"
+    },
+    "upcomingSchedule": {
+      "title": "Upcoming Schedule",
+      "schedules": {
+        "item1": {
+          "title": "Business Analytics Press",
+          "description": "Exploring the Future of Data-Driven +6 more"
+        },
+        "item2": {
+          "title": "Business Sprint",
+          "description": "Techniques from Business Sprint +2 more"
+        },
+        "item3": {
+          "title": "Customer Review Meeting",
+          "description": "Insights from the Customer Review Meeting +8 more"
+        }
+      }
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "dealId": "Deal ID",
+      "customer": "Customer",
+      "productService": "Product/Service",
+      "dealValue": "Deal Value",
+      "closeDate": "Close Date",
+      "status": "Status",
+      "action": "Action",
+      "products": {
+        "softwareLicense": "Software License",
+        "cloudHosting": "Cloud Hosting",
+        "webDomain": "Web Domain",
+        "sslCertificate": "SSL Certificate",
+        "premiumSupport": "Premium Support"
+      },
+      "statuses": {
+        "complete": "Complete",
+        "pending": "Pending",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "stocks": {
+    "title": "Stocks",
+    "dividend": {
+      "title": "Dividend",
+      "series": "Dividend",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "portfolioPerformance": {
+      "title": "Portfolio Performance",
+      "subtitle": "Here is your performance stats of each month",
+      "series": "Portfolio Performance"
+    },
+    "trendingStocks": {
+      "title": "Trending Stocks",
+      "shortStock": "Short Stock",
+      "buyStock": "Buy Stock"
+    },
+    "watchlist": {
+      "title": "My Watchlist",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "latestTransactions": {
+      "title": "Latest Transactions",
+      "searchPlaceholder": "Search...",
+      "table": {
+        "name": "Name",
+        "date": "Date",
+        "price": "Price",
+        "category": "Category",
+        "status": "Status"
+      },
+      "actions": {
+        "bought": "Bought {symbol}",
+        "sell": "Sell {symbol}"
+      },
+      "categories": {
+        "finance": "Finance"
+      },
+      "statuses": {
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    }
+  },
+  "saas": {
+    "title": "SaaS",
+    "metrics": {
+      "overview": "Overview",
+      "totalRevenue": "Total Revenue",
+      "activeUsers": "Active Users",
+      "clv": "Customer Lifetime Value",
+      "cac": "Customer Acquisition Cost"
+    },
+    "churnRate": {
+      "title": "Churn Rate",
+      "subtitle": "Downgrade to Free plan",
+      "thanLastWeek": "than last Week",
+      "series": "Churn Rate",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "userGrowth": {
+      "title": "User Growth",
+      "subtitle": "New signups website + mobile",
+      "thanLastWeek": "than last Week",
+      "series": "Revenue",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "conversionFunnel": {
+      "title": "Conversion Funnel",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "series": {
+        "adImpressions": "Ad Impressions",
+        "websiteSession": "Website Session",
+        "appDownload": "App Download",
+        "newUsers": "New Users"
+      }
+    },
+    "recentInvoices": {
+      "title": "Recent Invoices",
+      "table": {
+        "serialNo": "Serial No:",
+        "closeDate": "Close Date",
+        "user": "User",
+        "amount": "Amount",
+        "status": "Status"
+      },
+      "statuses": {
+        "complete": "Complete",
+        "pending": "Pending",
+        "cancelled": "Cancelled"
+      }
+    },
+    "productPerformance": {
+      "title": "Product Performance",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "tabs": {
+        "dailySales": "Daily Sales",
+        "onlineSales": "Online Sales",
+        "newUsers": "New Users"
+      },
+      "digitalProduct": "Digital Product",
+      "physicalProduct": "Physical Product",
+      "avgDailySales": "Average Daily Sales",
+      "totalOnlineSales": "Total Online Sales",
+      "addedLastMonth": "Added last month",
+      "totalNewUsers": "Total New Users",
+      "series": {
+        "sales": "Sales",
+        "revenue": "Revenue"
+      }
+    },
+    "activities": {
+      "title": "Activities",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "newInvoice": "New invoice",
+      "createdInvoice": "created invoice"
+    }
+  },
+  "logistics": {
+    "title": "Logistics",
+    "metrics": {
+      "totalOrders": "Total Orders",
+      "ordersInTransit": "Orders in Transit"
+    },
+    "deliveryStatistics": {
+      "title": "Delivery Statistics",
+      "subtitle": "Total number of deliveries 70.5K",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "shipment": "Shipment",
+      "delivery": "Delivery"
+    },
+    "revenueEarned": {
+      "totalRevenue": "Total revenue earned",
+      "shippedQuantities": "Shipped quantities",
+      "newSales": "New Sales"
+    },
+    "deliveryVehicle": {
+      "title": "Delivery Vehicles",
+      "subtitle": "Vehicles operating on the road",
+      "thanLastWeek": "than last Week",
+      "onRoute": "On-route"
+    },
+    "trackingDelivery": {
+      "title": "Tracking Delivery",
+      "subtitle": "Last viewed delivery history"
+    },
+    "trackingProgress": {
+      "trackingId": "Tracking ID",
+      "inTransit": "In Transit",
+      "pickedUp": "Picked up",
+      "delivered": "Delivered"
+    },
+    "deliveryMan": {
+      "courier": "Courier"
+    },
+    "deliveriesActivity": {
+      "title": "Delivery Activities",
+      "subtitle": "Track your recent shipping activities",
+      "tabs": {
+        "all": "All",
+        "delivered": "Delivered",
+        "inTransit": "In-Transit",
+        "pending": "Pending",
+        "processing": "Processing"
+      },
+      "filter": {
+        "button": "Filter",
+        "category": "Category",
+        "searchCategory": "Search category...",
+        "company": "Company",
+        "searchCompany": "Search company...",
+        "apply": "Apply"
+      },
+      "table": {
+        "orderId": "Order ID",
+        "category": "Category",
+        "company": "Company",
+        "arrivalTime": "Arrival Time",
+        "route": "Route",
+        "price": "Price",
+        "status": "Status"
+      },
+      "categories": {
+        "furniture": "Furniture",
+        "clothing": "Clothing",
+        "books": "Books",
+        "automotive": "Automotive",
+        "electronics": "Electronics",
+        "health": "Health",
+        "toys": "Toys",
+        "kitchen": "Kitchen",
+        "beauty": "Beauty",
+        "sports": "Sports"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "inTransit": "In Transit",
+        "canceled": "Canceled"
+      },
+      "pagination": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "page": "Page"
+      }
+    }
+  },
+  "aiDashboard": {
+    "stats": {
+      "users": "Users",
+      "projects": "Projects",
+      "revenue": "Revenue",
+      "paidUsers": "Paid Users",
+      "last30Days": "Last 30 Days"
+    },
+    "userRevenue": {
+      "title": "Users & Revenue Statistics",
+      "subtitle": "Visualize month-to-month progress and engagement.",
+      "users": "Users",
+      "revenue": "Revenue",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually"
+    },
+    "apiToken": {
+      "title": "API Token Usages",
+      "totalApiTokenUsed": "Total API Token Used",
+      "tokenUsed": "Token used",
+      "configuredKey": "{count, plural, one {# API key configured} other {# API keys configured}}",
+      "viewAllUsageDetails": "View All Usage Details"
+    },
+    "userAnalytics": {
+      "title": "User Analytics",
+      "subtitle": "Platform user insights",
+      "totalUsers": "Total Users",
+      "freeUsers": "Free Users",
+      "paidUsers": "Paid Users",
+      "ofTotalUser": "of total user",
+      "thisMonth": "This Month",
+      "fromLastMonth": "from last month",
+      "thisYear": "This Year",
+      "fromLastYear": "from last year"
+    },
+    "projectAnalytics": {
+      "title": "Projects Analytics",
+      "subtitle": "View detailed project insights",
+      "totalProjects": "Total Projects",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "projectCreated": "Project created",
+      "thisMonth": "This Month",
+      "fromLastMonth": "from last month",
+      "thisYear": "This Year",
+      "fromLastYear": "from last year"
+    },
+    "recentTransactions": {
+      "title": "Recent Transactions",
+      "searchPlaceholder": "Search...",
+      "filter": "Filter",
+      "table": {
+        "paidBy": "Paid By",
+        "packageName": "Package Name",
+        "price": "Price",
+        "paidDate": "Paid Date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "packages": {
+        "starterMonthly": "Starter - Monthly",
+        "growthYearly": "Growth - Yearly",
+        "premiumMonthly": "Premium - Monthly"
+      },
+      "statuses": {
+        "active": "Active",
+        "expired": "Expired"
+      },
+      "pagination": {
+        "previous": "Previous",
+        "next": "Next",
+        "pageOf": "Page {current} of {total}"
+      }
+    }
+  },
+  "sales": {
+    "salesStats": {
+      "title": "Sales Dashboard",
+      "subtitle": "Track revenue, performance, and sales growth in real-time",
+      "selectDateRange": "Select date range",
+      "export": "Export",
+      "totalRevenue": "Total Revenue",
+      "totalSales": "Total Sales",
+      "conversionRate": "Conversion Rate",
+      "refundRate": "Refund Rate",
+      "vsLastMonth": "vs last month",
+      "newSales": "New Sales"
+    },
+    "userRevenueStats": {
+      "title": "Users & Revenue Statistics",
+      "subtitle": "Visualize month-to-month progress and engagement.",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "onlineSales": "Online Sales",
+      "offlineSales": "Offline Sales"
+    },
+    "userRetention": {
+      "title": "User Retention",
+      "subtitle": "User engagement over time",
+      "increasedVsLastWeek": "Increased vs last week"
+    },
+    "salesByChannel": {
+      "title": "Sales by Channel",
+      "subtitle": "Channel performance overview",
+      "increasedVsLastWeek": "Increased vs last week",
+      "channels": {
+        "website": "Website",
+        "email": "Email",
+        "socialMedia": "Social Media"
+      },
+      "table": {
+        "channels": "Channels",
+        "metric": "Metric",
+        "total": "Total"
+      }
+    },
+    "salesByCountry": {
+      "title": "Sales by Country",
+      "subtitle": "Country-wise sales overview",
+      "countries": {
+        "usa": "USA",
+        "france": "France",
+        "japan": "Japan",
+        "germany": "Germany"
+      }
+    },
+    "topProducts": {
+      "title": "Top Products",
+      "table": {
+        "productName": "Product Name",
+        "category": "Category",
+        "sales": "Sales",
+        "earnings": "Earnings",
+        "stocks": "Stocks",
+        "status": "Status"
+      },
+      "products": {
+        "classicDenimJacket": "Classic Denim Jacket",
+        "slimFitChinos": "Slim Fit Chinos",
+        "organicCottonTShirt": "Organic Cotton T-Shirt",
+        "leatherAnkleBoots": "Leather Ankle Boots"
+      },
+      "variants": {
+        "threeSizes": "3 Sizes",
+        "fourColors": "4 Colors",
+        "fiveColors": "5 Colors",
+        "sixSizes": "6 Sizes"
+      },
+      "categories": {
+        "jacket": "Jacket",
+        "pants": "Pants",
+        "tShirt": "T-Shirt",
+        "footwear": "Footwear"
+      },
+      "statuses": {
+        "inStock": "In Stock",
+        "lowStock": "Low Stock",
+        "outOfStock": "Out of Stock"
+      }
+    }
+  },
+  "finance": {
+    "totalBalanceOverview": {
+      "title": "Total Balance",
+      "overview": "Overview of your current funds",
+      "thanLastMonth": "than last month",
+      "primaryAccount": "Primary Account:",
+      "seeDetails": "See Details",
+      "transfer": "Transfer",
+      "received": "Received",
+      "balance": "Balance"
+    },
+    "stats": {
+      "totalBalance": "Total Balance",
+      "monthlyIncome": "Monthly Income",
+      "totalSpent": "Total Spent",
+      "savingRate": "Saving Rate",
+      "thanLastMonth": "than last month",
+      "goalProgress": "Goal: 30% - 3.9% to go"
+    },
+    "cashflow": {
+      "title": "Cashflow Overview",
+      "totalRevenue": "Total Revenue",
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "spending": {
+      "title": "Spending",
+      "yearly": "Yearly",
+      "monthly": "Monthly",
+      "total": "Total",
+      "categories": {
+        "activity": "Activity",
+        "onlinePurchases": "Online Purchases",
+        "groceries": "Groceries",
+        "digitalGoods": "Digital Goods",
+        "stationery": "Stationery",
+        "others": "Others"
+      }
+    },
+    "quickSend": {
+      "title": "Quick send",
+      "sendFrom": "Send From",
+      "currency": "Currency",
+      "amount": "Amount",
+      "sendMoney": "Send Money"
+    },
+    "myCards": {
+      "title": "My Cards",
+      "addCard": "Add Card",
+      "virtualCard": "Virtual Card",
+      "recentTransactions": "Recent Transactions",
+      "seeAllTransactions": "See All Transactions",
+      "transactions": {
+        "paymentReceived": "Payment Received",
+        "cashbackDesc": "Cashback from Stellar Rewards",
+        "netflixSubscription": "Netflix Subscription",
+        "netflixDesc": "September subscription charge",
+        "moneyReceived": "Money received",
+        "paypalDesc": "Payment received via PayPal",
+        "googleAds": "Google Ads",
+        "googleAdsDesc": "Payment received form google ads"
+      }
+    },
+    "transactionsTable": {
+      "title": "Recent Transactions",
+      "searchPlaceholder": "Search...",
+      "filter": "Filter",
+      "table": {
+        "orderId": "Order ID",
+        "activity": "Activity",
+        "price": "Price",
+        "date": "Date",
+        "status": "Status"
+      },
+      "activities": {
+        "hotelBooking": "Hotel Booking",
+        "onlineShopping": "Online Shopping",
+        "gamePurchase": "Game Purchase",
+        "utilityBillPayment": "Utility Bill Payment",
+        "onlineCourseEnrollment": "Online Course Enrollment"
+      },
+      "statuses": {
+        "completed": "Completed",
+        "inProgress": "In Progress"
+      }
+    }
+  },
+  "security": {
+    "brandSub": "Vulnerability operations",
+    "workspace": "Northstar Group",
+    "workspaceSub": "Enterprise workspace",
+    "workspaceNav": "Security workspace",
+    "navigation": "Navigation",
+    "demoEnvironment": "Design preview",
+    "demoDescription": "Sample records and historical datasets. No production systems connected.",
+    "role": "Security administrator",
+    "skip": "Skip to content",
+    "toggleTheme": "Switch appearance",
+    "footer": "Design sample v1.3 · demonstration data",
+    "backTop": "Back to top",
+    "nav": {
+      "overview": "Overview",
+      "trends": "Trend analysis",
+      "vulnerabilities": "Vulnerabilities",
+      "designSystem": "Components"
+    },
+    "pages": {
+      "overview": {
+        "title": "Security overview"
+      },
+      "trends": {
+        "title": "Trend analysis"
+      },
+      "vulnerabilities": {
+        "title": "Vulnerability register"
+      }
+    },
+    "severity": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "status": {
+      "open": "Open",
+      "inProgress": "In progress",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "teams": {
+      "commerce": "Commerce",
+      "platform": "Platform engineering",
+      "data": "Data services",
+      "infrastructure": "Infrastructure"
+    },
+    "metrics": {
+      "active": "Open vulnerabilities",
+      "critical": "Critical findings",
+      "overdue": "Overdue tickets",
+      "remediationRate": "Remediation rate"
+    },
+    "findings": {
+      "accessControl": "Broken access control",
+      "sqlInjection": "Potential SQL injection",
+      "exposedConfig": "Exposed service configuration",
+      "outdatedLibrary": "Outdated component dependency",
+      "weakPassword": "Weak credential policy",
+      "missingHeaders": "Missing security headers",
+      "fileUpload": "Unrestricted file upload",
+      "sensitiveData": "Sensitive data exposure"
+    },
+    "columns": {
+      "id": "Ticket ID",
+      "vulnerability": "Vulnerability",
+      "severity": "Severity",
+      "asset": "Affected asset",
+      "owner": "Owner",
+      "due": "Due date",
+      "status": "Status",
+      "action": "",
+      "created": "Created"
+    },
+    "units": {
+      "findings": "findings",
+      "days": "days",
+      "perDay": "/ day",
+      "percent": "%"
+    },
+    "period": "Time period",
+    "lastDays": "Last {days} days",
+    "keyMetrics": "Key security metrics",
+    "bandContextScope": "All business units · current snapshot",
+    "overdueScopeNote": "Overdue is a subset of open findings, judged by due date against the snapshot date.",
+    "viewOpenTickets": "View open findings",
+    "reviewCritical": "Review critical findings",
+    "riskChangeTitle": "Risk movement",
+    "metaRange": "{start} to {end}",
+    "unitLabel": "Unit: {unit}",
+    "analysisTrendTitle": "Discoveries and remediation",
+    "analysisSeverityTitle": "Current severity",
+    "netReduction": "Net reduction over {days} days",
+    "netIncrease": "Net increase over {days} days",
+    "resolvedOfTotal": "{resolved} of {total} findings completed",
+    "independentHistory": "Independent sample history · separate from the current ticket snapshot",
+    "exploreAnalysis": "Explore trends",
+    "newFindings": "New findings",
+    "remediated": "Remediated",
+    "activeFindings": "active findings",
+    "snapshotDate": "Snapshot 2026-11-22",
+    "businessRisk": "Exposure by business unit",
+    "assetsMonitored": "{count} assets monitored",
+    "overdueCount": "{count} overdue",
+    "remediationQueue": "Remediation workflow",
+    "assigned": "In remediation",
+    "awaitingTriage": "Awaiting triage",
+    "openWorkspace": "Open vulnerability register",
+    "priorityQueue": "Priority findings",
+    "viewAll": "View all findings",
+    "chartView": "Analysis view",
+    "volumeView": "Discoveries & remediation",
+    "balanceView": "Net change",
+    "historyDataset": "Historical sample dataset",
+    "historySample": "Independent historical sample",
+    "countNotRisk": "Count changes in this sample do not by themselves mean risk decreased.",
+    "analysisMetrics": "Analysis metrics",
+    "netChangeLabel": "Net change (remediated − discovered)",
+    "mttr": "Mean time to remediate",
+    "dailyBalance": "Daily net change",
+    "remediationSpeed": "Remediation speed",
+    "mttrImprovement": "1.6 days faster than week 1",
+    "weekNumber": "Week {week}",
+    "weeklyHistory": "Four independent weekly cohorts · completed findings only",
+    "findingTypes": "Finding composition",
+    "categories": {
+      "application": "Application security",
+      "configuration": "Configuration",
+      "component": "Dependencies",
+      "identity": "Identity & access"
+    },
+    "categoryDataset": "Independent category sample · totals 100%",
+    "activityHeatmap": "Discovery activity by business unit",
+    "less": "Less",
+    "more": "More",
+    "heatmapDataset": "Independent activity sample · 0–5 findings per cell",
+    "allFindings": "All findings",
+    "statusFilter": "Filter by status",
+    "severityFilter": "Filter by severity",
+    "ownerFilter": "Filter by owner",
+    "sortLabel": "Sort findings",
+    "sortSeverity": "Severity first",
+    "sortDue": "Due date first",
+    "sortNewest": "Newest first",
+    "allSeverities": "All severities",
+    "allOwners": "All owners",
+    "searchPlaceholder": "Search findings, IDs or assets",
+    "matchedResults": "{count} matching findings",
+    "clearFilters": "Clear filters",
+    "noResults": "No matching findings",
+    "noResultsDescription": "Try a different keyword or clear your filters.",
+    "pagination": "Showing {from}–{to} of {total}",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "exportList": "Export list",
+    "demoDataDescription": "72 illustrative findings · snapshot 2026-11-22 · edits stay in this preview; demo records, not security advisories",
+    "savedNotice": "{id} updated in this preview.",
+    "exportedNotice": "Exported {count} sample findings.",
+    "viewFinding": "View {id}",
+    "overdueDays": "{count} days overdue",
+    "findingContext": "Demonstration finding · internal assessment",
+    "detailTabs": "Finding information",
+    "findingDetails": "Details",
+    "activity": "Activity",
+    "groupFinding": "Finding",
+    "groupAsset": "Asset scope",
+    "groupOwnership": "Ownership & deadlines",
+    "scoreDescription": "Illustrative assessment score. Validate actual impact before prioritization.",
+    "assetInformation": "Asset & ownership",
+    "ipAddress": "IP address",
+    "businessUnit": "Business unit",
+    "environment": "Environment",
+    "production": "Production",
+    "detected": "Detected on",
+    "findingSource": "Discovery source",
+    "securityAssessment": "Security assessment",
+    "description": "Finding description",
+    "findingDescription": "The assessment identified a potential security weakness on {asset}. This record demonstrates the presentation of findings and remediation context; it is not a real security advisory.",
+    "remediationAdvice": "Remediation guidance",
+    "remediationDescription": "Review the affected component, verify access boundaries and configuration, then validate the fix in a controlled environment before closing the ticket.",
+    "notes": "Remediation notes",
+    "noNotes": "No remediation notes yet.",
+    "ticketCreated": "Finding recorded",
+    "systemDiscovery": "Assessment record added to the register",
+    "ownerAssigned": "Owner assigned",
+    "currentState": "Current status",
+    "localOnly": "Changes stay in this preview",
+    "editFinding": "Edit finding",
+    "cancel": "Cancel",
+    "saveChanges": "Save changes",
+    "required": "This field is required.",
+    "invalidDate": "Enter a valid date on or after detection.",
+    "notesLimit": "Keep notes under 2,000 characters.",
+    "notesPlaceholder": "Add remediation steps, context or verification notes…",
+    "workbench": {
+      "title": "Theme and component workbench",
+      "reset": "Reset",
+      "export": "Export theme",
+      "notice": "Changes are saved automatically in this browser and survive reloads and restarts. Light and dark palettes are saved separately. Export CSS to reuse them.",
+      "row": "Default controls in one row",
+      "input": "Input example",
+      "placeholder": "Enter text",
+      "secondary": "Secondary",
+      "primary": "Primary",
+      "tokens": "All declared colors and shadows",
+      "restored": "Theme defaults restored",
+      "gallery": {
+        "title": "Component specimens",
+        "buttons": "Buttons and size tiers",
+        "save": "Save",
+        "reset": "Reset",
+        "secondary": "Secondary action",
+        "danger": "Delete record",
+        "disabled": "Unavailable",
+        "compact": "Compact 32",
+        "standard": "Default 40",
+        "touch": "Touch 44",
+        "saved": "Saved in this example",
+        "ready": "Ready",
+        "fields": "Input states",
+        "name": "Name",
+        "placeholder": "Enter a value",
+        "invalid": "Invalid value",
+        "error": "This field is required",
+        "textarea": "Long text",
+        "notes": "Notes",
+        "checkbox": "Checkbox states",
+        "checked": "Selected",
+        "unchecked": "Not selected",
+        "radio": "Radio selection",
+        "optionOne": "First option",
+        "optionTwo": "Second option",
+        "progress": "Progress",
+        "zero": "Zero progress",
+        "selection": "Aligned inputs and selection",
+        "tabs": "Tabs",
+        "accordion": "Expandable sections",
+        "loading": "Loading and separation",
+        "feedback": "Statuses and feedback",
+        "identity": "Identity and switches",
+        "overlays": "Overlay interaction",
+        "dialog": "Open dialog",
+        "popover": "Open popover",
+        "tooltip": "Tooltip",
+        "upload": "Upload file",
+        "otp": "Verification code",
+        "table": "Structured table",
+        "state": "Status",
+        "count": "Count",
+        "navigation": "Navigation and pagination",
+        "combinations": "Grouped actions",
+        "searchSelect": "Searchable selection",
+        "menu": "Actions menu",
+        "drawer": "Open detail drawer",
+        "close": "Close",
+        "range": "Range selection",
+        "empty": "No matching results",
+        "disclosure": "Progressive disclosure",
+        "disclosureBody": "Keep supporting definitions available on demand without repeating them beside every metric.",
+        "previous": "Previous",
+        "next": "Next",
+        "panels": "Resizable panels and scrolling",
+        "one": "First option",
+        "two": "Second option",
+        "three": "Third option",
+        "structure": "Fields and hierarchy",
+        "sidebar": "Sidebar navigation",
+        "mixed": "Partially selected",
+        "loadingState": "Loading",
+        "transactionPeriod": "January–November · Sample",
+        "applicationHeader": "Application header and account menus"
+      },
+      "directory": {
+        "title": "Full component examples",
+        "buttons": "Buttons",
+        "form-elements": "Forms and validation",
+        "basic-tables": "Tables",
+        "alerts": "Alerts",
+        "badge": "Badges",
+        "avatars": "Avatars",
+        "images": "Images",
+        "videos": "Video",
+        "line-chart": "Line chart",
+        "bar-chart": "Bar chart",
+        "calendar": "Calendar",
+        "profile": "Profile",
+        "dashboard-widgets": "Dashboard widgets",
+        "signin": "Sign in",
+        "signup": "Sign up",
+        "blank": "Blank and empty states",
+        "error-404": "Error page",
+        "form-layout": "Complete form layouts",
+        "security-components": "Heatmap & business components",
+        "theme-settings": "Theme settings",
+        "metric-styles": "Metric appearances"
+      },
+      "alerts": {
+        "action": "View records",
+        "default": {
+          "title": "Action required",
+          "description": "Review the selected records before continuing."
+        },
+        "success": {
+          "title": "Changes saved",
+          "description": "The selected records have been updated."
+        },
+        "warning": {
+          "title": "Some records were skipped",
+          "description": "Check records with missing required fields."
+        },
+        "error": {
+          "title": "Changes could not be saved",
+          "description": "Your input is preserved. Review the invalid fields and try again."
+        },
+        "info": {
+          "title": "Data refreshed",
+          "description": "The current view shows the latest available snapshot."
+        }
+      },
+      "empty": {
+        "title": "No content yet",
+        "description": "Choose a module from the component workbench to get started.",
+        "action": "Open component workbench"
+      },
+      "chartData": {
+        "view": "View chart data",
+        "period": "Period",
+        "missing": "No data",
+        "sample": "January–December · Sample data · Unit: records",
+        "financialSample": "Annual sample dataset · Unit: USD thousands"
+      },
+      "profile": {
+        "editPersonal": "Edit personal information",
+        "editAddress": "Edit address",
+        "requiredFields": "Fields marked * are required."
+      },
+      "sections": "Component sections",
+      "primitives": "Primitives",
+      "feedback": "Feedback and overlays",
+      "navigation": "Navigation and layout",
+      "invalidValue": "Enter a valid CSS color or shadow value.",
+      "media": {
+        "image1": "Building facade with blue glass and metal panels",
+        "image2": "Shared workspace with blue chairs and round tables",
+        "image3": "Lounge with floor lamps and pale chairs",
+        "image4": "Building roof and red columns against a blue sky",
+        "image5": "Diagonal staircase in a white interior",
+        "image6": "Geometric corner of a white building against a blue sky"
+      },
+      "settingsTitle": "Theme settings",
+      "businessTitle": "Heatmap & business components",
+      "businessNotice": "The actual components from all three business pages, with the same sample data.",
+      "businessPreview": "Business page compositions",
+      "autoSaved": "Saved automatically in this browser",
+      "saveFailed": "This browser could not save the settings. Export CSS to keep this palette."
+    },
+    "metricStyles": {
+      "title": "Metric appearance comparison",
+      "label": "Metric appearance",
+      "description": "All three options use the same vulnerability counts. Apply one to Overview and Trends; your choice is saved in this browser.",
+      "contrast": "Dark & luminous",
+      "contrastNote": "Neutral dark surface, bright yellow-green values and light gray labels.",
+      "gradient": "Silver metal",
+      "gradientNote": "Silver metal with yellow-green edge reflections, slow-moving light, and pointer-responsive reflections and shadows.",
+      "plain": "White & dark text",
+      "plainNote": "A white surface with dark values, as the readability baseline.",
+      "apply": "Apply appearance",
+      "selected": "Current appearance"
+    },
+    "palettePresets": {
+      "title": "Quick palettes",
+      "default": "Default",
+      "tenable": "Tenable",
+      "rapid7": "Rapid7",
+      "custom": "Custom",
+      "defaultDescription": "The current blue-gray and olive palette.",
+      "tenableDescription": "Website charcoal, white and yellow.",
+      "rapid7Description": "Website dark gray, orange and blue.",
+      "customDescription": "Your saved colors and shadows.",
+      "selected": "Selected",
+      "apply": "Apply",
+      "hint": "Switching presets preserves your saved custom palette. Editing a color or shadow switches to Custom; light and dark values are saved separately.",
+      "sourceNote": "Core brand colors are sourced from the official websites. UI ramps and metallic reflections are dashboard adaptations. Sources:"
+    },
+    "chartEncoding": {
+      "current": "Current period (sample)",
+      "previous": "Previous period (sample)",
+      "latest": "Blue-gray bars show history; the primary data color marks the final month.",
+      "balance": "Net remediation = remediated − incoming. Positive means backlog reduction; negative means backlog growth. Zero marks balance."
+    },
+    "fontSettings": {
+      "misans": "MiSans",
+      "oppo": "OPPO Sans 4.0",
+      "harmony": "HarmonyOS Sans",
+      "title": "Interface font",
+      "label": "Choose interface font",
+      "original": "Original Outfit",
+      "sampleTitle": "Vulnerability risk and remediation",
+      "sampleBody": "Compare headings, body text and numbers. Navigation, tables and charts update together.",
+      "idle": "Your choice applies across the site and is saved in this browser.",
+      "loading": "Loading font; a fallback is shown until ready…",
+      "ready": "Font applied and saved.",
+      "error": "The font could not load. Select it again or refresh the page.",
+      "notSaved": "Font applied, but this browser could not save your choice.",
+      "credits": "This website uses the following fonts. Rights belong to their respective owners. Licenses:"
+    },
+    "buttons": {
+      "title": "Button specification",
+      "body": "Page actions",
+      "brand": "Dark brand surface",
+      "states": "States and sizes",
+      "primary": "Primary action",
+      "neutral": "Neutral action",
+      "outline": "Outline action",
+      "ghost": "Ghost action",
+      "link": "Text link",
+      "danger": "Destructive action",
+      "dangerSolid": "Confirm deletion",
+      "loading": "Processing",
+      "disabled": "Unavailable",
+      "done": "Sample action completed",
+      "ready": "Ready",
+      "settings": "Open settings",
+      "vulnerabilities": "View vulnerabilities",
+      "save": "Save changes",
+      "compact": "Compact 32",
+      "standard": "Standard 40",
+      "touch": "Touch 44",
+      "bodyHelp": "Use equal heights in one row. Allow one accent primary action per action group.",
+      "brandHelp": "Transparent text, white outlines and accent fills distinguish navigation, secondary and primary actions.",
+      "preview": "Preview action",
+      "selected": "Selected",
+      "toggle": "Toggle selection",
+      "reset": "Reset sample",
+      "resetDone": "Sample reset",
+      "start": "Start processing",
+      "complete": "Complete processing"
+    }
+  }
+}

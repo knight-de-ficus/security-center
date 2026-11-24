@@ -1,0 +1,167 @@
+/* Each comparison uses the same markup, figures, size and spacing. */
+.sec-metric-surface {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  --color-sec-ink: var(--color-sec-metric-gradient-ink);
+  --color-sec-muted: var(--color-sec-metric-gradient-muted);
+  --color-sec-faint: var(--color-sec-metric-gradient-muted);
+  --color-sec-border: var(--color-sec-metric-gradient-border);
+  --color-sec-link: var(--color-sec-metric-light-link);
+  --color-sec-focus: var(--color-sec-metric-light-link);
+  --metric-value: var(--color-sec-metric-gradient-ink);
+  color: var(--color-sec-metric-gradient-ink);
+  background: linear-gradient(
+    178deg,
+    var(--color-sec-metric-gradient-start),
+    var(--color-sec-metric-metal-mid) 54%,
+    var(--color-sec-metric-gradient-end)
+  );
+  border: 1px solid var(--color-sec-metric-gradient-border);
+  box-shadow: var(--shadow-sec-metric-metal);
+}
+.sec-metric-surface > * {
+  position: relative;
+  z-index: 1;
+}
+.sec-metric-surface::before {
+  content: "";
+  position: absolute;
+  inset: -12% -8%;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 30% 58% at 3% 108%,
+      var(--color-sec-metric-metal-warm),
+      transparent 88%
+    ),
+    radial-gradient(
+      ellipse 42% 60% at 76% 116%,
+      var(--color-sec-metric-metal-steel),
+      transparent 90%
+    ),
+    radial-gradient(
+      ellipse 23% 70% at 100% 65%,
+      var(--color-sec-metric-metal-warm-edge),
+      transparent 82%
+    ),
+    linear-gradient(
+      110deg,
+      transparent 30%,
+      color-mix(in srgb, var(--color-sec-metric-metal-shine) 65%, transparent)
+        48%,
+      transparent 67%
+    );
+  animation: metric-metal-reflection 16s ease-in-out infinite alternate;
+}
+.sec-metric-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 35% 110% at var(--metric-pointer-x, 50%)
+      var(--metric-pointer-y, 15%),
+    color-mix(in srgb, var(--color-sec-metric-metal-shine) 42%, transparent),
+    transparent 80%
+  );
+}
+@keyframes metric-metal-reflection {
+  0% {
+    transform: translate3d(-3%, 1%, 0) scale(1.02);
+  }
+  50% {
+    transform: translate3d(1%, -2%, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(4%, 1%, 0) scale(1.02);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sec-metric-surface::before {
+    animation: none;
+    transform: none;
+  }
+  .sec-metric-surface::after {
+    display: none;
+  }
+}
+.sec-metric-surface .sec-band-metric dd {
+  color: var(--metric-value);
+}
+:root[data-metric-appearance="contrast"]
+  .sec-metric-surface:not([data-appearance]),
+.sec-metric-surface[data-appearance="contrast"] {
+  --color-sec-ink: var(--color-sec-metric-contrast-label);
+  --color-sec-muted: var(--color-sec-metric-contrast-label);
+  --color-sec-faint: var(--color-sec-metric-contrast-label);
+  --color-sec-border: var(--color-sec-metric-contrast-border);
+  --color-sec-link: var(--color-sec-metric-contrast-value);
+  --color-sec-focus: var(--color-sec-metric-contrast-value);
+  --metric-value: var(--color-sec-metric-contrast-value);
+  background: var(--color-sec-metric-contrast-surface);
+  color: var(--color-sec-metric-contrast-label);
+  border-color: transparent;
+  box-shadow: none;
+}
+:root[data-metric-appearance="plain"]
+  .sec-metric-surface:not([data-appearance]),
+.sec-metric-surface[data-appearance="plain"] {
+  --color-sec-ink: var(--color-sec-metric-plain-ink);
+  --color-sec-muted: var(--color-sec-metric-plain-muted);
+  --color-sec-faint: var(--color-sec-metric-plain-muted);
+  --color-sec-border: var(--color-sec-metric-plain-border);
+  --metric-value: var(--color-sec-metric-plain-ink);
+  background: var(--color-sec-metric-plain-surface);
+  color: var(--color-sec-metric-plain-ink);
+  border-color: transparent;
+  box-shadow: none;
+}
+:root[data-metric-appearance="contrast"]
+  .sec-metric-surface:not([data-appearance])::before,
+:root[data-metric-appearance="contrast"]
+  .sec-metric-surface:not([data-appearance])::after,
+:root[data-metric-appearance="plain"]
+  .sec-metric-surface:not([data-appearance])::before,
+:root[data-metric-appearance="plain"]
+  .sec-metric-surface:not([data-appearance])::after,
+.sec-metric-surface[data-appearance="contrast"]::before,
+.sec-metric-surface[data-appearance="contrast"]::after,
+.sec-metric-surface[data-appearance="plain"]::before,
+.sec-metric-surface[data-appearance="plain"]::after {
+  display: none;
+}
+.sec-metric-compact {
+  margin-block: 24px;
+}
+.sec-metric-comparisons {
+  display: grid;
+  gap: 28px;
+}
+.sec-metric-example {
+  min-width: 0;
+}
+.sec-metric-example-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-block-end: 12px;
+}
+.sec-metric-example-header h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.sec-metric-example-header p {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: var(--color-sec-muted);
+  margin-block-start: 4px;
+}
+.sec-metric-example .sec-band {
+  margin-block-end: 0;
+}
+.sec-metric-settings {
+  margin-block-end: 24px;
+}

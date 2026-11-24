@@ -1,0 +1,117 @@
+/* Original vendor files only. The browser requests a face when it is used. */
+@font-face {
+  font-family: "Workspace MiSans";
+  src: url("/fonts/misans/misans-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Workspace MiSans";
+  src: url("/fonts/misans/misans-medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Workspace MiSans";
+  src: url("/fonts/misans/misans-semibold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Workspace MiSans";
+  src: url("/fonts/misans/misans-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Workspace OPPO Sans 4";
+  src: url("/fonts/oppo-sans-4/oppo-sans-4.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Workspace HarmonyOS Sans";
+  src: url("/fonts/harmonyos-sans/harmonyos-sans-sc-regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Workspace HarmonyOS Sans";
+  src: url("/fonts/harmonyos-sans/harmonyos-sans-sc-medium.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Workspace HarmonyOS Sans";
+  src: url("/fonts/harmonyos-sans/harmonyos-sans-sc-bold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+html[data-workspace-font="misans"] .em-body {
+  --font-outfit: "Workspace MiSans", "Microsoft YaHei", system-ui, sans-serif;
+  font-family: var(--font-outfit);
+}
+html[data-workspace-font="oppo"] .em-body {
+  --font-outfit:
+    "Workspace OPPO Sans 4", "Microsoft YaHei", system-ui, sans-serif;
+  font-family: var(--font-outfit);
+}
+html[data-workspace-font="harmony"] .em-body {
+  --font-outfit:
+    "Workspace HarmonyOS Sans", "Microsoft YaHei", system-ui, sans-serif;
+  font-family: var(--font-outfit);
+}
+.em-font-settings {
+  margin-block-end: 24px;
+}
+.em-font-settings .sec-panel-header {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.em-font-preview-title {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+.em-font-preview-body {
+  margin-block-start: 12px;
+  color: var(--color-sec-muted);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.em-font-preview-numbers {
+  margin-block-start: 16px;
+  color: var(--color-sec-ink);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.em-font-status,
+.em-font-licenses {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: var(--color-sec-muted);
+}
+.em-font-status {
+  min-height: 1.25rem;
+  margin-block-start: 12px;
+}
+.em-font-licenses {
+  margin-block-start: 12px;
+}
+.em-font-licenses a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

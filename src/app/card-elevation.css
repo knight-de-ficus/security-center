@@ -1,0 +1,71 @@
+/* Resting cards stay grounded; hover moves only their shadow, never their layout. */
+:is(
+  .sec-panel,
+  .em-card,
+  .em-module,
+  .sec-analysis-band,
+  .sec-band,
+  .sec-register,
+  .em-table-frame,
+  .sec-analysis-pair
+) {
+  box-shadow: var(--shadow-sec-panel);
+  transition:
+    box-shadow 180ms ease-out,
+    filter 160ms ease-out;
+}
+:is(
+  .sec-panel,
+  .em-card,
+  .em-module,
+  .sec-analysis-band,
+  .sec-band,
+  .sec-register,
+  .em-table-frame,
+  .sec-analysis-pair
+)[data-card-hover="true"] {
+  box-shadow: var(--shadow-sec-panel-hover);
+  filter: drop-shadow(
+    var(--card-shadow-x, 0px) var(--card-shadow-y, 8px) 8px
+      var(--color-sec-shadow-directional)
+  );
+}
+.sec-metric-surface {
+  box-shadow: var(--shadow-sec-metric-metal), var(--shadow-sec-panel);
+}
+.sec-metric-surface[data-card-hover="true"] {
+  box-shadow: var(--shadow-sec-metric-metal), var(--shadow-sec-panel-hover);
+}
+:root[data-metric-appearance="contrast"]
+  .sec-metric-surface:not([data-appearance]),
+:root[data-metric-appearance="plain"]
+  .sec-metric-surface:not([data-appearance]),
+.sec-metric-surface[data-appearance="contrast"],
+.sec-metric-surface[data-appearance="plain"] {
+  box-shadow: var(--shadow-sec-panel);
+}
+:root[data-metric-appearance="contrast"]
+  .sec-metric-surface:not([data-appearance])[data-card-hover="true"],
+:root[data-metric-appearance="plain"]
+  .sec-metric-surface:not([data-appearance])[data-card-hover="true"],
+.sec-metric-surface[data-appearance="contrast"][data-card-hover="true"],
+.sec-metric-surface[data-appearance="plain"][data-card-hover="true"] {
+  box-shadow: var(--shadow-sec-panel-hover);
+}
+.sec-analysis-pair > .sec-panel {
+  box-shadow: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(
+    .sec-panel,
+    .em-card,
+    .em-module,
+    .sec-analysis-band,
+    .sec-band,
+    .sec-register,
+    .em-table-frame,
+    .sec-analysis-pair
+  ) {
+    transition: none;
+  }
+}

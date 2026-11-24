@@ -1,0 +1,77 @@
+/* TailAdmin's original shell dimensions and geometry. Colors remain editable. */
+.tailadmin-shell {
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+}
+.tailadmin-shell [data-slot="sidebar-inner"] {
+  background: var(--color-sec-surface);
+  color: var(--color-sec-ink);
+}
+.tailadmin-shell .menu-item-active,
+.tailadmin-shell .menu-dropdown-item-active {
+  background: var(--color-sec-accent-soft);
+  color: var(--color-sec-ink);
+}
+.tailadmin-shell .menu-item-icon-active {
+  color: var(--color-sec-ink);
+}
+.tailadmin-shell .menu-item-inactive:hover,
+.tailadmin-shell .menu-dropdown-item-inactive:hover {
+  background: var(--color-sec-subtle);
+  color: var(--color-sec-ink);
+}
+[data-tailadmin-header] .tailadmin-header-action {
+  width: 2.75rem;
+  height: 2.75rem;
+  min-height: 2.75rem;
+  border-radius: 0.625rem;
+}
+[data-tailadmin-header] .tailadmin-header-toggle {
+  width: 2.75rem;
+  height: 2.75rem;
+  min-height: 2.75rem;
+  border-radius: 0.5rem;
+}
+[data-tailadmin-header] .em-input-group {
+  min-height: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+}
+.tailadmin-user-trigger {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--color-sec-ink);
+}
+.tailadmin-user-trigger:focus-visible {
+  outline: 2px solid var(--color-sec-focus);
+  outline-offset: 2px;
+}
+.em-business-compositions {
+  margin-block-start: 2rem;
+  min-width: 0;
+}
+.em-save-status {
+  min-height: 1.125rem;
+  margin-block: 0.5rem 1rem;
+  color: var(--color-sec-muted);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+.sec-heatmap-cell {
+  height: 1.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0.125rem;
+}
+.tailadmin-header-menu {
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+.tailadmin-header-menu [data-slot="dropdown-menu-item"] {
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
+}
