@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import ComponentCard from "@/components/common/component-card";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import BarChartOne from "@/components/others/charts/bar/one";
@@ -9,7 +10,13 @@ export const metadata: Metadata = {
     "This is Next.js Bar Chart page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
 };
 
-export default function BarChartPage() {
+export default async function BarChartPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div>
       <PageBreadcrumb pageTitle="Bar Chart" />

@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import ComponentCard from "@/components/common/component-card";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import DefaultAlert from "@/components/others/ui-elements/alerts/default-alert";
@@ -14,7 +15,13 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export default function Alerts() {
+export default async function Alerts({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div>
       <PageBreadcrumb pageTitle="Alerts" />

@@ -1,3 +1,4 @@
+import withBasePath from "@/utils/with-base-path";
 import { Product } from "./types";
 
 export const recentOrdersData: Product[] = [
@@ -8,7 +9,7 @@ export const recentOrdersData: Product[] = [
     category: "laptop",
     price: "$2399.00",
     status: "delivered",
-    image: "/images/product/product-01.jpg",
+    image: withBasePath("/images/product/product-01.jpg"),
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ export const recentOrdersData: Product[] = [
     category: "watch",
     price: "$879.00",
     status: "pending",
-    image: "/images/product/product-02.jpg",
+    image: withBasePath("/images/product/product-02.jpg"),
   },
   {
     id: 3,
@@ -26,7 +27,7 @@ export const recentOrdersData: Product[] = [
     category: "smartphone",
     price: "$1869.00",
     status: "delivered",
-    image: "/images/product/product-03.jpg",
+    image: withBasePath("/images/product/product-03.jpg"),
   },
   {
     id: 4,
@@ -35,7 +36,7 @@ export const recentOrdersData: Product[] = [
     category: "electronics",
     price: "$1699.00",
     status: "canceled",
-    image: "/images/product/product-04.jpg",
+    image: withBasePath("/images/product/product-04.jpg"),
   },
   {
     id: 5,
@@ -44,6 +45,6 @@ export const recentOrdersData: Product[] = [
     category: "accessories",
     price: "$240.00",
     status: "delivered",
-    image: "/images/product/product-05.jpg",
+    image: withBasePath("/images/product/product-05.jpg"),
   },
 ];

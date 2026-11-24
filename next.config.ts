@@ -2,8 +2,15 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+const basePath = isGitHubPages ? "/security-center" : "";
 
 const nextConfig: NextConfig = {
+  ...(isGitHubPages
+    ? { output: "export", trailingSlash: true, distDir: ".next-pages" }
+    : {}),
+  basePath,
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
   /* config options here */
   webpack(config) {
     config.module.rules.push({
@@ -13,6 +20,7 @@ const nextConfig: NextConfig = {
     return config;
   },
   images: {
+    unoptimized: isGitHubPages,
     localPatterns: [
       {
         pathname: "/**",
@@ -29,6 +37,7 @@ const nextConfig: NextConfig = {
     },
   },
   redirects() {
+    if (isGitHubPages) return [];
     return [
       {
         source: "/buttons-group",

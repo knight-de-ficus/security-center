@@ -1,3 +1,4 @@
+import withBasePath from "@/utils/with-base-path";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
@@ -7,7 +8,7 @@ export default async function ThreeColumnImageGrid() {
     <div className="em-grid">
       <div data-columns={4} className="em-span-4">
         <Image
-          src="/images/grid-image/image-04.png"
+          src={withBasePath("/images/grid-image/image-04.png")}
           alt={t("image4")}
           className="em-media"
           width={338}
@@ -17,7 +18,7 @@ export default async function ThreeColumnImageGrid() {
 
       <div data-columns={4} className="em-span-4">
         <Image
-          src="/images/grid-image/image-05.png"
+          src={withBasePath("/images/grid-image/image-05.png")}
           alt={t("image5")}
           className="em-media"
           width={338}
@@ -27,7 +28,7 @@ export default async function ThreeColumnImageGrid() {
 
       <div data-columns={4} className="em-span-4">
         <Image
-          src="/images/grid-image/image-06.png"
+          src={withBasePath("/images/grid-image/image-06.png")}
           alt={t("image6")}
           className="em-media"
           width={338}

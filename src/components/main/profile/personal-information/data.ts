@@ -1,7 +1,8 @@
+import withBasePath from "@/utils/with-base-path";
 import { PersonalInfo } from "./types";
 
 export const defaultPersonalInfo: PersonalInfo = {
-  avatarUrl: "/images/user/user-01.jpg",
+  avatarUrl: withBasePath("/images/user/user-01.jpg"),
   fullName: "Musharof Chowdhury",
   role: "Team Manager",
   location: "Leeds, United Kingdom",

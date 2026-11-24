@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import SignIn from "@/components/others/auth/sign-in";
 import { Metadata } from "next";
 
@@ -6,6 +7,12 @@ export const metadata: Metadata = {
   description: "This is Next.js Signin Page TailAdmin Dashboard Template",
 };
 
-export default function SignInPage() {
+export default async function SignInPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return <SignIn />;
 }

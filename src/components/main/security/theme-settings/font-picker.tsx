@@ -1,4 +1,6 @@
 "use client";
+
+import withBasePath from "@/utils/with-base-path";
 import { useRef, useState, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import ComponentCard from "@/components/common/component-card";
@@ -67,12 +69,16 @@ export default function FontPicker() {
       </p>
       <p className="em-font-licenses">
         {t("credits")}{" "}
-        <a href="/fonts/misans/LICENSE.pdf" target="_blank" rel="noreferrer">
+        <a
+          href={withBasePath("/fonts/misans/LICENSE.pdf")}
+          target="_blank"
+          rel="noreferrer"
+        >
           MiSans
         </a>
         {" · "}
         <a
-          href="/fonts/oppo-sans-4/LICENSE.txt"
+          href={withBasePath("/fonts/oppo-sans-4/LICENSE.txt")}
           target="_blank"
           rel="noreferrer"
         >
@@ -80,7 +86,7 @@ export default function FontPicker() {
         </a>
         {" · "}
         <a
-          href="/fonts/harmonyos-sans/LICENSE.txt"
+          href={withBasePath("/fonts/harmonyos-sans/LICENSE.txt")}
           target="_blank"
           rel="noreferrer"
         >

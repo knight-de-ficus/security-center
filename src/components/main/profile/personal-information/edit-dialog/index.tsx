@@ -1,5 +1,7 @@
 "use client";
 
+import withBasePath from "@/utils/with-base-path";
+
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -36,7 +38,9 @@ export default function EditPersonalInfoDialog({
   const [avatarFileUrl, setAvatarFileUrl] = useState<string | null>(null);
 
   const previewAvatarUrl =
-    avatarFileUrl || initialData.avatarUrl || "/images/user/user-01.jpg";
+    avatarFileUrl ||
+    initialData.avatarUrl ||
+    withBasePath("/images/user/user-01.jpg");
 
   const {
     register,

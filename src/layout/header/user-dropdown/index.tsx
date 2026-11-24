@@ -1,5 +1,7 @@
 "use client";
 
+import withBasePath from "@/utils/with-base-path";
+
 import { Badge } from "@/components/ui/badge";
 import {
   DropdownMenu,
@@ -49,7 +51,7 @@ export default function UserDropdown() {
           <Image
             width={44}
             height={44}
-            src="/images/user/owner.png"
+            src={withBasePath("/images/user/owner.png")}
             alt="User"
           />
         </span>

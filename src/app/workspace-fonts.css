@@ -1,42 +1,42 @@
 /* Original vendor files only. The browser requests a face when it is used. */
 @font-face {
   font-family: "Workspace MiSans";
-  src: url("/fonts/misans/misans-regular.woff2") format("woff2");
+  src: url("../../public/fonts/misans/misans-regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Workspace MiSans";
-  src: url("/fonts/misans/misans-medium.woff2") format("woff2");
+  src: url("../../public/fonts/misans/misans-medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Workspace MiSans";
-  src: url("/fonts/misans/misans-semibold.woff2") format("woff2");
+  src: url("../../public/fonts/misans/misans-semibold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Workspace MiSans";
-  src: url("/fonts/misans/misans-bold.woff2") format("woff2");
+  src: url("../../public/fonts/misans/misans-bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Workspace OPPO Sans 4";
-  src: url("/fonts/oppo-sans-4/oppo-sans-4.ttf") format("truetype");
+  src: url("../../public/fonts/oppo-sans-4/oppo-sans-4.ttf") format("truetype");
   font-style: normal;
   font-weight: 100 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Workspace HarmonyOS Sans";
-  src: url("/fonts/harmonyos-sans/harmonyos-sans-sc-regular.ttf")
+  src: url("../../public/fonts/harmonyos-sans/harmonyos-sans-sc-regular.ttf")
     format("truetype");
   font-style: normal;
   font-weight: 400;
@@ -44,7 +44,7 @@
 }
 @font-face {
   font-family: "Workspace HarmonyOS Sans";
-  src: url("/fonts/harmonyos-sans/harmonyos-sans-sc-medium.ttf")
+  src: url("../../public/fonts/harmonyos-sans/harmonyos-sans-sc-medium.ttf")
     format("truetype");
   font-style: normal;
   font-weight: 500;
@@ -52,7 +52,7 @@
 }
 @font-face {
   font-family: "Workspace HarmonyOS Sans";
-  src: url("/fonts/harmonyos-sans/harmonyos-sans-sc-bold.ttf")
+  src: url("../../public/fonts/harmonyos-sans/harmonyos-sans-sc-bold.ttf")
     format("truetype");
   font-style: normal;
   font-weight: 700;

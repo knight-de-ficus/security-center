@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import ComponentCard from "@/components/common/component-card";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import GhostVariant from "@/components/others/ui-elements/badges/ghost-variant";
@@ -17,7 +18,13 @@ export const metadata: Metadata = {
     "This is Next.js Badge page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
 };
 
-export default function BadgePage() {
+export default async function BadgePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div>
       <PageBreadcrumb pageTitle="Badges" />

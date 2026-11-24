@@ -1,13 +1,17 @@
+import withBasePath from "@/utils/with-base-path";
 import Image from "next/image";
 
 export default function GridShape() {
   return (
     <>
-      <div aria-hidden="true" className="absolute top-0 end-1 -z-1 w-full max-w-62.5 xl:max-w-112.5">
+      <div
+        aria-hidden="true"
+        className="absolute end-1 top-0 -z-1 w-full max-w-62.5 xl:max-w-112.5"
+      >
         <Image
           width={540}
           height={254}
-          src="/images/shape/grid-01.svg"
+          src={withBasePath("/images/shape/grid-01.svg")}
           alt="grid"
         />
       </div>
@@ -15,7 +19,7 @@ export default function GridShape() {
         <Image
           width={540}
           height={254}
-          src="/images/shape/grid-01.svg"
+          src={withBasePath("/images/shape/grid-01.svg")}
           alt="grid"
         />
       </div>

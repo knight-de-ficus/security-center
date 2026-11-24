@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import CheckboxInputs from "@/components/main/forms/form-elements/checkbox-inputs";
 import DefaultInputs from "@/components/main/forms/form-elements/default-inputs";
@@ -17,7 +18,13 @@ export const metadata: Metadata = {
     "This is Next.js Form Elements page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
 };
 
-export default function FormElements() {
+export default async function FormElements({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div>
       <PageBreadcrumb pageTitle="Form Elements" />

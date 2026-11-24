@@ -1,3 +1,4 @@
+import withBasePath from "@/utils/with-base-path";
 export interface DemographicCountry {
   id: string;
   nameKey: "usa" | "france" | "yemen";
@@ -18,7 +19,7 @@ export const demographicData: DemographicCountry[] = [
     name: "USA",
     customerCount: "2,379",
     percentage: "70.38%",
-    flag: "/images/flag/usa.png",
+    flag: withBasePath("/images/flag/usa.png"),
     latLng: [37.2580397, -104.657039],
   },
   {
@@ -28,7 +29,7 @@ export const demographicData: DemographicCountry[] = [
     name: "France",
     customerCount: "589",
     percentage: "17.43%",
-    flag: "/images/flag/france.png",
+    flag: withBasePath("/images/flag/france.png"),
     latLng: [46.2276, 2.2137],
   },
   {
@@ -38,7 +39,7 @@ export const demographicData: DemographicCountry[] = [
     name: "Yemen",
     customerCount: "412",
     percentage: "12.19%",
-    flag: "/images/flag/yemen.png",
+    flag: withBasePath("/images/flag/yemen.png"),
     latLng: [15.5527, 48.5164],
   },
 ];

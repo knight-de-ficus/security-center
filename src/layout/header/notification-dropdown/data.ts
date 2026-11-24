@@ -1,10 +1,11 @@
+import withBasePath from "@/utils/with-base-path";
 import { NotificationItem } from "./types";
 
 export const notifications: NotificationItem[] = [
   {
     id: "1",
     name: "Terry Franci",
-    avatar: "/images/user/user-02.jpg",
+    avatar: withBasePath("/images/user/user-02.jpg"),
     actionKey: "requestsPermission",
     project: "Project - Nganter App",
     timeKey: "minAgo",
@@ -14,7 +15,7 @@ export const notifications: NotificationItem[] = [
   {
     id: "2",
     name: "Alena Franci",
-    avatar: "/images/user/user-03.jpg",
+    avatar: withBasePath("/images/user/user-03.jpg"),
     actionKey: "requestsPermission",
     project: "Project - Nganter App",
     timeKey: "minAgo",
@@ -24,7 +25,7 @@ export const notifications: NotificationItem[] = [
   {
     id: "3",
     name: "Jocelyn Kenter",
-    avatar: "/images/user/user-04.jpg",
+    avatar: withBasePath("/images/user/user-04.jpg"),
     actionKey: "requestsPermission",
     project: "Project - Nganter App",
     timeKey: "minAgo",
@@ -34,7 +35,7 @@ export const notifications: NotificationItem[] = [
   {
     id: "4",
     name: "Brandon Philips",
-    avatar: "/images/user/user-05.jpg",
+    avatar: withBasePath("/images/user/user-05.jpg"),
     actionKey: "requestsPermission",
     project: "Project - Nganter App",
     timeKey: "hrAgo",
@@ -44,7 +45,7 @@ export const notifications: NotificationItem[] = [
   {
     id: "5",
     name: "Terry Franci",
-    avatar: "/images/user/user-02.jpg",
+    avatar: withBasePath("/images/user/user-02.jpg"),
     actionKey: "requestsPermission",
     project: "Project - Nganter App",
     timeKey: "minAgo",
@@ -54,7 +55,7 @@ export const notifications: NotificationItem[] = [
   {
     id: "6",
     name: "Alena Franci",
-    avatar: "/images/user/user-03.jpg",
+    avatar: withBasePath("/images/user/user-03.jpg"),
     actionKey: "requestsPermission",
     project: "Project - Nganter App",
     timeKey: "minAgo",
@@ -64,7 +65,7 @@ export const notifications: NotificationItem[] = [
   {
     id: "7",
     name: "Jocelyn Kenter",
-    avatar: "/images/user/user-04.jpg",
+    avatar: withBasePath("/images/user/user-04.jpg"),
     actionKey: "requestsPermission",
     project: "Project - Nganter App",
     timeKey: "minAgo",
@@ -74,7 +75,7 @@ export const notifications: NotificationItem[] = [
   {
     id: "8",
     name: "Brandon Philips",
-    avatar: "/images/user/user-05.jpg",
+    avatar: withBasePath("/images/user/user-05.jpg"),
     actionKey: "requestsPermission",
     project: "Project - Nganter App",
     timeKey: "hrAgo",

@@ -1,5 +1,7 @@
 "use client";
 
+import withBasePath from "@/utils/with-base-path";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -49,7 +51,9 @@ export default function PersonalInformationSection({
         <div className="mt-2 flex items-center gap-4 sm:gap-6">
           <Avatar className="size-16 shrink-0 sm:size-20">
             <AvatarImage
-              src={profileData.avatarUrl || "/images/user/owner.png"}
+              src={
+                profileData.avatarUrl || withBasePath("/images/user/owner.png")
+              }
               alt={profileData.fullName || "User profile"}
             />
             <AvatarFallback className="em-profile-avatar">

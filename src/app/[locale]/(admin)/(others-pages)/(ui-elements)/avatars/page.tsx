@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import ComponentCard from "@/components/common/component-card";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import AvatarGroupPreview from "@/components/others/ui-elements/avatars/avatar-group";
@@ -13,7 +14,13 @@ export const metadata: Metadata = {
     "This is Next.js Avatars page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
 };
 
-export default function AvatarPage() {
+export default async function AvatarPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div>
       <PageBreadcrumb pageTitle="Avatar" />

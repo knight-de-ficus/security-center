@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import SignUpForm from "@/components/others/auth/sign-up";
 import { Metadata } from "next";
 
@@ -7,6 +8,12 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export default function SignUp() {
+export default async function SignUp({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return <SignUpForm />;
 }

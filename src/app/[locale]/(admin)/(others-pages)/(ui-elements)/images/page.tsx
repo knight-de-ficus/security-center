@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import ComponentCard from "@/components/common/component-card";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import ResponsiveImage from "@/components/others/ui-elements/images/responsive";
@@ -12,7 +13,13 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export default function Images() {
+export default async function Images({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div>
       <PageBreadcrumb pageTitle="Images" />

@@ -17,6 +17,7 @@ docs
 
 # next.js
 /.next/
+/.next-pages/
 /out/
 
 # production

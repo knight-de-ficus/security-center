@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import Calendar from "@/components/main/calendar";
 import "@fullcalendar/react/skeleton.css";
@@ -13,7 +14,13 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export default function page() {
+export default async function page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div>
       <PageBreadcrumb pageTitle="Calendar" />

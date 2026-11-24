@@ -1,4 +1,5 @@
-import Vulnerabilities from "@/components/main/security/vulnerabilities";
+import VulnerabilityQueryView from "@/components/main/security/vulnerabilities/query-view";
+import { Suspense } from "react";
 import { setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
@@ -7,18 +8,14 @@ export const metadata: Metadata = {
 };
 export default async function Page({
   params,
-  searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ severity?: string; ticket?: string }>;
 }) {
   const { locale } = await params;
-  const query = await searchParams;
   setRequestLocale(locale);
   return (
-    <Vulnerabilities
-      initialSeverity={query.severity}
-      initialTicket={query.ticket}
-    />
+    <Suspense fallback={null}>
+      <VulnerabilityQueryView />
+    </Suspense>
   );
 }

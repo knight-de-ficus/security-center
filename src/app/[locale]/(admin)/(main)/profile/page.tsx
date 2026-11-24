@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import PageBreadcrumb from "@/components/common/page-breadcrumb";
 import AddressSection from "@/components/main/profile/address";
 import DangerZone from "@/components/main/profile/danger";
@@ -11,7 +12,13 @@ export const metadata: Metadata = {
     "Manage your personal information, security settings, and preference on the TailAdmin Profile page.",
 };
 
-export default function Profile() {
+export default async function Profile({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div>
       <PageBreadcrumb pageTitle="Profile" />
