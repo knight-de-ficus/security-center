@@ -50,7 +50,7 @@ export default function NotificationDropdown() {
                 !notifying ? "hidden" : "flex",
               )}
             ></span>
-            <BellIcon className="size-auto!" />
+            <BellIcon className="size-6" />
           </Button>
         }
       />

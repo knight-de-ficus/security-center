@@ -33,6 +33,19 @@
   min-height: 2.75rem;
   border-radius: var(--radius-sec-control);
 }
+[data-tailadmin-header] .tailadmin-header-toggle > svg,
+[data-tailadmin-header] .tailadmin-header-action > svg,
+[data-tailadmin-header] .em-header-mobile-menu > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+[data-tailadmin-header] .em-input-addon > svg,
+[data-tailadmin-header] .tailadmin-user-trigger > svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
 [data-tailadmin-header] .em-input-group {
   min-height: 2.75rem;
   height: 2.75rem;

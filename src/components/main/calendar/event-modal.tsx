@@ -1,5 +1,7 @@
 "use client";
 
+import { calendarNextArrow, calendarPreviousArrow } from "@/icons";
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -128,11 +130,6 @@ export default function CalendarEventModal({
       return;
     }
 
-    const prevArrowSvg =
-      '<svg class="stroke-current rtl:rotate-180" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 15L7.5 10L12.5 5" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-    const nextArrowSvg =
-      '<svg class="stroke-current rtl:rotate-180" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 15L12.5 10L7.5 5" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-
     const timer = setTimeout(() => {
       if (startDateInputRef.current && !startPickerRef.current) {
         const fp = flatpickr(startDateInputRef.current, {
@@ -141,8 +138,8 @@ export default function CalendarEventModal({
           monthSelectorType: "static",
           static: true,
           clickOpens: true,
-          prevArrow: prevArrowSvg,
-          nextArrow: nextArrowSvg,
+          prevArrow: calendarPreviousArrow,
+          nextArrow: calendarNextArrow,
           onChange: (_dates, dateStr) => {
             setEventStartDate(dateStr);
             endPickerRef.current?.set("minDate", dateStr);
@@ -162,8 +159,8 @@ export default function CalendarEventModal({
           monthSelectorType: "static",
           static: true,
           clickOpens: true,
-          prevArrow: prevArrowSvg,
-          nextArrow: nextArrowSvg,
+          prevArrow: calendarPreviousArrow,
+          nextArrow: calendarNextArrow,
           onChange: (_dates, dateStr) => {
             setEventEndDate(dateStr);
           },

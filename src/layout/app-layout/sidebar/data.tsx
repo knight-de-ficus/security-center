@@ -1,11 +1,13 @@
 import {
+  AnalyticsIcon,
   BoxIcon,
-  LayoutGridIcon,
+  DataTableIcon,
   ListIcon,
+  MeterIcon,
   PageIcon,
   PieChartIcon,
-  PluginIcon,
-  TableIcon,
+  TaskBlankIcon,
+  ToolKitIcon,
   UserCircleIcon,
 } from "@/icons";
 import type { MenuType, NavItem } from "./types";
@@ -19,12 +21,12 @@ export const menuSections: {
     labelKey: "groups.business",
     items: [
       {
-        icon: <LayoutGridIcon className="size-6" />,
+        icon: <MeterIcon className="size-6" />,
         key: "securityOverview",
         path: "/",
       },
       {
-        icon: <PieChartIcon className="size-6" />,
+        icon: <AnalyticsIcon className="size-6" />,
         key: "securityTrends",
         path: "/trends",
       },
@@ -51,7 +53,7 @@ export const menuSections: {
         ],
       },
       {
-        icon: <ListIcon className="size-6" />,
+        icon: <TaskBlankIcon className="size-6" />,
         key: "forms",
         subItems: [
           { key: "formElements", path: "/form-elements" },
@@ -59,7 +61,7 @@ export const menuSections: {
         ],
       },
       {
-        icon: <TableIcon className="size-6" />,
+        icon: <DataTableIcon className="size-6" />,
         key: "basicTables",
         path: "/basic-tables",
       },
@@ -92,7 +94,7 @@ export const menuSections: {
     labelKey: "groups.settings",
     items: [
       {
-        icon: <PluginIcon className="size-6" />,
+        icon: <ToolKitIcon className="size-6" />,
         key: "themeSettings",
         path: "/theme-settings",
       },

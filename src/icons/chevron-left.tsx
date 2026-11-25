@@ -1,20 +1,18 @@
-import { IconProps } from ".";
+"use client";
+
+import { ChevronLeft } from "@carbon/icons-react";
+import type { IconProps } from ".";
+import CarbonIcon from "./carbon-icon";
 
 export function ChevronLeftIcon(props: IconProps) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
+    <CarbonIcon
+      icon={ChevronLeft}
+      size={24}
       width={24}
       height={24}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      data-carbon-icon="chevron--left"
       {...props}
-    >
-      <path d="M15 18l-6-6 6-6" />
-    </svg>
+    />
   );
 }

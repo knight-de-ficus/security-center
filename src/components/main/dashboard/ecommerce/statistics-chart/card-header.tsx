@@ -1,5 +1,7 @@
 "use client";
 
+import { calendarNextArrow, calendarPreviousArrow } from "@/icons";
+
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import { CalendarIcon } from "@/icons";
@@ -41,10 +43,8 @@ export default function CardHeader({
       maxDate: endDate,
       defaultDate: [startDate, endDate],
       clickOpens: true,
-      prevArrow:
-        '<svg class="stroke-current" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 15L7.5 10L12.5 5" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-      nextArrow:
-        '<svg class="stroke-current" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 15L12.5 10L7.5 5" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      prevArrow: calendarPreviousArrow,
+      nextArrow: calendarNextArrow,
       onChange: (selectedDates) => {
         if (selectedDates.length === 2) {
           onDateRangeChange([selectedDates[0], selectedDates[1]]);

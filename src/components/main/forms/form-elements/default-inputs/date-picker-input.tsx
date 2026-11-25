@@ -1,5 +1,7 @@
 "use client";
 
+import { calendarNextArrow, calendarPreviousArrow } from "@/icons";
+
 import { Field, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { CalendarIcon } from "@/icons";
@@ -14,6 +16,8 @@ export default function DatePickerInput() {
 
     if (dateInputRef.current) {
       dateFp = flatpickr(dateInputRef.current, {
+        prevArrow: calendarPreviousArrow,
+        nextArrow: calendarNextArrow,
         mode: "single",
         dateFormat: "m/d/Y",
       });

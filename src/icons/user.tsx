@@ -1,22 +1,18 @@
-import { IconProps } from ".";
+"use client";
+
+import { User } from "@carbon/icons-react";
+import type { IconProps } from ".";
+import CarbonIcon from "./carbon-icon";
 
 export function UserIcon(props: IconProps) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
+    <CarbonIcon
+      icon={User}
+      size={20}
       width={20}
       height={20}
-      viewBox="0 0 20 20"
-      fill="none"
+      data-carbon-icon="user"
       {...props}
-    >
-      <path
-        d="M16.25 16.199s.105-5.417-6.25-5.417S3.75 16.2 3.75 16.2m9.302-10.912a2.995 2.995 0 11-5.991 0 2.995 2.995 0 015.99 0z"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+    />
   );
 }

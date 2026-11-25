@@ -1,20 +1,18 @@
-import { IconProps } from ".";
+"use client";
+
+import { ViewOff } from "@carbon/icons-react";
+import type { IconProps } from ".";
+import CarbonIcon from "./carbon-icon";
 
 export function EyeCloseIcon(props: IconProps) {
   return (
-    <svg
+    <CarbonIcon
+      icon={ViewOff}
+      size={20}
       width={20}
       height={20}
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
+      data-carbon-icon="view--off"
       {...props}
-    >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M4.638 3.577a.75.75 0 00-1.06 1.06l1.275 1.277a8.03 8.03 0 00-2.437 3.545.75.75 0 000 .487 8.019 8.019 0 0011.083 4.614l1.864 1.863a.75.75 0 101.06-1.06L4.638 3.576zm7.723 9.844l-1.914-1.913c-.14.034-.289.053-.44.053h-.015a1.858 1.858 0 01-1.803-2.312l-2.27-2.27a6.532 6.532 0 00-1.996 2.723 6.518 6.518 0 008.438 3.72zm3.716-3.719a6.516 6.516 0 01-1.257 2.03l1.061 1.06a8.012 8.012 0 001.704-2.846.75.75 0 000-.487A8.019 8.019 0 007.522 4.433l1.23 1.23a6.519 6.519 0 017.326 4.04z"
-      />
-    </svg>
+    />
   );
 }

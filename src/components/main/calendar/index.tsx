@@ -232,14 +232,14 @@ export default function Calendar() {
           buttons={{
             prev: {
               iconContent: () => (
-                <ChevronLeftIcon className="size-5 bg-transparent text-foreground sm:size-6 rtl:rotate-180 dark:text-gray-400" />
+                <ChevronLeftIcon className="size-5 text-current sm:size-6 rtl:rotate-180" />
               ),
               className:
                 "em-button em-button-outline em-control-default em-button-icon",
             },
             next: {
               iconContent: () => (
-                <ChevronRightIcon className="size-5 bg-transparent text-foreground sm:size-6 rtl:rotate-180 dark:text-gray-400" />
+                <ChevronRightIcon className="size-5 text-current sm:size-6 rtl:rotate-180" />
               ),
               className:
                 "em-button em-button-outline em-control-default em-button-icon",

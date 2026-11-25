@@ -1,22 +1,18 @@
-import { IconProps } from ".";
+"use client";
+
+import { OverflowMenuVertical } from "@carbon/icons-react";
+import type { IconProps } from ".";
+import CarbonIcon from "./carbon-icon";
 
 export function VerticalDotsIcon(props: IconProps) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
+    <CarbonIcon
+      icon={OverflowMenuVertical}
+      size={24}
       width={24}
       height={24}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      data-carbon-icon="overflow-menu--vertical"
       {...props}
-    >
-      <circle cx={12} cy={12} r={1} />
-      <circle cx={12} cy={5} r={1} />
-      <circle cx={12} cy={19} r={1} />
-    </svg>
+    />
   );
 }

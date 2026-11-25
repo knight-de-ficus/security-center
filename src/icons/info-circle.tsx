@@ -1,29 +1,18 @@
-import { IconProps } from ".";
+"use client";
+
+import { Information } from "@carbon/icons-react";
+import type { IconProps } from ".";
+import CarbonIcon from "./carbon-icon";
 
 export function InfoCircleIcon(props: IconProps) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
+    <CarbonIcon
+      icon={Information}
+      size={24}
       width={24}
       height={24}
-      viewBox="0 0 24 24"
-      fill="none"
+      data-carbon-icon="information"
       {...props}
-    >
-      <path
-        d="M12 8.67h0"
-        stroke="currentColor"
-        strokeWidth={1.8}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M12 11.215v4.224M21.25 12a9.25 9.25 0 11-18.5 0 9.25 9.25 0 0118.5 0z"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+    />
   );
 }

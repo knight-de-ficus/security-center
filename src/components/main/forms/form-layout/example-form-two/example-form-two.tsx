@@ -1,5 +1,7 @@
 "use client";
 
+import { calendarNextArrow, calendarPreviousArrow } from "@/icons";
+
 import { Button } from "@/components/ui/button";
 import { Field, FieldError, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
@@ -73,6 +75,8 @@ export default function ExampleFormTwoContent() {
     let fp: flatpickr.Instance | undefined;
     if (datePickerRef.current) {
       fp = flatpickr(datePickerRef.current, {
+        prevArrow: calendarPreviousArrow,
+        nextArrow: calendarNextArrow,
         dateFormat: "d/m/Y",
         onChange: (_, dateStr) => {
           setValue("dateOfBirth", dateStr, { shouldValidate: true });
