@@ -2,6 +2,7 @@
 import { useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
+import PresetLogo from "./preset-logo";
 import {
   customPresetValues,
   readThemePreset,
@@ -10,7 +11,6 @@ import {
 } from "@/utils/editorial-theme";
 import {
   defaultPresetSwatches,
-  themePresetSources,
   websiteThemePresets,
   type ThemeMode,
   type ThemePresetId,
@@ -61,11 +61,12 @@ export default function PresetPicker({
             size="palette"
             data-columns={3}
             aria-pressed={active === preset}
+            aria-label={t(preset)}
             disabled={!ready}
             onClick={() => onChange(preset)}
           >
             <span className="em-preset-heading">
-              <strong>{t(preset)}</strong>
+              <PresetLogo preset={preset} label={t(preset)} />
               <span>{active === preset ? t("selected") : t("apply")}</span>
             </span>
             <span className="em-preset-swatches" aria-hidden="true">
@@ -73,23 +74,9 @@ export default function PresetPicker({
                 <span key={i} style={{ backgroundColor: color }} />
               ))}
             </span>
-            <span className="em-preset-description">
-              {t(`${preset}Description`)}
-            </span>
           </Button>
         ))}
       </div>
-      <p className="em-preset-note">{t("hint")}</p>
-      <p className="em-preset-note">
-        {t("sourceNote")}{" "}
-        <a href={themePresetSources.tenable} target="_blank" rel="noreferrer">
-          Tenable
-        </a>{" "}
-        ·{" "}
-        <a href={themePresetSources.rapid7} target="_blank" rel="noreferrer">
-          Rapid7
-        </a>
-      </p>
     </section>
   );
 }

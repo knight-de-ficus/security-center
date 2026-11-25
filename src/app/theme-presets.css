@@ -37,8 +37,9 @@
 .em-preset-heading {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
+  min-height: 40px;
 }
 .em-preset-heading strong {
   font-size: 0.875rem;
@@ -47,6 +48,16 @@
 .em-preset-heading > span {
   font-size: 0.75rem;
   color: var(--color-sec-muted);
+}
+.em-preset-heading > span:last-child {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.em-preset-logo {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 40px;
 }
 .em-preset-swatches {
   display: flex;
@@ -71,6 +82,11 @@
 @media (width<1000px) {
   .em-palette-size {
     grid-column: span 6;
+  }
+}
+@media (width<640px) {
+  .em-palette-size {
+    grid-column: span 12;
   }
 }
 
