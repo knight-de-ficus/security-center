@@ -164,7 +164,7 @@
   display: inline-block;
   height: 6px;
   width: 6px;
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
   background: var(--color-sec-positive);
   margin-inline-end: 7px;
   vertical-align: middle;
@@ -666,7 +666,7 @@
   display: inline-block;
   width: 6px;
   height: 6px;
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
   background: var(--color-sec-data-primary);
 }
 .sec-legend-dot.secondary {
@@ -728,13 +728,13 @@
 .sec-bar-track {
   height: 5px;
   background: var(--color-sec-subtle);
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
   overflow: hidden;
 }
 .sec-bar-fill {
   height: 100%;
   display: block;
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
 }
 .sec-fill-critical {
   background: var(--color-sec-critical);
@@ -772,7 +772,7 @@
 .sec-badge-dot {
   height: 5px;
   width: 5px;
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
   background: currentColor;
   flex-shrink: 0;
 }
@@ -904,7 +904,7 @@
   display: inline-block;
   height: 5px;
   width: 5px;
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
   background: var(--color-sec-positive);
   margin-inline-end: 6px;
 }
@@ -1159,13 +1159,13 @@
   flex: 1;
   background: var(--color-sec-subtle);
   height: 7px;
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
 }
 .sec-weekly-bars > div > div > span {
   display: block;
   height: 100%;
   background: var(--color-sec-data-primary);
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
 }
 .sec-weekly-bars strong {
   font-size: 0.75rem;
@@ -1194,7 +1194,7 @@
 .sec-category-dot {
   width: 6px;
   height: 6px;
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
   background: var(--color-sec-data-primary);
   flex-shrink: 0;
 }
@@ -1265,7 +1265,7 @@
 }
 .sec-heatmap-row > div > span {
   height: 20px;
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
 }
 .heat-0 {
   background: var(--color-sec-heat-0);
@@ -1297,7 +1297,7 @@
 .sec-heatmap-key i {
   height: 10px;
   width: 10px;
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
 }
 .sec-heatmap-key p {
   margin-inline-start: auto;

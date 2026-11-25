@@ -1,4 +1,5 @@
 "use client";
+import { saveEditorialTheme } from "@/utils/editorial-theme";
 import SnapshotExample from "./snapshot-example";
 import { useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
@@ -64,7 +65,10 @@ export default function MetricStyles() {
               <Button
                 variant={appearance === mode ? "security" : "security-outline"}
                 aria-pressed={appearance === mode}
-                onClick={() => setMetricAppearance(mode)}
+                onClick={() => {
+                  setMetricAppearance(mode);
+                  saveEditorialTheme();
+                }}
               >
                 {t(
                   appearance === mode

@@ -105,7 +105,7 @@ export default function SecurityChart({
     plotOptions: {
       bar: {
         horizontal,
-        borderRadius: 2,
+        borderRadius: Number.parseFloat(palette["radius-small"]) || 0,
         columnWidth: "38%",
         barHeight: "32%",
         colors: {

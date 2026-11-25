@@ -47,7 +47,7 @@ export default function UserDropdown() {
   return (
     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
       <DropdownMenuTrigger className="tailadmin-user-trigger flex items-center text-foreground dark:text-foreground">
-        <span className="me-3 size-11 overflow-hidden rounded-full">
+        <span className="em-user-avatar me-3 size-11 overflow-hidden">
           <Image
             width={44}
             height={44}

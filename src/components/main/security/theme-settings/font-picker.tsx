@@ -1,4 +1,5 @@
 "use client";
+import { saveEditorialTheme } from "@/utils/editorial-theme";
 
 import withBasePath from "@/utils/with-base-path";
 import { useRef, useState, useSyncExternalStore } from "react";
@@ -29,7 +30,8 @@ export default function FontPicker() {
   async function choose(value: string) {
     if (!isWorkspaceFont(value)) return;
     const revision = ++request.current;
-    const saved = setWorkspaceFont(value);
+    const fontSaved = setWorkspaceFont(value);
+    const saved = saveEditorialTheme() && fontSaved;
     const face = workspaceFontFaces[value];
     setStatus("loading");
     try {

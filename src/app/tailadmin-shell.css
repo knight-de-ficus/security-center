@@ -1,8 +1,8 @@
 /* TailAdmin's original shell dimensions and geometry. Colors remain editable. */
 .tailadmin-shell {
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
-  --radius-2xl: 1rem;
+  --radius-lg: var(--radius-sec-control);
+  --radius-xl: var(--radius-sec-card);
+  --radius-2xl: var(--radius-sec-card);
 }
 .tailadmin-shell [data-slot="sidebar-inner"] {
   background: var(--color-sec-surface);
@@ -25,18 +25,18 @@
   width: 2.75rem;
   height: 2.75rem;
   min-height: 2.75rem;
-  border-radius: 0.625rem;
+  border-radius: var(--radius-sec-control);
 }
 [data-tailadmin-header] .tailadmin-header-toggle {
   width: 2.75rem;
   height: 2.75rem;
   min-height: 2.75rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-sec-control);
 }
 [data-tailadmin-header] .em-input-group {
   min-height: 2.75rem;
   height: 2.75rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-sec-control);
 }
 .tailadmin-user-trigger {
   display: inline-flex;
@@ -65,13 +65,13 @@
   height: 1.25rem;
   padding: 0;
   border: 0;
-  border-radius: 0.125rem;
+  border-radius: var(--radius-sec-small);
 }
 .tailadmin-header-menu {
   padding: 0.75rem;
-  border-radius: 1rem;
+  border-radius: var(--radius-sec-dialog);
 }
 .tailadmin-header-menu [data-slot="dropdown-menu-item"] {
-  border-radius: 0.5rem;
+  border-radius: var(--radius-sec-control);
   padding: 0.625rem 0.75rem;
 }

@@ -1,5 +1,20 @@
-import { metricAppearanceBootstrap } from "./metric-appearance";
-import { workspaceFontBootstrap } from "./workspace-font";
+import {
+  defaultRadii,
+  radiusGroups,
+  themeAppearances,
+  validatedAppearance,
+  type ThemeAppearance,
+} from "./theme-appearance";
+import {
+  readMetricAppearance,
+  setMetricAppearance,
+  metricAppearanceBootstrap,
+} from "./metric-appearance";
+import {
+  readWorkspaceFont,
+  setWorkspaceFont,
+  workspaceFontBootstrap,
+} from "./workspace-font";
 import {
   websiteThemePresets,
   type ThemePresetId,
@@ -20,6 +35,7 @@ interface PresetState {
   active: ThemePresetId;
   custom: ThemePalette;
   customReady: boolean;
+  appearance?: ThemeAppearance;
 }
 let memoryState: PresetState | undefined;
 const previousDefaults = {
@@ -79,6 +95,8 @@ function readState(): PresetState {
           dark: validatedOverrides(data?.custom?.dark),
         },
         customReady: !!data?.customReady,
+        appearance:
+          validatedAppearance(data?.appearance) ?? captureAppearance(),
       };
     }
     // Migrate previous saved custom palettes without deleting their old storage.
@@ -102,7 +120,12 @@ function readState(): PresetState {
     const custom = { light: migrate("light"), dark: migrate("dark") };
     const customReady =
       Object.keys(custom.light).length + Object.keys(custom.dark).length > 0;
-    return { active: customReady ? "custom" : "default", custom, customReady };
+    return {
+      active: customReady ? "custom" : "default",
+      custom,
+      customReady,
+      appearance: captureAppearance(),
+    };
   } catch {
     return emptyState();
   }
@@ -157,6 +180,14 @@ export function restoreEditorialTheme(mode: ThemeMode) {
     valuesFor(state.active, mode, state),
   ))
     root.style.setProperty(name, value);
+  const appearance =
+    state.active === "custom"
+      ? (state.appearance ?? captureAppearance())
+      : themeAppearances[state.active];
+  setWorkspaceFont(appearance.font);
+  setMetricAppearance(appearance.metric);
+  for (const group of radiusGroups)
+    root.style.setProperty(`--radius-sec-${group}`, appearance.radii[group]);
   root.dataset.themePreset = state.active;
 }
 export function selectThemePreset(preset: ThemePresetId) {
@@ -167,6 +198,7 @@ export function selectThemePreset(preset: ThemePresetId) {
       light: { ...valuesFor(state.active, "light", state) },
       dark: { ...valuesFor(state.active, "dark", state) },
     };
+    state.appearance = captureAppearance();
     state.customReady = true;
   }
   state.active = preset;
@@ -174,6 +206,20 @@ export function selectThemePreset(preset: ThemePresetId) {
   restoreEditorialTheme(modeNow());
   notifyPresetChange();
   return saved;
+}
+function captureAppearance(): ThemeAppearance {
+  const style = getComputedStyle(document.documentElement);
+  return {
+    font: readWorkspaceFont(),
+    metric: readMetricAppearance(),
+    radii: Object.fromEntries(
+      radiusGroups.map((group) => [
+        group,
+        style.getPropertyValue(`--radius-sec-${group}`).trim() ||
+          defaultRadii[group],
+      ]),
+    ) as ThemeAppearance["radii"],
+  };
 }
 export function saveEditorialTheme() {
   const state = readState(),
@@ -188,6 +234,7 @@ export function saveEditorialTheme() {
       .filter(isThemeName)
       .map((name) => [name, style.getPropertyValue(name)]),
   );
+  state.appearance = captureAppearance();
   state.customReady = true;
   state.active = "custom";
   const saved = persistState(state);
@@ -293,4 +340,36 @@ function bootstrapTheme(config: {
 export const editorialThemeBootstrap =
   `(${bootstrapTheme.toString()})(${JSON.stringify({ key: themePresetStorageKey, legacy: legacyKeys, ids: presetIds, presets: websiteThemePresets, oldDefaults: previousDefaults })});` +
   metricAppearanceBootstrap +
-  workspaceFontBootstrap;
+  workspaceFontBootstrap +
+  `(${bootstrapAppearance.toString()})(${JSON.stringify({ key: themePresetStorageKey, appearances: themeAppearances, defaults: defaultRadii })});`;
+
+function bootstrapAppearance(config: {
+  key: string;
+  appearances: typeof themeAppearances;
+  defaults: typeof defaultRadii;
+}) {
+  try {
+    const state = JSON.parse(localStorage.getItem(config.key) || "{}");
+    const active = document.documentElement.dataset.themePreset || "default";
+    const appearance =
+      active === "custom"
+        ? state.appearance
+        : config.appearances[active as keyof typeof config.appearances];
+    if (!appearance) return;
+    const root = document.documentElement;
+    if (["misans", "oppo", "harmony", "original"].includes(appearance.font))
+      root.dataset.workspaceFont = appearance.font;
+    if (["contrast", "gradient", "plain"].includes(appearance.metric))
+      root.dataset.metricAppearance = appearance.metric;
+    for (const group of Object.keys(
+      config.defaults,
+    ) as (keyof typeof config.defaults)[]) {
+      const value = appearance.radii?.[group];
+      if (
+        typeof value === "string" &&
+        /^(?:\d+(?:\.\d+)?)(?:px|%)$/.test(value)
+      )
+        root.style.setProperty(`--radius-sec-${group}`, value);
+    }
+  } catch {}
+}

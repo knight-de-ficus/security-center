@@ -134,7 +134,7 @@
       "securityOverview": "安全总览",
       "securityTrends": "趋势分析",
       "securityVulnerabilities": "漏洞管理",
-      "themeSettings": "配色设置",
+      "themeSettings": "主题设置",
       "securityComponents": "活动热力图",
       "dashboardSamples": "仪表盘样例",
       "chartSamples": "图表与热力图",
@@ -1091,7 +1091,7 @@
       "title": "主题与组件工作台",
       "reset": "恢复默认",
       "export": "导出主题",
-      "notice": "修改后自动保存在当前浏览器，关闭页面或重启后继续保留；浅色与深色分别保存。可导出 CSS。",
+      "notice": "主题调整即时应用并自动保存到当前浏览器。",
       "row": "同一行的默认控件",
       "input": "输入示例",
       "placeholder": "输入内容",
@@ -1186,7 +1186,7 @@
         "error-404": "错误页面",
         "form-layout": "完整表单布局",
         "security-components": "热力图与业务组件",
-        "theme-settings": "配色设置",
+        "theme-settings": "主题设置",
         "metric-styles": "统计样式对比"
       },
       "alerts": {
@@ -1242,7 +1242,7 @@
         "image5": "白色室内空间中的斜向楼梯结构",
         "image6": "蓝天下白色建筑的几何转角"
       },
-      "settingsTitle": "配色设置",
+      "settingsTitle": "主题设置",
       "businessTitle": "活动热力图",
       "businessNotice": "复用三个业务页面的实际组件；示例数据与业务页面保持一致。",
       "businessPreview": "业务页面组合",
@@ -1263,18 +1263,18 @@
       "selected": "当前样式"
     },
     "palettePresets": {
-      "title": "快速配色",
+      "title": "主题预设",
       "default": "默认",
       "tenable": "Tenable",
       "rapid7": "Rapid7",
       "custom": "自定义",
-      "defaultDescription": "当前的深蓝灰与橄榄绿。",
-      "tenableDescription": "官网炭灰、白色与荧光黄。",
-      "rapid7Description": "官网深灰、橙色与蓝色。",
-      "customDescription": "保存你对颜色与阴影的调整。",
+      "defaultDescription": "保留原有默认配色，统计样式使用“白底黑字”。",
+      "tenableDescription": "Tenable 配色、直角、深色高亮统计与 HarmonyOS Sans。",
+      "rapid7Description": "Rapid7 配色、MiSans 与金属浅灰统计样式。",
+      "customDescription": "保存配色、字体、统计样式与圆角的全部调整。",
       "selected": "已选",
       "apply": "切换",
-      "hint": "切换方案会保留已保存的自定义配色。修改任意颜色或阴影后，自动转为自定义；浅色和深色分别保存。",
+      "hint": "切换预设会同时应用配色、字体、统计样式和圆角；手动调整后自动保存为自定义主题。",
       "sourceNote": "品牌核心色取自官网；明暗色阶与金属反光为本 Demo 适配。来源："
     },
     "chartEncoding": {
@@ -1287,7 +1287,7 @@
       "misans": "MiSans",
       "oppo": "OPPO Sans 4.0",
       "harmony": "HarmonyOS Sans",
-      "title": "界面字体",
+      "title": "字体设置",
       "label": "选择界面字体",
       "original": "原字体 Outfit",
       "sampleTitle": "漏洞风险与修复进度",
@@ -1332,7 +1332,19 @@
       "complete": "完成处理"
     },
     "unsavedChanges": "修改尚未保存。关闭或取消将放弃这些修改。",
-    "noPriorityItems": "当前快照没有需要优先处理的 Critical 漏洞。"
+    "noPriorityItems": "当前快照没有需要优先处理的 Critical 漏洞。",
+    "styleSettings": {
+      "title": "样式设置",
+      "colorsTitle": "配色设置",
+      "radiusTitle": "R角设置",
+      "radiusHint": "统一调整全部组件的圆角；0 为直角。圆形与胶囊组件使用百分比，其余使用像素。",
+      "card": "卡片与面板",
+      "control": "按钮与表单控件",
+      "dialog": "弹窗、抽屉与菜单",
+      "band": "统计指标带",
+      "small": "图表与小型组件",
+      "full": "胶囊与其他圆形组件"
+    }
   },
   "componentExamples": {
     "badgeSolid": "实心标签",

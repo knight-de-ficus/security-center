@@ -515,7 +515,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
 .em-resizable-grip {
   width: 4px;
   height: 24px;
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
   background: var(--color-sec-control);
 }
 .em-slider-track {
@@ -524,7 +524,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   width: 100%;
   height: 6px;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
   background: var(--color-sec-subtle);
 }
 .em-slider-track[data-orientation="vertical"] {
@@ -544,7 +544,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   width: 16px;
   height: 16px;
   border: 2px solid var(--color-sec-data-primary);
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
   background: var(--color-sec-surface);
   cursor: grab;
 }
@@ -649,7 +649,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
 }
 .em-scrollbar {
   display: flex;
-  border-radius: 4px;
+  border-radius: var(--radius-sec-control);
   background: var(--color-sec-subtle);
 }
 .em-scrollbar[data-orientation="vertical"] {
@@ -663,7 +663,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
 }
 .em-scrollbar-thumb {
   position: relative;
-  border-radius: 4px;
+  border-radius: var(--radius-sec-control);
   background: var(--color-sec-control);
 }
 .em-scrollbar-thumb[data-orientation="vertical"] {
@@ -867,6 +867,12 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   color: var(--color-sec-ink);
   font: inherit;
 }
+/* Avatars keep their circular silhouette in every theme. */
+[data-slot="avatar"],
+[data-slot="avatar-image"],
+.em-user-avatar {
+  border-radius: 50%;
+}
 .em-avatar-fallback {
   display: flex;
   width: 100%;
@@ -886,7 +892,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   padding: 2px;
   width: 36px;
   height: 20px;
-  border-radius: 20px;
+  border-radius: var(--radius-sec-full);
   background: var(--color-sec-control);
   cursor: pointer;
 }
@@ -897,7 +903,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   display: block;
   width: 16px;
   height: 16px;
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
   background: var(--color-sec-surface);
   transition: transform 150ms;
 }
@@ -1123,7 +1129,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
 }
 .em-skeleton {
   background: var(--color-sec-subtle);
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
   min-height: 20px;
 }
 .em-separator {
@@ -1328,13 +1334,13 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   border-color: var(--color-sec-critical-text);
 }
 .em-radio {
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
 }
 .em-radio-dot {
   display: block;
   width: 6px;
   height: 6px;
-  border-radius: 50%;
+  border-radius: var(--radius-sec-full);
   background: var(--color-sec-on-accent);
 }
 .em-radio [data-slot="radio-group-indicator"] {
@@ -1348,7 +1354,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   flex: 1;
   height: 6px;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: var(--radius-sec-small);
   background: var(--color-sec-subtle);
 }
 .em-progress-value {
@@ -1537,6 +1543,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  /* Presence dots stay circular regardless of the selected theme. */
   border-radius: 50%;
   color: var(--color-sec-surface);
   outline: 2px solid var(--color-sec-surface);
@@ -2006,6 +2013,7 @@ body:has(.em-dialog[data-open]) .em-menu-positioner {
   inset-inline-end: 3px;
   width: 6px;
   height: 6px;
+  /* Unread dots stay circular regardless of the selected theme. */
   border-radius: 50%;
   background: var(--color-sec-accent);
   border: 1px solid var(--color-sec-ink);

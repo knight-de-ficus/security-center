@@ -134,7 +134,7 @@
       "securityOverview": "Security overview",
       "securityTrends": "Trend analysis",
       "securityVulnerabilities": "Vulnerabilities",
-      "themeSettings": "Theme settings",
+      "themeSettings": "Configuración del tema",
       "securityComponents": "Mapa de actividad",
       "dashboardSamples": "Dashboard examples",
       "chartSamples": "Charts & heatmap",
@@ -1108,7 +1108,7 @@
       "title": "Theme and component workbench",
       "reset": "Reset",
       "export": "Export theme",
-      "notice": "Changes are saved automatically in this browser and survive reloads and restarts. Light and dark palettes are saved separately. Export CSS to reuse them.",
+      "notice": "Los cambios se aplican al instante y se guardan en este navegador.",
       "row": "Default controls in one row",
       "input": "Input example",
       "placeholder": "Enter text",
@@ -1203,7 +1203,7 @@
         "error-404": "Error page",
         "form-layout": "Complete form layouts",
         "security-components": "Heatmap & business components",
-        "theme-settings": "Theme settings",
+        "theme-settings": "Configuración del tema",
         "metric-styles": "Metric appearances"
       },
       "alerts": {
@@ -1259,7 +1259,7 @@
         "image5": "Diagonal staircase in a white interior",
         "image6": "Geometric corner of a white building against a blue sky"
       },
-      "settingsTitle": "Theme settings",
+      "settingsTitle": "Configuración del tema",
       "businessTitle": "Mapa de actividad",
       "businessNotice": "The actual components from all three business pages, with the same sample data.",
       "businessPreview": "Business page compositions",
@@ -1280,18 +1280,18 @@
       "selected": "Current appearance"
     },
     "palettePresets": {
-      "title": "Quick palettes",
+      "title": "Temas predefinidos",
       "default": "Default",
       "tenable": "Tenable",
       "rapid7": "Rapid7",
       "custom": "Custom",
-      "defaultDescription": "The current blue-gray and olive palette.",
-      "tenableDescription": "Website charcoal, white and yellow.",
-      "rapid7Description": "Website dark gray, orange and blue.",
-      "customDescription": "Your saved colors and shadows.",
+      "defaultDescription": "Paleta original con el estilo de métricas de texto negro sobre fondo blanco.",
+      "tenableDescription": "Colores Tenable, esquinas rectas, métricas oscuras destacadas y HarmonyOS Sans.",
+      "rapid7Description": "Colores Rapid7, MiSans y métricas metálicas claras.",
+      "customDescription": "Guarda tus colores, fuentes, estilo de métricas y esquinas.",
       "selected": "Selected",
       "apply": "Apply",
-      "hint": "Switching presets preserves your saved custom palette. Editing a color or shadow switches to Custom; light and dark values are saved separately.",
+      "hint": "Los temas aplican colores, fuente, estilo de métricas y esquinas a la vez. Los cambios manuales se guardan en el tema personalizado.",
       "sourceNote": "Core brand colors are sourced from the official websites. UI ramps and metallic reflections are dashboard adaptations. Sources:"
     },
     "chartEncoding": {
@@ -1349,7 +1349,19 @@
       "complete": "Completar proceso"
     },
     "unsavedChanges": "Cambios sin guardar. Cerrar o cancelar descarta las modificaciones.",
-    "noPriorityItems": "No hay hallazgos críticos prioritarios en esta instantánea."
+    "noPriorityItems": "No hay hallazgos críticos prioritarios en esta instantánea.",
+    "styleSettings": {
+      "title": "Configuración de estilo",
+      "colorsTitle": "Configuración de colores",
+      "radiusTitle": "Radio de las esquinas",
+      "radiusHint": "0 produce esquinas rectas. Los componentes redondos usan porcentajes; los demás, píxeles.",
+      "card": "Tarjetas y paneles",
+      "control": "Botones y campos",
+      "dialog": "Diálogos, paneles y menús",
+      "band": "Bandas de métricas",
+      "small": "Gráficos y componentes pequeños",
+      "full": "Componentes en forma de píldora y otros redondos"
+    }
   },
   "componentExamples": {
     "badgeSolid": "Solid badges",

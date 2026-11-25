@@ -1091,7 +1091,7 @@
       "title": "Theme and component workbench",
       "reset": "Reset",
       "export": "Export theme",
-      "notice": "Changes are saved automatically in this browser and survive reloads and restarts. Light and dark palettes are saved separately. Export CSS to reuse them.",
+      "notice": "Changes apply immediately and are saved in this browser.",
       "row": "Default controls in one row",
       "input": "Input example",
       "placeholder": "Enter text",
@@ -1263,18 +1263,18 @@
       "selected": "Current appearance"
     },
     "palettePresets": {
-      "title": "Quick palettes",
+      "title": "Theme presets",
       "default": "Default",
       "tenable": "Tenable",
       "rapid7": "Rapid7",
       "custom": "Custom",
-      "defaultDescription": "The current blue-gray and olive palette.",
-      "tenableDescription": "Website charcoal, white and yellow.",
-      "rapid7Description": "Website dark gray, orange and blue.",
-      "customDescription": "Your saved colors and shadows.",
+      "defaultDescription": "Original default palette with the white-background, black-text metric style.",
+      "tenableDescription": "Tenable colors, square corners, dark highlighted metrics and HarmonyOS Sans.",
+      "rapid7Description": "Rapid7 colors, MiSans and light metallic metrics.",
+      "customDescription": "Keep your colors, fonts, metric style and corner settings.",
       "selected": "Selected",
       "apply": "Apply",
-      "hint": "Switching presets preserves your saved custom palette. Editing a color or shadow switches to Custom; light and dark values are saved separately.",
+      "hint": "Presets apply colors, font, metric style and corners together. Manual changes are saved as a custom theme.",
       "sourceNote": "Core brand colors are sourced from the official websites. UI ramps and metallic reflections are dashboard adaptations. Sources:"
     },
     "chartEncoding": {
@@ -1332,7 +1332,19 @@
       "complete": "Complete processing"
     },
     "unsavedChanges": "Unsaved changes. Closing or cancelling discards these edits.",
-    "noPriorityItems": "No Critical findings need priority attention in this snapshot."
+    "noPriorityItems": "No Critical findings need priority attention in this snapshot.",
+    "styleSettings": {
+      "title": "Style settings",
+      "colorsTitle": "Color settings",
+      "radiusTitle": "Corner radius",
+      "radiusHint": "Adjust corners across all components; 0 makes square corners. Round and pill components use percentages, other components use pixels.",
+      "card": "Cards and panels",
+      "control": "Buttons and form controls",
+      "dialog": "Dialogs, drawers and menus",
+      "band": "Metric bands",
+      "small": "Charts and small components",
+      "full": "Pills and other round components"
+    }
   },
   "componentExamples": {
     "badgeSolid": "Solid badges",

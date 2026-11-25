@@ -1,4 +1,5 @@
 "use client";
+import { saveEditorialTheme } from "@/utils/editorial-theme";
 import { useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import SecuritySelect from "./select";
@@ -20,7 +21,10 @@ export default function MetricStyleSelector() {
   return (
     <SecuritySelect
       value={value}
-      onChange={(value) => setMetricAppearance(value as MetricAppearance)}
+      onChange={(value) => {
+        setMetricAppearance(value as MetricAppearance);
+        saveEditorialTheme();
+      }}
       label={t("label")}
       options={metricAppearances.map((value) => ({ value, label: t(value) }))}
     />

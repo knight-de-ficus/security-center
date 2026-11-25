@@ -73,3 +73,19 @@
     grid-column: span 6;
   }
 }
+
+.em-style-settings {
+  margin-block-start: 28px;
+}
+.em-radius-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-block-start: 16px;
+}
+.em-radius-field {
+  display: grid;
+  gap: 8px;
+  color: var(--color-sec-muted);
+  font-size: 0.875rem;
+}

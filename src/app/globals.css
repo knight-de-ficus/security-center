@@ -816,6 +816,8 @@ pre[class*="language-"].line-numbers {
   --radius-sec-control: 4px;
   --radius-sec-dialog: 8px;
   --radius-sec-band: 4px;
+  --radius-sec-small: 2px;
+  --radius-sec-full: 50%;
   --text-sec-metric: 2.5rem;
   --text-sec-metric--line-height: 3rem;
   --text-sec-small-metric: 1.5rem;

@@ -42,6 +42,7 @@ export default function useThemeColors() {
             style.getPropertyValue(`--color-sec-${name}`).trim(),
           ]),
         ),
+        "radius-small": style.getPropertyValue("--radius-sec-small").trim(),
         "font-family": getComputedStyle(document.body).fontFamily,
       });
     };

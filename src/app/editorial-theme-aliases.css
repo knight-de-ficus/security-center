@@ -59,6 +59,11 @@
   --shadow-slider-navigation: var(--shadow-sec-panel);
   --shadow-datepicker: var(--shadow-sec-overlay);
   --shadow-focus-ring: 0 0 0 2px var(--color-sec-focus);
+  --radius-xs: var(--radius-sec-small);
+  --radius-sm: var(--radius-sec-control);
+  --radius-md: var(--radius-sec-control);
+  --radius-full: var(--radius-sec-full);
+  --radius-4xl: var(--radius-sec-dialog);
   --radius-lg: var(--radius-sec-control);
   --radius-xl: var(--radius-sec-card);
   --radius-2xl: var(--radius-sec-card);
@@ -177,4 +182,11 @@
   --color-purple-800: var(--color-sec-data-violet);
   --color-purple-900: var(--color-sec-data-violet);
   --color-purple-950: var(--color-sec-data-violet);
+}
+
+@utility rounded-full {
+  border-radius: var(--radius-sec-full);
+}
+@utility rounded {
+  border-radius: var(--radius-sec-control);
 }

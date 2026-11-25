@@ -12,6 +12,9 @@ import { saveEditorialTheme, selectThemePreset } from "@/utils/editorial-theme";
 import type { ThemePresetId } from "@/utils/theme-presets";
 import PresetPicker from "./preset-picker";
 import FontPicker from "./font-picker";
+import RadiusSettings from "./radius-settings";
+import ComponentCard from "@/components/common/component-card";
+import { radiusGroups } from "@/utils/theme-appearance";
 
 // Read the actual theme declarations rather than maintaining a second palette.
 function declaredTokens() {
@@ -41,6 +44,7 @@ function declaredTokens() {
 
 export default function ThemeSettings() {
   const t = useTranslations("security.workbench");
+  const styleT = useTranslations("security.styleSettings");
   const metricT = useTranslations("security.metricStyles");
   const [tokens, setTokens] = useState<ThemeToken[]>([]);
   const [notice, setNotice] = useState("");
@@ -95,7 +99,14 @@ export default function ThemeSettings() {
   }
   function exportTheme() {
     const style = getComputedStyle(document.documentElement);
-    const css = `${theme === "dark" ? ".dark" : ":root:not(.dark)"} {\n${tokens.map(({ name }) => `  ${name}: ${style.getPropertyValue(name).trim()};`).join("\n")}\n}\n`;
+    const appearance = getComputedStyle(document.documentElement);
+    const radiusCss = radiusGroups
+      .map(
+        (group) =>
+          `  --radius-sec-${group}: ${appearance.getPropertyValue(`--radius-sec-${group}`).trim()};`,
+      )
+      .join("\n");
+    const css = `/* font: ${document.documentElement.dataset.workspaceFont}; metric: ${document.documentElement.dataset.metricAppearance} */\n${theme === "dark" ? ".dark" : ":root:not(.dark)"} {\n${tokens.map(({ name }) => `  ${name}: ${style.getPropertyValue(name).trim()};`).join("\n")}\n${radiusCss}\n  --font-outfit: ${getComputedStyle(document.body).fontFamily};\n}\n`;
     const url = URL.createObjectURL(new Blob([css], { type: "text/css" }));
     const a = document.createElement("a");
     a.href = url;
@@ -120,23 +131,19 @@ export default function ThemeSettings() {
       <p className="em-save-status" role="status">
         {notice}
       </p>
-      <FontPicker />
       <PresetPicker
         mode={theme}
         ready={tokens.length > 0}
         onChange={choosePreset}
       />
-      <div className="em-control-row sec-metric-settings">
-        <MetricStyleSelector />
-        <Link href="/metric-styles">{metricT("title")}</Link>
-      </div>
+      <FontPicker />
       <section className="em-grid">
         <div
           id="theme-tokens"
           data-columns={12}
           className="em-module em-span-12"
         >
-          <h2>{t("tokens")}</h2>
+          <h2>{styleT("colorsTitle")}</h2>
           <div className="em-token-grid">
             {tokens.map((token) => (
               <ThemeTokenField
@@ -149,6 +156,20 @@ export default function ThemeSettings() {
           </div>
         </div>
       </section>
+      <ComponentCard
+        variant="security"
+        columns={12}
+        title={styleT("title")}
+        className="em-style-settings"
+      >
+        <div className="em-control-row sec-metric-settings">
+          <MetricStyleSelector />
+          <Link href="/metric-styles">{metricT("title")}</Link>
+        </div>
+        <RadiusSettings
+          onSave={(saved) => setNotice(t(saved ? "autoSaved" : "saveFailed"))}
+        />
+      </ComponentCard>
     </>
   );
 }

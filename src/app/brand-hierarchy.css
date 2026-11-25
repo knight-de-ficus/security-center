@@ -21,7 +21,7 @@
 .sec-band,
 .sec-small-metrics {
   border: 0;
-  border-radius: var(--radius-sec-card);
+  border-radius: var(--radius-sec-band);
   background: var(--color-sec-surface);
   color: var(--color-sec-ink);
 }

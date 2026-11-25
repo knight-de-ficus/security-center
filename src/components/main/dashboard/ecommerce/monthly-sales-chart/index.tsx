@@ -36,7 +36,7 @@ export default function MonthlySalesChart() {
       bar: {
         horizontal: false,
         columnWidth: "38%",
-        borderRadius: 2,
+        borderRadius: Number.parseFloat(palette["radius-small"]) || 0,
         borderRadiusApplication: "around",
         dataLabels: {
           position: "top",
