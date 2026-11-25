@@ -1,4 +1,15 @@
 /* TailAdmin's original shell dimensions and geometry. Colors remain editable. */
+.tailadmin-sidebar-divider {
+  inset-inline-start: calc((var(--sidebar-width-icon) - 3.75rem) / 2);
+}
+.tailadmin-sidebar-brand {
+  container-type: inline-size;
+}
+.tailadmin-sidebar-logo {
+  width: clamp(2.5rem, calc(2rem + 12.8cqw), 4rem);
+  height: auto;
+  flex-shrink: 0;
+}
 .tailadmin-shell {
   --radius-lg: var(--radius-sec-control);
   --radius-xl: var(--radius-sec-card);

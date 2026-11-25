@@ -23,7 +23,7 @@ export default function SidebarSubmenuItem({
         aria-current={isActive ? "page" : undefined}
         target={subItem.target}
         className={cn(
-          "group menu-dropdown-item",
+          "group menu-dropdown-item whitespace-nowrap",
           isActive
             ? "menu-dropdown-item-active"
             : "menu-dropdown-item-inactive",

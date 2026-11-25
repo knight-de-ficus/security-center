@@ -41,22 +41,22 @@ export default function SidebarMenuItem({
   );
   const isDirectActive = Boolean(nav.path && nav.path === pathname);
   const isItemActive = hasSubItems ? isOpen || hasActiveChild : isDirectActive;
-  const isPanelOpen = showContent && isOpen;
+  const textVisibility = showContent ? "opacity-100" : "opacity-0";
 
   return (
     <UiSidebarMenuItem>
       {hasSubItems ? (
-        <Collapsible open={isPanelOpen} onOpenChange={onToggle}>
+        <Collapsible open={isOpen} onOpenChange={onToggle}>
           <CollapsibleTrigger
             aria-label={t(`items.${nav.key}`)}
             className={cn(
-              "group menu-item cursor-pointer",
+              "group menu-item h-10 justify-start overflow-hidden cursor-pointer",
               isItemActive ? "menu-item-active" : "menu-item-inactive",
-              !showContent ? "lg:justify-center" : "lg:justify-start",
             )}
           >
             <span
               className={cn(
+                "shrink-0",
                 isItemActive
                   ? "menu-item-icon-active"
                   : "menu-item-icon-inactive",
@@ -64,13 +64,20 @@ export default function SidebarMenuItem({
             >
               {nav.icon}
             </span>
-            {showContent && (
-              <span className="menu-item-text">{t(`items.${nav.key}`)}</span>
-            )}
-            {nav.new && showContent && (
+            <span
+              aria-hidden="true"
+              className={cn(
+                "menu-item-text pointer-events-none absolute start-12 whitespace-nowrap transition-opacity duration-150 motion-reduce:transition-none",
+                textVisibility,
+              )}
+            >
+              {t(`items.${nav.key}`)}
+            </span>
+            {nav.new && (
               <span
                 className={cn(
-                  "absolute inset-e-10 ms-auto menu-dropdown-badge",
+                  "absolute inset-e-10 ms-auto menu-dropdown-badge transition-opacity duration-150 motion-reduce:transition-none",
+                  textVisibility,
                   isItemActive
                     ? "menu-dropdown-badge-active"
                     : "menu-dropdown-badge-inactive",
@@ -79,17 +86,23 @@ export default function SidebarMenuItem({
                 {t("badges.new")}
               </span>
             )}
-            {showContent && (
-              <ChevronDownIcon
-                className={cn(
-                  "ms-auto h-5 w-5 transition-transform duration-200",
-                  isOpen ? "rotate-180 text-brand-500" : "",
-                )}
-              />
-            )}
+            <ChevronDownIcon
+              className={cn(
+                "absolute end-3 size-5 shrink-0 transition-[opacity,transform] duration-150 motion-reduce:transition-none",
+                textVisibility,
+                isOpen ? "rotate-180 text-brand-500" : "",
+              )}
+            />
           </CollapsibleTrigger>
           <CollapsibleContent>
-            <ul className="ms-9 mt-2 space-y-1">
+            <ul
+              aria-hidden={!showContent}
+              inert={!showContent}
+              className={cn(
+                "ms-9 mt-2 space-y-1 transition-opacity duration-150 motion-reduce:transition-none",
+                textVisibility,
+              )}
+            >
               {nav.subItems?.map((subItem) => (
                 <SidebarSubmenuItem
                   key={subItem.key}
@@ -112,13 +125,13 @@ export default function SidebarMenuItem({
             aria-current={isDirectActive ? "page" : undefined}
             target={nav.target}
             className={cn(
-              "group menu-item",
+              "group menu-item h-10 justify-start overflow-hidden",
               isItemActive ? "menu-item-active" : "menu-item-inactive",
-              !showContent ? "lg:justify-center" : "lg:justify-start",
             )}
           >
             <span
               className={cn(
+                "shrink-0",
                 isItemActive
                   ? "menu-item-icon-active"
                   : "menu-item-icon-inactive",
@@ -126,9 +139,15 @@ export default function SidebarMenuItem({
             >
               {nav.icon}
             </span>
-            {showContent && (
-              <span className="menu-item-text">{t(`items.${nav.key}`)}</span>
-            )}
+            <span
+              aria-hidden="true"
+              className={cn(
+                "menu-item-text pointer-events-none absolute start-12 whitespace-nowrap transition-opacity duration-150 motion-reduce:transition-none",
+                textVisibility,
+              )}
+            >
+              {t(`items.${nav.key}`)}
+            </span>
           </Link>
         )
       )}

@@ -35,7 +35,7 @@ export default function NotificationDropdown() {
   };
 
   return (
-    <DropdownMenu open={isOpen} onOpenChange={handleOpenChange}>
+    <DropdownMenu open={isOpen} onOpenChange={handleOpenChange} modal={false}>
       <DropdownMenuTrigger
         render={
           <Button
@@ -58,6 +58,7 @@ export default function NotificationDropdown() {
       <DropdownMenuContent
         align="end"
         sideOffset={12}
+        positionMethod="fixed"
         className="tailadmin-header-menu em-surface w-87.5 overflow-hidden p-3 sm:w-90.25"
       >
         <div className="flex items-center justify-between pb-3">

@@ -75,5 +75,3 @@ export { XIcon } from "./x";
 
 export { default as TailadminLogo } from "./tailadmin-logo.svg";
 export { calendarNextArrow, calendarPreviousArrow } from "./calendar-arrows";
-
-export { default as TailadminLogoMark } from "./tailadmin-logo-mark.svg";

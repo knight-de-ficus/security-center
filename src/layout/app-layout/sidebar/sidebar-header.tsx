@@ -2,40 +2,25 @@
 
 import { SidebarHeader } from "@/components/ui/sidebar";
 import { Link } from "@/i18n/navigation";
-import { cn } from "@/utils";
-import { TailadminLogo, TailadminLogoMark } from "@/icons";
+import Image from "next/image";
+import withBasePath from "@/utils/with-base-path";
 
-interface AppSidebarHeaderProps {
-  showContent: boolean;
-}
-
-export default function AppSidebarHeader({
-  showContent,
-}: AppSidebarHeaderProps) {
+export default function AppSidebarHeader() {
   return (
-    <SidebarHeader className="px-5 pt-5 pb-8">
+    <SidebarHeader className="tailadmin-sidebar-brand px-5 pt-5 pb-8">
       <Link
         href="/"
-        className={cn(
-          "flex items-center",
-          !showContent ? "justify-center" : "justify-start",
-        )}
+        className="flex h-10 items-center justify-center"
+        aria-label="Kdf"
       >
-        {showContent ? (
-          <TailadminLogo
-            width={150}
-            height={40}
-            role="img"
-            aria-label="TailAdmin"
-          />
-        ) : (
-          <TailadminLogoMark
-            width={32}
-            height={32}
-            role="img"
-            aria-label="TailAdmin"
-          />
-        )}
+        <Image
+          src={withBasePath("/images/brand/kdf_white.png")}
+          width={800}
+          height={500}
+          alt=""
+          className="tailadmin-sidebar-logo block"
+          unoptimized
+        />
       </Link>
     </SidebarHeader>
   );

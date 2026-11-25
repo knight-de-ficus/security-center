@@ -63,9 +63,9 @@ export default function AppSidebar() {
 
   return (
     <Sidebar side="left" collapsible="icon">
-      <AppSidebarHeader showContent={showContent} />
+      <AppSidebarHeader />
 
-      <SidebarContent className="overflow-y-auto px-5 duration-300 ease-linear">
+      <SidebarContent className="overflow-x-hidden overflow-y-auto px-5 duration-300 ease-linear">
         <nav className="mb-6">
           <div className="flex flex-col gap-4">
             {activeSections.map((section) => (

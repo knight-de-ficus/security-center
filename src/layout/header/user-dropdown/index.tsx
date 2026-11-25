@@ -45,7 +45,7 @@ export default function UserDropdown() {
   };
 
   return (
-    <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
+    <DropdownMenu open={isOpen} onOpenChange={setIsOpen} modal={false}>
       <DropdownMenuTrigger className="tailadmin-user-trigger flex items-center text-foreground dark:text-foreground">
         <span className="em-user-avatar me-3 size-11 overflow-hidden">
           <Image
@@ -69,6 +69,7 @@ export default function UserDropdown() {
       <DropdownMenuContent
         align="end"
         sideOffset={12}
+        positionMethod="fixed"
         className="tailadmin-header-menu w-65 p-3"
       >
         <div className="px-3 py-2">

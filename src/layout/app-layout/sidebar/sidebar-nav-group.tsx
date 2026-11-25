@@ -5,7 +5,6 @@ import {
   SidebarGroupLabel,
   SidebarMenu,
 } from "@/components/ui/sidebar";
-import { HorizontalDotsIcon } from "@/icons";
 import { cn } from "@/utils";
 import { useTranslations } from "next-intl";
 import SidebarMenuItem from "./sidebar-menu-item";
@@ -36,11 +35,24 @@ export default function SidebarNavGroup({
     <SidebarGroup className="p-0">
       <SidebarGroupLabel
         className={cn(
-          "mb-4 flex h-auto p-0 text-xs leading-5 text-gray-400 uppercase",
-          !showContent ? "xl:justify-center" : "justify-start",
+          "relative mb-4 flex h-5 overflow-hidden p-0 text-xs leading-5 whitespace-nowrap text-gray-400 uppercase group-data-[collapsible=icon]/sidebar:mt-0 group-data-[collapsible=icon]/sidebar:opacity-100",
         )}
       >
-        {showContent ? t(labelKey) : <HorizontalDotsIcon />}
+        <span
+          className={cn(
+            "absolute start-0 transition-opacity duration-150 motion-reduce:transition-none",
+            showContent ? "opacity-100" : "opacity-0",
+          )}
+        >
+          {t(labelKey)}
+        </span>
+        <span
+          aria-hidden="true"
+          className={cn(
+            "tailadmin-sidebar-divider absolute h-px w-5 bg-border transition-opacity duration-150 motion-reduce:transition-none dark:bg-border",
+            showContent ? "opacity-0" : "opacity-100",
+          )}
+        />
       </SidebarGroupLabel>
       <SidebarMenu className="gap-1">
         {items.map((nav, index) => (
